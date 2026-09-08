@@ -11,8 +11,6 @@ body {
 }
 
 
-/* ENCABEZADO */
-
 header {
     background-color: #8BC34A;
     padding: 20px;
@@ -61,8 +59,6 @@ nav a:hover {
 }
 
 
-/* CATEGORIAS */
-
 .categorias {
     background-color: white;
     padding: 20px;
@@ -91,8 +87,6 @@ nav a:hover {
 }
 
 
-/* SECCIONES DE MASCOTAS */
-
 .seccion {
     background-color: white;
     padding: 25px;
@@ -111,7 +105,6 @@ nav a:hover {
 }
 
 
-/* TITULOS DE PRODUCTOS */
 
 .seccion h3 {
     color: #689F38;
@@ -120,7 +113,7 @@ nav a:hover {
 }
 
 
-/* PRODUCTOS */
+
 
 .lista-productos {
     text-align: center;
@@ -177,8 +170,6 @@ nav a:hover {
     font-size: 18px;
 }
 
-
-/* PIE DE PAGINA */
 
 footer {
     background-color: #558B2F;
