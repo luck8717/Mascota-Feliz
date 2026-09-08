@@ -7,30 +7,42 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
   <!-- Menú de navegación -->
   <header>
-    <h2 class="logo">MascotaFeliz 🐾</h2>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="consejos.html">Consejos</a>
-      <a href="servicios.html">Servicios</a>
-    </nav>
+    <div class="contenedor encabezado ">
+      <h2 class="logo">MascotaFeliz 🐾</h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="servicios.html">Servicios</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Título de la página -->
   <main>
-    <h1>Catálogo de productos</h1>
-    <p>Aquí encuentras alimentos, juguetes y accesorios
-      para perros, gatos y aves.</p>
+    <!-- presentación -->
+    <section class="presentacion">
+      <div class="contenedor">
+        <p class="subtitulo">🐾 Productos para tus mascotas</p>
+        <h1>Catálogo de productos</h1>
+        <p>
+          Encuentra alimentos, juguetes y accesorios
+          para perros, gatos y aves.
+        </p>
+      </div>
+    </section>
 
-    <!-- Botones para ir directo a cada sección -->
-    <div class="menu-categorias">
-      <a href="#perros">🐶 Perros</a>
-      <a href="#gatos">🐱 Gatos</a>
-      <a href="#aves">🐦 Aves</a>
-    </div>
+    <!-- Categorías -->
+    <section class="contenedor categorias">
+      <h2>Elige una categoría</h2>
+
+      <div class="menu-categorias">
+        <a href="#perros">🐶 <span>Perros</span></a>
+        <a href="#gatos">🐱 <span>Gatos</span></a>
+        <a href="#aves">🐦 <span>Aves</span></a>
+      </div>
+    </section>
 
     <!-- ===== PERROS ===== -->
     <h2 id="perros">🐶 Perros</h2>
