@@ -1,0 +1,188 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #8BC34A;
+    padding: 20px;
+}
+
+.encabezado {
+    text-align: center;
+}
+
+.logo {
+    color: white;
+}
+
+nav {
+    background-color: #558B2F;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/* PRESENTACION */
+
+.presentacion {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.presentacion h1 {
+    color: #558B2F;
+    font-size: 30px;
+}
+
+.subtitulo {
+    color: #689F38;
+}
+
+
+/* CATEGORIAS */
+
+.categorias {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.categorias h2 {
+    color: #558B2F;
+}
+
+.menu-categorias {
+    margin: 20px;
+}
+
+.menu-categorias a {
+    background-color: #8BC34A;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.menu-categorias a:hover {
+    background-color: #558B2F;
+}
+
+
+/* SECCIONES DE MASCOTAS */
+
+.seccion {
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo-mascota {
+    text-align: center;
+    background-color: #F1F8E9;
+    padding: 15px;
+}
+
+.titulo-mascota h2 {
+    color: #558B2F;
+}
+
+
+/* TITULOS DE PRODUCTOS */
+
+.seccion h3 {
+    color: #689F38;
+    border-bottom: 2px solid #8BC34A;
+    padding-bottom: 5px;
+}
+
+
+/* PRODUCTOS */
+
+.lista-productos {
+    text-align: center;
+}
+
+.producto {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #F9F9F9;
+    text-align: left;
+}
+
+.producto:hover {
+    background-color: #E8F5E9;
+}
+
+
+/* IMAGEN DEL PRODUCTO */
+
+.imagen-producto {
+    background-color: #F1F8E9;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+}
+
+
+/* INFORMACION DEL PRODUCTO */
+
+.contenido-producto {
+    padding: 10px;
+}
+
+.tipo {
+    color: #689F38;
+    font-size: 14px;
+}
+
+.contenido-producto h4 {
+    color: #558B2F;
+    font-size: 20px;
+}
+
+.contenido-producto p {
+    font-size: 15px;
+}
+
+.precio {
+    color: #9B0000;
+    font-size: 18px;
+}
+
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #558B2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
