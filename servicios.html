@@ -36,6 +36,58 @@
             </article>
         </section>
 
+        <section>
+            <h2>Agendado Rápido por WhatsApp</h2>
+            <p>¿Prefieres una atención inmediata? Escríbenos directamente a nuestro WhatsApp oficial para coordinar una cita:</p>
+            <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20agendar%20un%20servicio%20para%20mi%20mascota" target="_blank" class="btn-whatsapp">
+                Reservar Cita por WhatsApp
+            </a>
+        </section>
+
+        <section>
+            <h2>Formulario de Reserva de Citas</h2>
+            <form action="#" method="POST">
+                
+                <div>
+                    <label for="nombre">Nombre del Cliente:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono / Celular:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
+                </div>
+
+                <div>
+                    <label for="mascota">Tipo de Mascota:</label>
+                    <select id="mascota" name="mascota" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="servicio">Servicio Requerido:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">-- Selecciona un servicio --</option>
+                        <option value="bano">Baño e Higiene</option>
+                        <option value="peluqueria">Corte y Peluquería</option>
+                        <option value="completo">Servicio Completo (Baño + Corte)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="comentarios">Detalles o Indicaciones Especiales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ej. Alérgico a ciertos champús, temeroso con la secadora..."></textarea>
+                </div>
+
+                <button type="submit">Enviar Reserva</button>
+
+            </form>
+        </section>
+
     </main>
 
     <footer>
