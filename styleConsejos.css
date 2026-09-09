@@ -1,0 +1,117 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+
+header {
+    background-color: #8BC34A;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+header h1 {
+    color: white;
+}
+
+header p {
+    color: white;
+}
+
+
+
+nav {
+    background-color: #558B2F;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section h2 {
+    color: #558B2F;
+    text-align: center;
+}
+
+
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C4A;
+}
+
+
+
+article {
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 15px;
+    background-color: #F1F8E9;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+article img {
+    width: 100%;
+    height: 180px;
+}
+
+article h3 {
+    color: #558B2F;
+}
+
+article:hover {
+    background-color: #E8F5E9;
+}
+
+
+
+footer {
+    background-color: #558B2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
