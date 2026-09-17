@@ -1,0 +1,159 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+header {
+    background-color: #8BC34A;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 35px;
+}
+
+
+
+nav {
+    background-color: #558B2F;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+section h2 {
+    color: #558B2F;
+}
+
+
+article {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    padding: 15px;
+    background-color: #F1F8E9;
+    border: 1px solid #ccc;
+}
+
+article h3 {
+    color: #558B2F;
+}
+
+article img {
+    width: 100%;
+    height: 220px;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+article:hover {
+    background-color: #E8F5E9;
+}
+
+
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C4A;
+}
+
+
+
+form {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+form div {
+    margin: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #558B2F;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+button {
+    background-color: #8BC34A;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    margin: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #558B2F;
+}
+
+
+
+footer {
+    background-color: #558B2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
