@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/catalogo.css">
+    <link rel="stylesheet" href="assets/css/escatalogo.css">
     <link 
     <title>MascotaFeliz - Tienda y Farmacia Veterinaria</title>
 </head>
@@ -87,7 +87,144 @@
           Consúltanos</a>
       </div>
     </div>
-  
+    <div class="contenedor tienda__layout">
+
+      <!-- ============ FILTROS LATERALES ============ -->
+      <aside class="filtros" aria-label="Filtros de productos">
+        <div class="filtros__cabecera">
+          <h2>🎚️ Filtros</h2>
+          <a href="catalogo.html">Limpiar todo</a>
+        </div>
+
+        <form action="catalogo.html" method="get">
+
+          <fieldset class="filtros__grupo">
+            <legend>Filtro por Mascota</legend>
+
+            <label class="filtros__opcion">
+              <input type="checkbox" name="mascota" value="perros" checked>
+              🐶 Perros <span class="filtros__cantidad">142</span>
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="mascota" value="gatos">
+              🐱 Gatos <span class="filtros__cantidad">98</span>
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="mascota" value="aves">
+              🐦 Aves <span class="filtros__cantidad">45</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filtros__grupo">
+            <legend>Categorías Especializadas</legend>
+
+            <label class="filtros__opcion">
+              <input type="checkbox" name="categoria" value="alimentos" checked>
+              🍖 Alimentos y Snacks <span class="filtros__cantidad">110</span>
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="categoria" value="farmacia">
+              ✚ Farmacia y Suplementos <span class="filtros__cantidad">64</span>
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="categoria" value="antipulgas">
+              🛡️ Antipulgas y Pipetas <span class="filtros__cantidad">38</span>
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="categoria" value="juguetes">
+              🧸 Juguetes y Hábitats <span class="filtros__cantidad">49</span>
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="categoria" value="higiene">
+              🧼 Higiene y Belleza <span class="filtros__cantidad">24</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filtros__grupo">
+            <legend>Rango de Precio <span class="filtros__max">Hasta S/ 120</span></legend>
+
+            <input class="filtros__rango" type="range" name="precio" min="5" max="120" value="120"
+              aria-label="Precio máximo">
+            <div class="filtros__rango-marcas">
+              <span>S/ 5</span><span>S/ 60</span><span>S/ 120</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="filtros__grupo">
+            <legend>Marcas Destacadas</legend>
+
+            <label class="filtros__opcion">
+              <input type="checkbox" name="marca" value="royal-canin" checked>
+              Royal Canin
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="marca" value="bravecto">
+              Bravecto
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="marca" value="versele-laga">
+              Versele-Laga
+            </label>
+            <label class="filtros__opcion">
+              <input type="checkbox" name="marca" value="zupreem">
+              ZuPreem
+            </label>
+          </fieldset>
+
+          <fieldset class="filtros__grupo">
+            <legend>Disponibilidad</legend>
+
+            <label class="filtros__opcion">
+              <input type="checkbox" name="stock" value="hoy" checked>
+              📦 En stock para entrega hoy
+              <span class="filtros__nota">Despacho desde clínica local</span>
+            </label>
+          </fieldset>
+
+          <button class="filtros__aplicar btn btn--primario" type="submit">Aplicar filtros</button>
+        </form>
+
+        <div class="filtros__receta">
+          <h3>✚ Farmacia con Receta</h3>
+          <p>¿Tu mascota necesita medicamentos sujetos a prescripción? Envíanos la orden médica por WhatsApp y
+            la validamos.</p>
+          <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">📄 Subir receta
+            médica</a>
+        </div>
+      </aside>
+      <!-- ============ PRODUCTOS ============ -->
+      <section class="productos" aria-label="Listado de productos">
+
+        <div class="productos__barra">
+          <p class="productos__contador">Mostrando <strong>12</strong> de 285 productos</p>
+          <p class="productos__stock">✔ Stock verificado en tiempo real</p>
+
+          <div class="productos__herramientas">
+            <label class="productos__buscar">
+              <span class="productos__buscar-icono" aria-hidden="true">🔍</span>
+              <input type="search" name="buscar" placeholder="Buscar en farmacia y pienso"
+                aria-label="Buscar productos">
+            </label>
+
+            <label class="productos__ordenar">
+              Ordenar:
+              <select name="ordenar">
+                <option value="populares">Más populares</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="rating">Mejor valorados</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <ul class="productos__activos" aria-label="Filtros activos">
+          <li>Filtros activos:</li>
+          <li><a href="catalogo.html">🐶 Perros </a></li>
+          <li><a href="catalogo.html">Royal Canin / Hill's </a></li>
+          <li><a href="catalogo.html">📦 En Stock hoy </a></li>
+        </ul>
+
   </main>
 
   <!-- Pie de página -->
