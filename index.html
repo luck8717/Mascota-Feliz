@@ -4,43 +4,51 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>MascotaFeliz - Inicio</title>
 </head>
 
 <body>
-
-    <header>
-        <div class="encabezado-tienda">
-            <address>
-                <span>
-                    Urgencias 24/7:
-                    <a href="tel:+51987654321" rel="noopener noreferrer">+51 987 654 321</a>
-                </span>
-                <span>Lun-Sáb: 8:00-20:00</span>
-                <span>Av. Principal de las Mascotas 42, Lima</span>
-            </address>
+    <header class="header">
+        <div class="header__topbar">
+            <div class="contenedor">
+                <address class="header__contacto">
+                    <span class="header__dato">
+                        Urgencias 24/7:
+                        <a href="tel:+51987654321" rel="noopener noreferrer">+51 987 654 321</a>
+                    </span>
+                    <span class="header__dato">Lun-Sáb: 8:00-20:00</span>
+                    <span class="header__dato">Av. Principal de las Mascotas 42, Lima</span>
+                </address>
+            </div>
         </div>
 
-        <div>
-            <a href="index.html">
-                <img src="assets/img/logos/logo.jpg" alt="MascotaFeliz ir al inicio">
-                <p>Mascota<span>Feliz</span></p>
-            </a>
+        <div class="header__principal">
+            <div class="header__barra contenedor">
+                <a class="marca" href="index.html">
+                    <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz ir al inicio">
+                </a>
 
-            <nav aria-label="Navegación Principal">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios Médicos</a></li>
-                    <li><a href="catalogo.html">Tienda para tus Mascotas</a></li>
-                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                </ul>
-            </nav>
+                <nav class="menu" aria-label="Navegación Principal">
+                    <ul class="menu__lista">
+                        <li><a class="menu__enlace" href="index.html" aria-current="page">Inicio</a></li>
+                        <li><a class="menu__enlace" href="servicios.html">Servicios Médicos</a></li>
+                        <li><a class="menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
+                        <li><a class="menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
 
-            <div>
-                <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">Agendar Cita</a>
-                <a href="carrito.html">Carrito de Compras</a>
+                <div class="header__acciones">
+                    <a class="btn btn--primario" href="https://wa.me/51999999999" target="_blank"
+                        rel="noopener noreferrer">Agendar Cita</a>
+                    <a class="carrito" href="carrito.html">Carrito de Compras</a>
+                </div>
             </div>
         </div>
     </header>
@@ -518,7 +526,8 @@
                     tienda.</p>
                 <form action="#" method="post">
                     <label for="correo-boletin">Correo electrónico</label>
-                    <input type="email" name="correo" id="correo-boletin" placeholder="Introduce tu correo electrónico" required>
+                    <input type="email" name="correo" id="correo-boletin" placeholder="Introduce tu correo electrónico"
+                        required>
                     <button type="submit">Suscribirme gratis</button>
                 </form>
             </div>
