@@ -19,222 +19,75 @@
 
 <body>
   <!-- Menú de navegación -->
-  <header>
-    <div class="contenedor encabezado ">
-      <h2 class="logo">MascotaFeliz 🐾</h2>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="consejos.html">Consejos</a>
-        <a href="servicios.html">Servicios</a>
-      </nav>
+<body>
+  <header class="header">
+    <div class="header__topbar">
+      <div class="contenedor">
+        <address class="header__contacto">
+          <span class="header__dato">
+            Urgencias 24/7:
+            <a href="tel:+519****4321" rel="noopener noreferrer">+51 987 654 321</a>
+          </span>
+          <span class="header__dato">Lun-Sáb: 8:00-20:00</span>
+          <span class="header__dato">Av. Principal de las Mascotas 42, Lima</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="header__principal">
+      <div class="header__barra contenedor">
+        <a class="marca" href="index.html">
+          <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz ir al inicio">
+        </a>
+
+        <nav class="menu" aria-label="Navegación Principal">
+          <ul class="menu__lista">
+            <li><a class="menu__enlace" href="index.html">Inicio</a></li>
+            <li><a class="menu__enlace" href="servicios.html">Servicios Médicos</a></li>
+            <li><a class="menu__enlace" href="catalogo.html" aria-current="page">Tienda de Mascotas</a></li>
+            <li><a class="menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__acciones">
+          <a class="btn btn--primario" href="https://wa.me/51999999999" target="_blank"
+            rel="noopener noreferrer">Agendar Cita</a>
+          <a class="carrito" href="carrito.html">Carrito de Compras</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- presentación -->
-    <section class="presentacion">
-      <div class="contenedor">
-        <p class="subtitulo">🐾 Productos para tus mascotas</p>
-        <h1>Catálogo de productos</h1>
-        <p>
-          Encuentra alimentos, juguetes y accesorios
-          para perros, gatos y aves.
-        </p>
-      </div>
+    <!-- Migas de pan -->
+    <nav class="migas contenedor" aria-label="Migas de pan">
+      <a href="index.html">Inicio</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Tienda de Mascotas</span>
+    </nav>
+
+    <!-- Cabecera de la tienda -->
+    <section class="tienda__cabecera contenedor">
+      <p class="tienda__insignia">✚ Farmacia y Nutrición Certificada</p>
+      <h1 class="tienda__titulo">Tienda &amp; Farmacia Veterinaria <span>MascotaFeliz</span></h1>
+      <p class="tienda__subtitulo">Nutrición de alta gama, farmacia certificada, antipulgas y accesorios para
+        consentir a perros, gatos y aves con envío a domicilio en 24h.</p>
+
+      <ul class="tienda__puntos">
+        <li>🚚 <strong>Envío Exprés 24h</strong><span>Gratis desde S/ 149</span></li>
+        <li>🛡️ <strong>Control Clínico</span><span>Supervisado por veterinarios</span></li>
+      </ul>
     </section>
 
-    <!-- Categorías -->
-    <section class="contenedor categorias">
-      <h2>Elige una categoría</h2>
-
-      <div class="menu-categorias">
-        <a href="#perros">🐶 <span>Perros</span></a>
-        <a href="#gatos">🐱 <span>Gatos</span></a>
-        <a href="#aves">🐦 <span>Aves</span></a>
+    <!-- Barra de envíos -->
+    <div class="tienda__envios">
+      <div class="contenedor tienda__envios-interior">
+        <p>⚡ Envíos exprés en el día para pedidos antes de las 14:00 | Retiro gratis en clínica en 30 minutos</p>
+        <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">¿Dudas o recetas?
+          Consúltanos</a>
       </div>
-    </section>
-
-    <!-- ===== PERROS ===== -->
-    <section class="contenedor seccion" id="perros">
-      <div class="titulo-mascota">
-        <h2>🐶 Perros</h2>
-        <p>Alimentos, juguetes y accesorios para perros.</p>
-      </div>
-
-      <h3>Alimentos</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🥩</div>
-          <div class="contenido-producto">
-            <span class="tipo">Alimento</span>
-            <h4>Ricocan Adulto Carne</h4>
-            <p>Para perro adulto de raza pequeña.</p>
-            <strong class="precio">S/ 39.90</strong>
-          </div>
-        </div>
-
-        <div class="producto">
-          <div class="imagen-producto">🍖</div>
-          <div class="contenido-producto">
-            <span class="tipo">Alimento</span>
-            <h4>Mimaskot Adulto Carne</h4>
-            <p>Para perro adulto de todas las razas.</p>
-            <strong class="precio">S/ 42.90</strong>
-          </div>
-        </div>
-      </div>
-
-      <h3>Juguetes</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🎾</div>
-          <div class="contenido-producto">
-            <span class="tipo">Juguete</span>
-            <h4>Pelota de Caucho</h4>
-            <p>Para perros y juegos activos.</p>
-            <strong class="precio">S/ 18.90</strong>
-          </div>
-        </div>
-      </div>
-
-      <h3>Accesorios</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🦮</div>
-          <div class="contenido-producto">
-            <span class="tipo">Accesorio</span>
-            <h4>Collar de Nylon Ajustable</h4>
-            <p>Para perros, talla ajustable.</p>
-            <strong class="precio">S/ 24.90</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== GATOS ===== -->
-    <section class="contenedor seccion" id="gatos">
-      <div class="titulo-mascota">
-        <h2>🐱 Gatos</h2>
-        <p>Alimentos, juguetes y productos de higiene.</p>
-      </div>
-
-      <h3>Alimentos</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🐟</div>
-          <div class="contenido-producto">
-            <span class="tipo">Alimento</span>
-            <h4>Ricocat Adulto Pescado</h4>
-            <p>Para gato adulto de todas las razas.</p>
-            <strong class="precio">S/ 45.90</strong>
-          </div>
-        </div>
-      </div>
-
-      <h3>Juguetes</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🐭</div>
-          <div class="contenido-producto">
-            <span class="tipo">Juguete</span>
-            <h4>Ratón de Juguete</h4>
-            <p>Para juego y estimulación.</p>
-            <strong class="precio">S/ 16.90</strong>
-          </div>
-        </div>
-      </div>
-
-      <h3>Accesorios e higiene</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🪵</div>
-          <div class="contenido-producto">
-            <span class="tipo">Accesorio</span>
-            <h4>Rascador de Cartón</h4>
-            <p>Para cuidado de uñas y entretenimiento.</p>
-            <strong class="precio">S/ 59.90</strong>
-          </div>
-        </div>
-
-        <div class="producto">
-          <div class="imagen-producto">📦</div>
-          <div class="contenido-producto">
-            <span class="tipo">Higiene</span>
-            <h4>Arena Sanitaria</h4>
-            <p>Producto para la higiene de los gatos.</p>
-            <strong class="precio">S/ 29.90</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== AVES ===== -->
-    <section class="contenedor seccion" id="aves">
-      <div class="titulo-mascota">
-        <h2>🐦 Aves</h2>
-        <p>Alimentos, juguetes y accesorios para aves.</p>
-      </div>
-
-      <h3>Alimentos</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🌾</div>
-          <div class="contenido-producto">
-            <span class="tipo">Alimento</span>
-            <h4>Mix de Semillas</h4>
-            <p>Para aves, alimentación diaria.</p>
-            <strong class="precio">S/ 22.90</strong>
-          </div>
-        </div>
-      </div>
-
-      <h3>Juguetes</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🔔</div>
-          <div class="contenido-producto">
-            <span class="tipo">Juguete</span>
-            <h4>Juguete con Campanas</h4>
-            <p>Para aves, entretenimiento.</p>
-            <strong class="precio">S/ 15.90</strong>
-          </div>
-        </div>
-      </div>
-
-      <h3>Accesorios</h3>
-
-      <div class="lista-productos">
-        <div class="producto">
-          <div class="imagen-producto">🌿</div>
-          <div class="contenido-producto">
-            <span class="tipo">Accesorio</span>
-            <h4>Percha de Madera Natural</h4>
-            <p>Para aves, descanso.</p>
-            <strong class="precio">S/ 19.90</strong>
-          </div>
-        </div>
-
-        <div class="producto">
-          <div class="imagen-producto">💧</div>
-          <div class="contenido-producto">
-            <span class="tipo">Accesorio</span>
-            <h4>Bebedero para Jaula</h4>
-            <p>Para aves, hidratación.</p>
-            <strong class="precio">S/ 17.90</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    </div>
+  
   </main>
 
   <!-- Pie de página -->
