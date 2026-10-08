@@ -8,11 +8,14 @@
     --color-neutro: #1E293B;
     --color-fondo: #F8F9FA;
     --color-blanco: #FFFFFF;
-    --color-texto-suave: #64748B;
+    --color-texto-suave: #49525f;
     --color-borde: #E2E8F0;
+    --color-primario-claro: #9AF2D5;
+    --color-fondo-suave: #F1F4FF;
 
     /*OTRO*/
     --radio: 12px;
+    --sombra: 0 8px 24px rgba(30, 41 ,59, 0.08);
 
     /*TIPOGRAFIAS*/
     --fuente-titulos: 'Plus Jakarta Sans', sans-serif;
@@ -147,7 +150,138 @@ ul {
     white-space: nowrap;
 }
 
+.etiqueta {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    background: var(--color-primario-claro);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
 
+.btn--whatsapp {
+    background: var(--color-terciario);
+    color: var(--color-blanco);
+}
+
+.btn--secundario {
+    background: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.hero {
+    background: var(--color-fondo-suave);
+    padding-block: 3rem;
+}
+
+.hero__contenedor {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero__titulo {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.hero__destacado {
+    display: block;
+    color: var(--color-primario);
+}
+
+.hero__descripcion {
+    max-width: 32rem;
+    margin: 0 0 1.5rem;
+    color: var(--color-texto-suave);
+}
+
+.hero__acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero__datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.hero__dato {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem 1rem;
+    background: var(--color-blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    line-height: 1.3;
+}
+
+.hero__dato strong {
+    font-size: 0.85rem;
+}
+
+.hero__dato span {
+    font-size: 0.75rem;
+    color: var(--color-texto-suave);
+}
+
+.hero__visual {
+    position: relative;
+}
+
+.hero__figura {
+    margin: 0;
+    padding: 0.75rem;
+    background: var(--color-blanco);
+    border-radius: 24px;
+    box-shadow: var(--sombra);
+}
+
+.hero__imagen {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.hero__tarjeta {
+    position: absolute;
+    padding: 0.9rem 1.1rem;
+    background: var(--color-blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    font-size: 0.85rem;
+}
+
+.hero__tarjeta p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero__tarjeta--doctora {
+    left: 2rem;
+    right: 2rem;
+    bottom: 1.5rem;
+}
+
+.hero__tarjeta-fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__estado {
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    background: var(--color-primario-claro);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
 
 /*SERVICIOS*/
 
