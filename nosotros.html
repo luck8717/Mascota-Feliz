@@ -15,29 +15,43 @@
 </head>
 <body>
     <header class="header">
-        <div class="top-bar">
-            <div class="contenedor top-bar-content">
-                <span>Urgencias 24/7: +51 987 654 321</span>
-                <span>Lun-Sáb: 8:00-20:00</span>
-                <span>Av. Principal de las Mascotas 42, Lima</span>
+        <div class="header__topbar">
+            <div class="contenedor">
+                <address class="header__contacto">
+                    <span class="header__dato">
+                        Urgencias 24/7:
+                        <a href="tel:+51987654321" rel="noopener noreferrer">+51 987 654 321</a>
+                    </span>
+                    <span class="header__dato">Lun-Sáb: 8:00-20:00</span>
+                    <span class="header__dato">Av. Principal de las Mascotas 42, Lima</span>
+                </address>
             </div>
         </div>
-        <div class="contenedor header-grid">
-            <a href="index.html" class="logo">
-                <strong>Mascota<span>Feliz</span></strong>
-            </a>
-            <nav class="navegacion">
-                <a href="index.html">Inicio</a>
-                <a href="servicios.html">Servicios Médicos</a>
-                <a href="catalogo.html">Tienda de Mascotas</a>
-                <a href="nosotros.html" class="activo">Sobre Nosotros</a>
-                <a href="carrito.html">Carrito de Compras</a>
-            </nav>
-            <div class="header-acciones">
-                <a href="#" class="btn btn-primario">Agendar Cita</a>
+
+        <div class="header__principal">
+            <div class="header__barra contenedor">
+                <a class="marca" href="index.html">
+                    <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz ir al inicio">
+                </a>
+
+                <nav class="menu" aria-label="Navegación Principal">
+                    <ul class="menu__lista">
+                        <li><a class="menu__enlace" href="index.html" aria-current="page">Inicio</a></li>
+                        <li><a class="menu__enlace" href="servicios.html">Servicios Médicos</a></li>
+                        <li><a class="menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
+                        <li><a class="menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__acciones">
+                    <a class="btn btn--primario" href="https://wa.me/51999999999" target="_blank"
+                        rel="noopener noreferrer">Agendar Cita</a>
+                    <a class="carrito" href="carrito.html">Carrito de Compras</a>
+                </div>
             </div>
         </div>
     </header>
+
 
     <main class="contenedor seccion nosotros">
         
@@ -45,120 +59,382 @@
             <a href="index.html">Inicio</a> &gt; <span>Sobre Nosotros</span>
         </nav>
 
-        <div class="nosotros-hero grid-2">
-            <div class="nosotros-texto">
-                <p class="tagline">➕ Más de 20 años cuidando vidas con empatía y ciencia</p>
-                <h1>Pasión Médica, Respeto Biológico y <span class="resaltado">Amor Genuino</span> por Cada Mascota</h1>
-                <p>Nacimos con el firme propósito de transformar la experiencia veterinaria tradicional en un espacio libre de estrés (Fear-Free), adaptado meticulosamente a las necesidades etológicas y fisiológicas de perros, gatos y aves exóticas.</p>
-                
-                <div class="tags-nosotros">
-                    <span>🩺 Medicina Centro-Avanzada</span>
-                    <span>🍃 Salas Libres de Olor y Ruido</span>
-                    <span>🐱 Clínica Cat-Friendly Certificada</span>
-                </div>
-            </div>
-            <div class="nosotros-imagen-cont">
-                <img src="assets/img/hero-nosotros.jpg" alt="Veterinaria cuidando a un perro" class="imagen-hero-nosotros">
-                <div class="imagen-capa">
-                    <p><strong>Instalaciones Fear-Free Certificadas</strong></p>
-                    <p>Climatización con feromonas y sonido diseñado</p>
-                </div>
-            </div>
+        <section class="seccion-hero">
+  <div class="contenedor hero-grid">
+
+    <div class="hero-content">
+      
+      <div class="badge-tagline">
+        <span>♡</span> Más de 14 años cuidando vidas con empatía y ciencia
+      </div>
+
+      <h1>
+        Pasión Médica, Respeto Biológico y 
+        <span class="texto-verde">Amor Genuino</span> 
+        por Cada Mascota
+      </h1>
+
+      <p class="hero-descripcion">
+        Nacimos con el firme propósito de transformar la experiencia veterinaria tradicional en un espacio libre de estrés (<strong>Fear-Free</strong>), adaptado meticulosamente a las necesidades etológicas y fisiológicas de perros, gatos y aves exóticas.
+      </p>
+
+      <div class="hero-tags">
+        <span class="tag-item">🐾 Medicina Canina Avanzada</span>
+        <span class="tag-item">🩺 Salas Libres de Olor y Ruido</span>
+        <span class="tag-item">🦜 Clínica Aviar Certificada</span>
+      </div>
+
+      <div class="hero-stats">
+        
+        <div class="stat-card">
+          <span class="stat-numero verde">+18.5k</span>
+          <span class="stat-titulo">Pacientes Atendidos</span>
+          <span class="stat-sub">Perros, gatos y aves</span>
         </div>
 
-        <div class="estadisticas grid-4 seccion-reducida">
-            <div class="estat">
-                <span>+18.5k</span> 
-                <p>Atenciones Médicas<br><small>Perros, gatos y aves</small></p>
-            </div>
-            <div class="estat destacado">
-                <span>3</span> 
-                <p>Sedes Clínicas<br><small>Espacios de bienestar</small></p>
-            </div>
-            <div class="estat">
-                <span>28</span> 
-                <p>Especialistas<br><small>Clínica e Investigación</small></p>
-            </div>
-            <div class="estat">
-                <span>4.9 ⭐</span> 
-                <p>Google Reviews<br><small>12,400+ testimonios</small></p>
-            </div>
+        <div class="stat-card">
+          <span class="stat-numero naranja">3</span>
+          <span class="stat-titulo">Sedes Clínicas</span>
+          <span class="stat-sub">Urgencias 24/7 activas</span>
         </div>
 
-        <section class="seccion-pilares seccion">
-            <p class="centrar tagline-min">NUESTRA ATENCIÓN ASISTENCIAL</p>
-            <h2 class="centrar">Cuatro Pilares Que Redefinen el Bienestar Animal</h2>
-            <p class="centrar descripcion-pilares">No tratamos animales en serie. Diseñamos entornos clínicos basados en el rigor científico, el confort sensorial y la ética médica sin concesiones.</p>
-            
-            <div class="grid-4 pilares-cartas">
-                <div class="pilar-carta">
-                    <span class="pilar-tag">PILAR I</span>
-                    <h3>Ciencia con Empatía (Fear-Free)</h3>
-                    <p>Protocolos de manipulación dócil, feromonas sintéticas continuas, mantas pre-calentadas y salas de espera separadas para evitar estrés.</p>
-                </div>
-                <div class="pilar-carta">
-                    <span class="pilar-tag">PILAR II</span>
-                    <h3>Especialización por Especie</h3>
-                    <p>Salas y quirófanos diferenciados: sabemos que un felino amazónico o un gato sénior tienen respuestas etológicas distintas a las de un perro.</p>
-                </div>
-                <div class="pilar-carta">
-                    <span class="pilar-tag">PILAR III</span>
-                    <h3>Transparencia y Calidez</h3>
-                    <p>Sin pruebas innecesarias ni tarifas ocultas. Explicamos cada analítica, diagnóstico por imagen y pronóstico con lenguaje claro.</p>
-                </div>
-                <div class="pilar-carta">
-                    <span class="pilar-tag">PILAR IV</span>
-                    <h3>Disponibilidad Activa 24/7</h3>
-                    <p>Equipo médico y de enfermería en guardia física los 365 días del año en nuestro Hospital Central con monitorización continua.</p>
-                </div>
-            </div>
-        </section>
+        <div class="stat-card">
+          <span class="stat-numero azul">28</span>
+          <span class="stat-titulo">Facultativos Colegiados</span>
+          <span class="stat-sub">Cirujanos & etólogos</span>
+        </div>
 
-        <section class="seccion seccion-testimonios">
-            <p class="centrar tagline-min">HISTORIAS DE RECUPERACIÓN</p>
-            <h2 class="centrar">La Voz de Quienes Más los Aman</h2>
-            <p class="centrar">Detrás de cada estadística hay un vínculo único. Estas son algunas de las familias que confían en nuestro compromiso diario.</p>
-            
-            <div class="grid-3 testimonios-cartas">
-                <div class="testimonio-carta">
-                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
-                    <h3>"La recuperación de Kiko, nuestro loro amazónico"</h3>
-                    <p>"Algo dejó de comer y tenía dificultades respiratorias severas. Casi ninguna clínica atiende aves con facilidad. En MascotaFeliz nos explicaron todo paso a paso."</p>
-                    <div class="autor-testimonio">
-                        <strong>Elena R.</strong>
-                        <span>Tutoría de Kiko (Loro Amazónico, 2 años)</span>
-                    </div>
-                </div>
-                <div class="testimonio-carta">
-                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
-                    <h3>"Un ambiente 100% sin estrés para Luna"</h3>
-                    <p>"Llevar a Luna al veterinario solía ser una pesadilla de maullidos. En MascotaFeliz entras a la sala de gatos sin olor a perro, con toallitas impregnadas de feromonas."</p>
-                    <div class="autor-testimonio">
-                        <strong>Valeria S.</strong>
-                        <span>Tutoría de Luna (Gata Mesta, 4 años)</span>
-                    </div>
-                </div>
-                <div class="testimonio-carta">
-                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
-                    <h3>"Atención inmediata que le salvó la vida a Thor"</h3>
-                    <p>"Un domingo a las 3:00 am Thor presentó una distensión abdominal aguda. Llegamos a la sede y en menos de 10 minutos estaba en quirófano."</p>
-                    <div class="autor-testimonio">
-                        <strong>Carlos M.</strong>
-                        <span>Tutor de Thor (Pastor Alemán, 6 años)</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="stat-card">
+          <span class="stat-numero negro">4.9 <span class="estrella">★</span></span>
+          <span class="stat-titulo">Google Reviews</span>
+          <span class="stat-sub">+2.400 testimonios</span>
+        </div>
 
-        <section class="seccion cta-principal">
-            <p class="tagline-min cta-tag">ATENCIÓN PERSONALIZADA A UN CLICK</p>
-            <h2>¿Quieres conocernos o necesitas asesoría para tu mascota?</h2>
-            <p>Estaremos encantados de resolver tus dudas, darte un recorrido previo por nuestras instalaciones o agendar una primera evaluación preventiva.</p>
-            <div class="cta-acciones">
-                <a href="#" class="btn btn-blanco">Escribir por WhatsApp</a>
-                <a href="#" class="btn btn-primario-contorno">Reservar Primera Consulta</a>
-            </div>
-        </section>
+      </div>
+
+    </div>
+
+    <div class="hero-media">
+      <div class="hero-img-wrapper">
+        <img src="assets/img/nosotros/hero-nosotros.jpg" alt="Equipo veterinario de MascotaFeliz ateniendo pacientes" class="hero-img">
+        
+        <div class="badge-flotante">
+          <div class="badge-icono">🌱</div>
+          <div class="badge-info">
+            <strong>Instalaciones Fear-Free Certificadas</strong>
+            <span>Climatización con feromonas y bajo decibelio</span>
+          </div>
+          <div class="badge-check">✓</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+        <section class="seccion-pilares">
+  <div class="contenedor">
+
+    <span class="tagline-pilares">NUESTRA FILOSOFÍA ASISTENCIAL</span>
+    <h2>Cuatro Pilares que Redefinen el Bienestar Animal</h2>
+    <p class="descripcion-pilares">
+      No tratamos animales en serie. Diseñamos entornos clínicos basados en el rigor científico, el confort sensorial y la ética médica sin concesiones.
+    </p>
+
+    <div class="pilares-grid">
+
+      <article class="card-pilar">
+        <div class="pilar-head">
+          <div class="icono-pilar verde">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <span class="pilar-numero verde">PILAR 01</span>
+          <h3>Ciencia con Empatía (Fear-Free)</h3>
+        </div>
+        <p class="pilar-texto">
+          Protocolos de manipulación dócil, feromonas sintéticas continuas, mantas pre-calentadas y salas de espera aisladas para que la consulta médica jamás sea una experiencia traumática.
+        </p>
+        <div class="pilar-footer verde">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Manejo en positivo</span>
+        </div>
+      </article>
+
+      <article class="card-pilar">
+        <div class="pilar-head">
+          <div class="icono-pilar naranja">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <span class="pilar-numero naranja">PILAR 02</span>
+          <h3>Especialización por Especie</h3>
+        </div>
+        <p class="pilar-texto">
+          Salas y quirófanos diferenciados: sabemos que un loro amazónico o un gato sénior tienen respuestas etológicas y farmacológicas diametralmente distintas a las de un perro.
+        </p>
+        <div class="pilar-footer naranja">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Instalaciones segregadas</span>
+        </div>
+      </article>
+
+      <article class="card-pilar">
+        <div class="pilar-head">
+          <div class="icono-pilar verde">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/>
+              <path d="m7 21 1.6-1.4c.4-.4.9-.6 1.4-.6h4c1.7 0 3-1.3 3-3V7c0-1.7-1.3-3-3-3H7"/>
+            </svg>
+          </div>
+          <span class="pilar-numero verde">PILAR 03</span>
+          <h3>Transparencia y Calidez</h3>
+        </div>
+        <p class="pilar-texto">
+          Sin pruebas innecesarias ni tarifas ocultas. Explicamos cada analítica, diagnóstico por imagen y pronóstico con diapositivas y lenguaje comprensible antes de actuar.
+        </p>
+        <div class="pilar-footer verde">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span>Presupuestos previos claros</span>
+        </div>
+      </article>
+
+      <article class="card-pilar">
+        <div class="pilar-head">
+          <div class="icono-pilar naranja">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2"/><path d="M12 20v2"/>
+              <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
+              <path d="M2 12h2"/><path d="M20 12h2"/>
+            </svg>
+          </div>
+          <span class="pilar-numero naranja">PILAR 04</span>
+          <h3>Disponibilidad Activa 24/7</h3>
+        </div>
+        <p class="pilar-texto">
+          Equipo médico y de enfermería de guardia física los 365 días del año en nuestro Hospital Central, con monitorización continua en tiempo real y UCI especializada.
+        </p>
+        <div class="pilar-footer naranja">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Atención sin interrupciones</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+        <section class="seccion-sedes">
+  <div class="contenedor">
+    
+    <div class="sedes-header">
+      <div class="sedes-header-info">
+        <span class="tagline-sedes">RED HOSPITALARIA MASCOTAFELIZ</span>
+        <h2>Nuestras 3 Sedes en Lima</h2>
+        <p>Centros especializados interconectados mediante historial clínico digital compartido para asegurar el seguimiento integral de tu mascota.</p>
+      </div>
+      <div class="sedes-header-badges">
+        <span class="badge-estado-activo">Todas las Sedes Activas</span>
+        <span class="badge-tiempo-espera">🟢 Tiempo medio espera: &lt;10min</span>
+      </div>
+    </div>
+
+    <div class="sedes-grid">
+
+      <article class="card-sede">
+        <div class="card-sede-media">
+          <span class="badge-categoria verde">SEDE CENTRAL</span>
+          <img src="assets/img/nosotros/sede-central.jpg" alt="Sede Central Chamartín" class="sede-img">
+          <span class="badge-distrito">Lima</span>
+        </div>
+        <div class="card-sede-body">
+          <h3>Central & Especialidades</h3>
+          <p class="sede-direccion">📍 Av. Principal de las Mascotas 42, 28036 Lima</p>
+          
+          <div class="pill-horario azul">
+            ⏰ Lun a Sáb: 8:00 a 20:00 (Citas y Farmacia)
+          </div>
+
+          <p class="sede-subtitulo">Instalaciones destacadas:</p>
+          <ul class="sede-lista verde">
+            <li>✓ Consultas caninas y felinas independientes</li>
+            <li>✓ Peluquería dermatológica con baño de ozono</li>
+            <li>✓ Farmacia veterinaria con stock certificado</li>
+          </ul>
+
+          <a href="#" class="btn btn-verde-bloque">
+            📅 Pedir Cita 
+          </a>
+        </div>
+      </article>
+
+      <article class="card-sede card-urgente">
+        <div class="card-sede-media">
+          <span class="badge-categoria naranja">URGENCIAS 24H ACTIVAS</span>
+          <img src="assets/img/nosotros/sede-hospital.jpg" alt="Hospital Clínico Urgencias" class="sede-img">
+          <span class="badge-distrito">El Rescate</span>
+        </div>
+        <div class="card-sede-body">
+          <h3>Hospital Clínico & Urgencias</h3>
+          <p class="sede-direccion">📍 Calle del Rescate 15, 28028 Lima</p>
+
+          <div class="pill-horario naranja">
+            ✳️ Abierto 24 Horas / 365 Días al Año
+          </div>
+
+          <p class="sede-subtitulo">Unidades de alta complejidad:</p>
+          <ul class="sede-lista naranja">
+            <li>✓ Quirófano inhalatorio y monitorización multiparamétrica</li>
+            <li>✓ UCI con incubadoras oxigenadas para aves y cachorros</li>
+            <li>✓ Laboratorio IDEXX con resultados en 15 minutos</li>
+          </ul>
+
+          <a href="#" class="btn btn-naranja-bloque">
+            📞 Llamar Urgencias: 987 654 321
+          </a>
+        </div>
+      </article>
+
+      <article class="card-sede">
+        <div class="card-sede-media">
+          <span class="badge-categoria verde">UNIDAD ESPECIALIZADA</span>
+          <img src="assets/img/nosotros/sede-norte.jpg" alt="Clínica Norte Aves Exóticas" class="sede-img">
+          <span class="badge-distrito">Dr. Fleming</span>
+        </div>
+        <div class="card-sede-body">
+          <h3>Clínica Norte & Aves Exóticas</h3>
+          <p class="sede-direccion">📍 C/ Doctor Fleming 12, 28036 Lima</p>
+
+          <div class="pill-horario azul">
+            ⏰ Lun a Sáb: 8:30 a 20:30
+          </div>
+
+          <p class="sede-subtitulo">Capacidades únicas:</p>
+          <ul class="sede-lista verde">
+            <li>✓ Unidad exclusiva de Psitácidos y Aves Canoras</li>
+            <li>✓ Radiología digital micrométrica sin anestesia forzada</li>
+            <li>✓ Asesoría de comportamiento y etología de loros</li>
+          </ul>
+
+          <a href="#" class="btn btn-azul-suave-bloque">
+            💬 Consultar Unidad Aviar
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+        <section class="seccion-testimonios">
+  <div class="contenedor">
+
+    <span class="tagline-testimonios">HISTORIAS DE RECUPERACIÓN</span>
+    <h2>La Voz de Quienes Más los Aman</h2>
+    <p class="descripcion-testimonios">
+      Detrás de cada estadística hay un vínculo único. Estas son algunas de las familias que confían en nuestro compromiso diario.
+    </p>
+
+
+    <div class="testimonios-grid">
+
+
+      <article class="card-testimonio">
+        <div class="estrellas">★★★★★</div>
+        <h3>"La recuperación de Kiko, nuestro loro amazónico"</h3>
+        <p class="testimonio-texto">
+          "Kiko dejó de comer y tenía dificultades respiratorias severas. Casi ninguna clínica atiende aves con seriedad. El Dr. Mateo no solo lo estabilizó en su incubadora con nebulizaciones, sino que nos explicó cada paso. Hoy Kiko canta como siempre."
+        </p>
+        <div class="autor-info">
+          <img src="assets/img/nosotros/loro.jpg" alt="Elena R." class="autor-avatar">
+          <div>
+            <strong>Elena R.</strong>
+            <span>Tutora de Kiko (Loro Amazona, 7 años)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card-testimonio">
+        <div class="estrellas">★★★★★</div>
+        <h3>"Un ambiente 100% sin estrés para Luna"</h3>
+        <p class="testimonio-texto">
+          "Llevar a Luna al veterinario solía ser una pesadilla de bufidos y pánico. En MascotaFeliz entras a la sala de gatos sin olor a perro, con toallas impregnadas de feromonas y la Dra. Clara la examinó sin agarrarla bruscamente. Nunca más cambio de clínica."
+        </p>
+        <div class="autor-info">
+          <img src="assets/img/nosotros/gata.jpg" alt="Valeria S." class="autor-avatar">
+          <div>
+            <strong>Valeria S.</strong>
+            <span>Tutora de Luna (Gata Persa, 4 años)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card-testimonio">
+        <div class="estrellas">★★★★★</div>
+        <h3>"Atención inmediata que salvó la vida de Thor"</h3>
+        <p class="testimonio-texto">
+          "Un domingo a las 3:00 AM Thor empezó con distensión abdominal aguda por torsión gástrica. Llegamos a la sede de El Rescate y en menos de 10 minutos estaba en quirófano. La rapidez del equipo de urgencias fue la diferencia entre la vida y la muerte."
+        </p>
+        <div class="autor-info">
+          <img src="assets/img/nosotros/perro.jpg" alt="Carlos M." class="autor-avatar">
+          <div>
+            <strong>Carlos M.</strong>
+            <span>Tutor de Thor (Pastor Alemán, 5 años)</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+        <section class="cta-banner">
+  <div class="cta-container">
+    
+
+    <div class="cta-content">
+      <div class="cta-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span>Atención personalizada y sin prisas</span>
+      </div>
+
+      <h2>¿Quieres conocernos o necesitas asesoría para tu mascota?</h2>
+
+      <p>Estaremos encantados de resolver tus dudas, darte un recorrido previo por nuestras instalaciones o agendar una primera evaluación preventiva.</p>
+    </div>
+
+    <div class="cta-actions">
+      <a href="https://wa.me/51999999999" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span>Escribir por WhatsApp</span>
+      </a>
+
+      <a href="#" class="btn btn-reserva">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+          <line x1="16" x2="16" y1="2" y2="6"/>
+          <line x1="8" x2="8" y1="2" y2="6"/>
+          <line x1="3" x2="21" y1="10" y2="10"/>
+        </svg>
+        <span>Reservar Primera Consulta</span>
+      </a>
+    </div>
+
+  </div>
+</section>
 
     </main>
 
