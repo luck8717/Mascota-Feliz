@@ -270,14 +270,15 @@
                     </article>
 
                     <article class="servicio servicio--urgencia">
-                        <div>
-                            <img src="assets/img/servicios/servicios-24-7.jpg"
+                        <div class="servicio__media">
+                            <img class="servicio__imagen" src="assets/img/servicios/servicios-24-7.jpg"
                                 alt="Doctora realizando una cirugía a una mascota">
-                            <span>Guardia 24 Horas</span>
+                            <span class="servicio__etiqueta">Guardia 24 Horas</span>
                         </div>
 
-                        <h3>Cirugía y Laboratorio Clínico 24/7</h3>
-                        <p>Quirófanos equipados, anestesia inhalatoria, ecografía Doppler y analíticas sanguíneas en 15
+                        <h3 class="servicio__titulo">Cirugía y Laboratorio Clínico 24/7</h3>
+                        <p class="servicio__descripcion">Quirófanos equipados, anestesia inhalatoria, ecografía Doppler
+                            y analíticas sanguíneas en 15
                             minutos.</p>
 
                         <div class="servicio__precio">
@@ -292,292 +293,257 @@
             </div>
         </section>
 
-        <section>
-            <header>
-                <div>
-                    <p>Farmacia y Nutrición</p>
-                    <h2>Los favoritos de nuestra tienda</h2>
-                </div>
-
-                <a href="catalogo.html">Ver catálogo completo</a>
-            </header>
-
-            <div>
-                <article>
+        <section class="seccion">
+            <div class="contenedor">
+                <header class="seccion__cabecera">
                     <div>
-                        <img src="assets/img/productos/royal-canin.jpg"
-                            alt="Bolsa de alimentos para perros de raza grande">
-                        <span>Perro Cachorro</span>
-                        <span>-15% OFF</span>
+                        <p class="sobretitulo sobretitulo--naranja">Farmacia y Nutrición</p>
+                        <h2 class="seccion__titulo">Los favoritos de nuestra tienda</h2>
                     </div>
 
-                    <div>
-                        <span role="img" aria-label="4.5 de 5 estrellas">★★★★★</span>
-                        <span>(142)</span>
-                    </div>
+                    <a class="enlace-flecha" href="catalogo.html">Ver catálogo completo</a>
+                </header>
 
-                    <h3>Royal Canin Maxi Puppy 15kg</h3>
-                    <p>Para cachorros de razas grandes hasta los 15 meses.</p>
-
-                    <div>
-                        <div>
-                            <strong>S/ 68.00</strong>
-                            <del>S/ 79.90</del>
+                <div class="productos">
+                    <article class="producto producto-perro">
+                        <div class="producto__media">
+                            <img class="producto__imagen" src="assets/img/productos/royal-canin.jpg"
+                                alt="Bolsa de alimentos para perros de raza grande">
+                            <span class="producto__categoria">Perro Cachorro</span>
+                            <span class="producto__descuento">-15% OFF</span>
                         </div>
-                        <button type="button" aria-label="Agregar Royal Canin Maxi Puppy al carrito"></button>
-                    </div>
-                </article>
 
-                <article>
-                    <div>
-                        <img src="assets/img/productos/bravecto.jpg" alt="Paquete de producto antipulgas para perros">
-                        <span>Farmacia Canina</span>
-                    </div>
+                        <div class="producto__valoracion">
+                            <span class="producto__estrellas" role="img" aria-label="4.5 de 5 estrellas">★★★★★</span>
+                            <span class="producto__resenas">(142)</span>
+                        </div>
 
-                    <div>
-                        <span role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-                        <span>(289)</span>
-                    </div>
+                        <h3 class="producto__nombre">Royal Canin Maxi Puppy 15kg</h3>
+                        <p class="producto__descripcion">Para cachorros de razas grandes hasta los 15 meses.</p>
 
-                    <h3>Bravecto Antipulgas Perros M (10-20kg)</h3>
-                    <p>Protección continua por 12 semanas contra pulgas y garrapatas.</p>
+                        <div class="producto__pie">
+                            <div class="producto__precio">
+                                <strong class="producto__precio">S/ 68.00</strong>
+                                <del class="producto__precio-anterior">S/ 79.90</del>
+                            </div>
+                            <button class="producto__carrito" type="button"
+                                aria-label="Agregar Royal Canin Maxi Puppy al carrito"></button>
+                        </div>
+                    </article>
 
-                    <div>
-                        <strong>S/ 32.50</strong>
-                        <button type="button" aria-label="Agregar Bravecto Antipulgas Perros M al carrito"></button>
-                    </div>
-                </article>
+                    <article class="producto producto--perro">
+                        <div class="producto__media">
+                            <img class="producto__imagen" src="assets/img/productos/bravecto.jpg"
+                                alt="Paquete de producto antipulgas para perros">
+                            <span class="producto__categoria">Farmacia Canina</span>
+                        </div>
 
-                <article>
-                    <div>
-                        <img src="assets/img/productos/arena-sanitaria.jpg" alt="Paquete de arena sanitaria para gatos">
-                        <span>Gatos Higiene</span>
-                    </div>
+                        <div class="producto__valoracion">
+                            <span class="producto__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                            <span class="producto__resenas">(289)</span>
+                        </div>
 
-                    <div>
-                        <span role="img" aria-label="4 de 5 estrellas">★★★★☆</span>
-                        <span>(96)</span>
-                    </div>
+                        <h3 class="producto__nombre">Bravecto Antipulgas Perros M (10-20kg)</h3>
+                        <p class="producto__descripcion">Protección continua por 12 semanas contra pulgas y garrapatas.
+                        </p>
 
-                    <h3>Arena Sanitaria Aglomerante Gatos 10kg</h3>
-                    <p>Ultra aglomeración, libre de polvo en un 99.8% y neutralizador de olores.</p>
+                        <div class="producto__pie">
+                            <strong class="producto__precio">S/ 32.50</strong>
+                            <button class="producto__carrito" type="button"
+                                aria-label="Agregar Bravecto Antipulgas Perros M al carrito"></button>
+                        </div>
+                    </article>
 
-                    <div>
-                        <strong>S/ 18.00</strong>
-                        <button type="button" aria-label="Agregar Arena Sanitaria Aglomerante al carrito"></button>
-                    </div>
-                </article>
+                    <article class="producto producto--gato">
+                        <div class="producto__media">
+                            <img class="producto__imagen" src="assets/img/productos/arena-sanitaria.jpg"
+                                alt="Paquete de arena sanitaria para gatos">
+                            <span class="producto__categoria">Gatos Higiene</span>
+                        </div>
 
-                <article>
-                    <div>
-                        <img src="assets/img/productos/mezcla-premium.jpg"
-                            alt="Paquete de Mezcla Premium para loros y aves">
-                        <span>Aves Nutrición</span>
-                    </div>
+                        <div class="producto__valoracion">
+                            <span class="producto__estrellas" role="img" aria-label="4 de 5 estrellas">★★★★☆</span>
+                            <span class="producto__resenas">(96)</span>
+                        </div>
 
-                    <div>
-                        <span role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-                        <span>(53)</span>
-                    </div>
+                        <h3 class="producto__nombre">Arena Sanitaria Aglomerante Gatos 10kg</h3>
+                        <p class="producto__descripcion">Ultra aglomeración, libre de polvo en un 99.8% y neutralizador
+                            de olores.</p>
 
-                    <h3>Mezcla Premium Loros y Aves 2kg</h3>
-                    <p>Semillas seleccionadas, frutos deshidratados y vitaminas añadidas.</p>
+                        <div class="producto__pie">
+                            <strong class="producto__precio">S/ 18.00</strong>
+                            <button class="producto__carrito" type="button"
+                                aria-label="Agregar Arena Sanitaria Aglomerante al carrito"></button>
+                        </div>
+                    </article>
 
-                    <div>
-                        <strong>S/ 14.90</strong>
-                        <button type="button" aria-label="Agregar Mezcla Premium Loros y Aves al carrito"></button>
-                    </div>
-                </article>
-            </div>
-        </section>
+                    <article class="producto producto--ave">
+                        <div class="producto__media">
+                            <img class="producto__imagen" src="assets/img/productos/mezcla-premium.jpg"
+                                alt="Paquete de Mezcla Premium para loros y aves">
+                            <span class="producto__categoria">Aves Nutrición</span>
+                        </div>
 
-        <section>
-            <div>
-                <p>Nuestra Diferencia</p>
-                <h2>Veterinaria pensada con el corazón y respaldada por la ciencia</h2>
-                <p>No somos solo una clínica: somos un ecosistema de bienestar animal donde la empatía, el silencio y la
-                    tecnología eliminan el miedo de las visitas médicas.</p>
+                        <div class="producto__valoracion">
+                            <span class="producto__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                            <span class="producto__resenas">(53)</span>
+                        </div>
 
-                <div>
-                    <h3>Colegiatura y Certificaciones Oficiales</h3>
-                    <p>Todos nuestros médicos están colegiados por el Colegio Médico Veterinario del Perú.</p>
+                        <h3 class="producto__nombre">Mezcla Premium Loros y Aves 2kg</h3>
+                        <p class="producto__descripcion">Semillas seleccionadas, frutos deshidratados y vitaminas
+                            añadidas.</p>
+
+                        <div class="producto__pie">
+                            <strong class="producto__precio">S/ 14.90</strong>
+                            <button class="producto__carrito" type="button"
+                                aria-label="Agregar Mezcla Premium Loros y Aves al carrito"></button>
+                        </div>
+                    </article>
                 </div>
             </div>
-
-            <ul>
-                <li>
-                    <h3>Médicos Certificados</h3>
-                    <p>Especialistas con formación de postgrado en medicina felina, medicina interna canina y
-                        ornitología clínica.</p>
-                </li>
-
-                <li>
-                    <h3>Instalaciones Libres de Estrés</h3>
-                    <p>Salas de espera y consultas físicamente separadas para gatos y perros, difusores de feromonas
-                        y reducción acústica.</p>
-                </li>
-
-                <li>
-                    <h3>Farmacia Veterinaria Completa</h3>
-                    <p>Disponibilidad inmediata de tratamientos crónicos, antibióticos específicos y fármacos
-                        especializados para aves y exóticos.</p>
-                </li>
-
-                <li>
-                    <h3>Seguimiento Post-Consulta Vía WhatsApp</h3>
-                    <p>No te dejamos solo tras la visita: monitorizamos la recuperación y absorción de medicamentos
-                        vía mensaje directo con tu doctor.</p>
-                </li>
-            </ul>
         </section>
 
-        <section>
-            <header>
-                <p>Experiencias Reales</p>
-                <h2>Lo que dicen las familias de nuestros pacientes</h2>
-                <p>La confianza de más de 15,000 clientes es nuestro mayor orgullo y compromiso continuo.</p>
-            </header>
+        <section class="seccion">
+            <div class="diferencia contenedor">
+                <div class="diferencia__texto">
+                    <p class="sobretitulo">Nuestra Diferencia</p>
+                    <h2 class="seccion__titulo">Veterinaria pensada con el corazón y respaldada por la ciencia</h2>
+                    <p class="diferencia__descripcion">No somos solo una clínica: somos un ecosistema de bienestar
+                        animal donde la empatía, el silencio y la tecnología eliminan el miedo de las visitas médicas.
+                    </p>
 
-            <div>
-                <article>
-                    <span role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-                    <blockquote>
-                        Traje a 'Max', mi Golden de 4 años, con un cuadro digestivo agudo un domingo a medianoche. La
-                        atención en urgencias fue rápida, cariñosa y muy profesional. Al día siguiente nos escribieron
-                        por WhatsApp para revisar su evolución. Son una maravilla.
-                    </blockquote>
-
-                    <div>
-                        <img src="assets/img/testimonios/testimonio-carlos-m.jpg"
-                            alt="Foto de Carlos M. con su mascota">
-
+                    <div class="respaldo">
+                        <span class="respaldo__icono" aria-hidden="true"></span>
                         <div>
-                            <strong>Carlos M.</strong>
-                            <span>Dueño de Max (Golden Retriever)</span>
+                            <h3 class="respaldo__titulo">Colegiatura y Certificaciones Oficiales</h3>
+                            <p class="respaldo__texto">Todos nuestros médicos están colegiados por el Colegio Médico
+                                Veterinario del Perú.</p>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article>
-                    <span role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-                    <blockquote>
-                        Es casi imposible encontrar clínicas con auténtica especialización en aves. En MascotaFeliz
-                        trataron a 'Kiko', mi loro amazónico, con una delicadeza sublime. Su plumaje y nutrición han
-                        mejorado un 200%. Les debo la vida de mi compañero.
-                    </blockquote>
+                <ul class="ventajas">
+                    <li class="ventaja">
+                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <h3 class="ventaja__titulo">Médicos Certificados</h3>
+                        <p class="ventaja__texto">Especialistas con formación de postgrado en medicina felina, medicina
+                            interna canina y ornitología clínica.</p>
+                    </li>
 
-                    <div>
-                        <img src="assets/img/testimonios/testimonio-elena-r.jpg" alt="Foto de Elena R. con su mascota">
+                    <li class="ventaja ventaja--instalaciones">
+                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <h3 class="ventaja__titulo">Instalaciones Libres de Estrés</h3>
+                        <p class="ventaja__texto">Salas de espera y consultas físicamente separadas para gatos y perros,
+                            difusores de feromonas y reducción acústica.</p>
+                    </li>
 
-                        <div>
-                            <strong>Elena R.</strong>
-                            <span>Dueña de Kiko (Loro Amazónico)</span>
-                        </div>
-                    </div>
-                </article>
+                    <li class="ventaja ventaja--farmacia">
+                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <h3 class="ventaja__titulo">Farmacia Veterinaria Completa</h3>
+                        <p class="ventaja__texto">Disponibilidad inmediata de tratamientos crónicos, antibióticos
+                            específicos y fármacos especializados para aves y exóticos.</p>
+                    </li>
 
-                <article>
-                    <span role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-                    <blockquote>
-                        Mi gata Persa 'Luna' se aterrorizaba con solo ver la transportadora por los ladridos en otras
-                        veterinarias. La sala Cat-Friendly de MascotaFeliz cambió todo: silencio total, caricias y cero
-                        estrés. Nunca iremos a otro sitio.
-                    </blockquote>
-
-                    <div>
-                        <img src="assets/img/testimonios/testimonio-valeria-s.jpg"
-                            alt="Foto de Valeria S. con su mascota">
-
-                        <div>
-                            <strong>Valeria S.</strong>
-                            <span>Dueña de Luna (Gata Persa)</span>
-                        </div>
-                    </div>
-                </article>
+                    <li class="ventaja">
+                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <h3 class="ventaja__titulo">Seguimiento Post-Consulta Vía WhatsApp</h3>
+                        <p class="ventaja__texto">No te dejamos solo tras la visita: monitorizamos la recuperación y
+                            absorción de medicamentos vía mensaje directo con tu doctor.</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section>
-            <div>
-                <p>Veterinario de Guardia Disponible</p>
-                <h2>¿Dudas sobre los síntomas de tu mascota?</h2>
-                <p>Habla directamente con nuestro veterinario de turno por WhatsApp. Te orientamos al instante,
-                    evaluamos la gravedad y agendamos tu turno prioritario.</p>
-            </div>
-            <div>
-                <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">Escribir al Veterinario
-                    Ahora</a>
-                <span>Respuesta típica en menos de 5 minutos</span>
+        <section class="seccion">
+            <div class="contenedor">
+                <div class="guardia">
+                    <div class="guardia__texto">
+                        <p class="guardia__etiqueta">Veterinario de Guardia Disponible</p>
+                        <h2 class="guardia__titulo">¿Dudas sobre los síntomas de tu mascota?</h2>
+                        <p class="guardia__descripcion">Habla directamente con nuestro veterinario de turno por
+                            WhatsApp. Te orientamos al instante, evaluamos la gravedad y agendamos tu turno prioritario.
+                        </p>
+                    </div>
+
+                    <div class="guardia__accion">
+                        <a class="btn btn--whatsapp guardia__boton" href="https://wa.me/51999999999" target="_blank"
+                            rel="noopener noreferrer">Escribir al Veterinario Ahora</a>
+                        <span class="guardia__nota">Respuesta típica en menos de 5 minutos</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <div>
-                <p>Mascota<span>Feliz</span></p>
-                <p>Clínica veterinaria y farmacia especializada comprometida con la salud, bienestar y cariño de tus
+    <footer class="footer">
+
+        <div class="footer__principal contenedor">
+            <div class="footer__columna">
+                <p class="footer__marca">Mascota<span class="footer__acento">Feliz</span></p>
+                <p class="footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
+                    bienestar y cariño de tus
                     compañeros peludos y alados.</p>
-                <ul>
+                <ul class="footer__datos">
                     <li>Equipo Médico Colegiado N.º 95130</li>
-                    <li>Urgencias 24h: <a href="tel:+51987654321">+51 987 654 321</a></li>
-                    <li><a href="#">Ver sedes en Google Maps</a></li>
+                    <li>Urgencias 24h: <a class="footer__urgencia" href="tel:+51987654321">+51 987 654 321</a></li>
+                    <li><a class="footer__enlace-subrayado" href="#">Ver sedes en Google Maps</a></li>
                 </ul>
             </div>
 
-            <nav aria-label="Servicios y Productos">
-                <h2>Servicios y Productos por Especie</h2>
-                <ul>
-                    <li><a href="#">Medicina Integral para Perros</a></li>
-                    <li><a href="#">Cuidados Especiales y Vacunación Felina</a></li>
-                    <li><a href="#">Clínica y Bienestar de Aves Exóticas</a></li>
-                    <li><a href="#">Farmacia Veterinaria y Fármacos</a></li>
-                    <li><a href="#">Peluquería Dermatológica e Higiene</a></li>
-                    <li><a href="#">Cirugía y Hospitalización 24/7</a></li>
+            <nav class="footer__columna" aria-label="Servicios y Productos">
+                <h2 class="footer__titulo">Servicios y Productos por Especie</h2>
+                <ul class="footer_lista">
+                    <li><a class="footer__enlace" href="#">Medicina Integral para Perros</a></li>
+                    <li><a class="footer__enlace" href="#">Cuidados Especiales y Vacunación Felina</a></li>
+                    <li><a class="footer__enlace" href="#">Clínica y Bienestar de Aves Exóticas</a></li>
+                    <li><a class="footer__enlace" href="#">Farmacia Veterinaria y Fármacos</a></li>
+                    <li><a class="footer__enlace" href="#">Peluquería Dermatológica e Higiene</a></li>
+                    <li><a class="footer__enlace" href="#">Cirugía y Hospitalización 24/7</a></li>
                 </ul>
             </nav>
 
-            <div>
-                <h2>Atención & Sedes</h2>
-                <address>
+            <div class="footer__columna">
+                <h2 class="footer__titulo">Atención & Sedes</h2>
+                <address class="footer__sede">
                     <strong>Sede Central Lima</strong>
                     <p>Av. Principal de las Mascotas 160.</p>
                     <p>Lun a Sáb de 8:00 a 20:00</p>
                 </address>
 
-                <address>
+                <address class="footer__sede">
                     <strong>Centro Hospitalario Urgencias</strong>
                     <p>Calle del Rescate 20, Lima</p><span>Abierto 24 Horas / 365 Días</span>
                 </address>
-
-                <strong>WhatsApp Atención al Cliente:</strong>
-                <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">+51 999 999 999</a>
+                <div class="footer__sede">
+                    <strong>WhatsApp Atención al Cliente:</strong>
+                    <a class="footer__enlace-verde" href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">+51 999 999 999</a>
+                </div>
             </div>
 
-            <div>
-                <h2>Consejos & Comunidad</h2>
-                <p>Suscríbete para recibir guías de nutrición, recordatorios de vacunación y promociones de nuestra
+            <div class="footer__columna">
+                <h2 class="footer__titulo">Consejos & Comunidad</h2>
+                <p class="footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y promociones de nuestra
                     tienda.</p>
-                <form action="#" method="post">
-                    <label for="correo-boletin">Correo electrónico</label>
-                    <input type="email" name="correo" id="correo-boletin" placeholder="Introduce tu correo electrónico"
+                <form class="suscripcion" action="#" method="post">
+                    <label class="visualmente-oculto" for="correo-boletin">Correo electrónico</label>
+                    <input class="suscripcion__campo" type="email" name="correo" id="correo-boletin" placeholder="Introduce tu correo electrónico"
                         required>
-                    <button type="submit">Suscribirme gratis</button>
+                    <button class="btn btn--primario suscripcion__boton" type="submit">Suscribirme gratis</button>
                 </form>
             </div>
         </div>
 
-        <div>
+        <div class="footer__inferior contenedor">
             <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
-            <ul>
+            <ul class="footer_legal">
                 <li><a href="#">Aviso Legal</a></li>
                 <li><a href="#">Política de Privacidad</a></li>
             </ul>
         </div>
 
-        <div>
-            <p>¿Necesitas cita o consulta? ¡Escríbenos!</p>
-            <a aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999" target="_blank"
+        <div class="whatsapp-flotante">
+            <p class="whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
+            <a class="whatsapp-flotante__boton" aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999" target="_blank"
                 rel="noopener noreferrer"></a>
         </div>
     </footer>

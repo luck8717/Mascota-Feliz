@@ -17,6 +17,7 @@
   --color-azul-claro: #DDE5FF;
   --color-urgencia: #9A3412;
   --color-urgencia-hover: #7C2A0E;
+  --color-primario-oscuro: #065F46;
 
   /*OTRO*/
   --radio: 12px;
@@ -531,6 +532,493 @@ ul {
 .servicio__boton {
   text-align: center;
   font-size: 0.85rem;
+}
+
+.sobretitulo--naranja {
+  color: var(--color-secundario);
+}
+
+.enlace-flecha {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primario);
+}
+
+.enlace-flecha::after {
+  content: " →";
+}
+
+.enlace-flecha:hover {
+  text-decoration: underline;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.producto {
+  --producto-categoria: var(--color-primario);
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--color-blanco);
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+}
+
+.producto--gato {
+  --producto-categoria: var(--color-secundario);
+}
+
+.producto__media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 180px;
+  margin-bottom: 1rem;
+  background: var(--color-fondo-suave);
+  border-radius: 16px;
+}
+
+.producto__imagen {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.producto__categoria {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: var(--producto-categoria);
+  color: var(--color-blanco);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.producto__descuento {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--color-secundario-claro);
+  color: var(--color-urgencia);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.producto__valoracion {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.producto__estrellas {
+  color: var(--color-secundario);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.producto__resenas {
+  color: var(--color-texto-suave);
+}
+
+.producto__nombre {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.producto__descripcion {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+.producto__pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-borde);
+}
+
+.producto__precios {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.producto__precio {
+  font-family: var(--fuente-titulos);
+  font-size: 1.35rem;
+}
+
+.producto__precio-anterior {
+  font-size: 0.75rem;
+  color: var(--color-texto-suave);
+}
+
+.producto__carrito {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--color-primario);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.producto__carrito:hover {
+  background: var(--color-btn-hover);
+}
+
+.diferencia {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.diferencia__descripcion {
+  margin: 1rem 0 1.5rem;
+  color: var(--color-texto-suave);
+}
+
+.respaldo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-fondo-suave);
+  border-radius: var(--radio);
+}
+
+.respaldo__icono {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--color-primario);
+}
+
+.respaldo__titulo {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.respaldo__texto {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+.ventajas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.ventaja {
+  --ventaja-icono: var(--color-primario-claro);
+
+  padding: 1.5rem;
+  background: var(--color-blanco);
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+}
+
+.ventaja--instalaciones {
+  --ventaja-icono: var(--color-secundario-claro);
+}
+
+.ventaja--farmacia {
+  --ventaja-icono: var(--color-terciario-claro);
+}
+
+.ventaja__icono {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: var(--ventaja-icono);
+}
+
+.ventaja__titulo {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.ventaja__texto {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+}
+
+.guardia {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-primario-oscuro));
+  color: var(--color-blanco);
+  box-shadow: var(--sombra);
+}
+
+.guardia::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -60px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.guardia__texto,
+.guardia__accion {
+  position: relative;
+  z-index: 1;
+}
+
+.guardia__texto {
+  max-width: 36rem;
+}
+
+.guardia__etiqueta {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.guardia__titulo {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--color-blanco);
+}
+
+.guardia__descripcion {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.guardia__accion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.guardia__boton {
+  padding: 0.9rem 1.6rem;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}
+
+.guardia__nota {
+  font-size: 0.7rem;
+  opacity: 0.85;
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.footer {
+  background: var(--color-fondo-suave);
+  border-top: 1px solid var(--color-borde);
+  padding-top: 3rem;
+  font-size: 0.85rem;
+}
+
+.footer__principal {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.footer__marca {
+  margin: 0 0 1rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primario);
+}
+
+.footer__acento {
+  color: var(--color-secundario);
+}
+
+.footer__texto {
+  margin: 0 0 1rem;
+  color: var(--color-texto-suave);
+}
+
+.footer__datos {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer__titulo {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.footer__lista {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.footer__enlace {
+  color: var(--color-texto-suave);
+}
+
+.footer__enlace:hover,
+.footer__enlace-subrayado:hover {
+  color: var(--color-primario);
+}
+
+.footer__enlace-subrayado {
+  text-decoration: underline;
+}
+
+.footer__urgencia {
+  font-weight: 700;
+  color: var(--color-urgencia);
+}
+
+.footer__enlace-verde {
+  color: var(--color-primario);
+}
+
+.footer__sede {
+  display: block;
+  margin-bottom: 1rem;
+  font-style: normal;
+  color: var(--color-texto-suave);
+}
+
+.footer__sede strong {
+  display: block;
+  color: var(--color-neutro);
+}
+
+.footer__sede p {
+  margin: 0;
+}
+
+.suscripcion {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.suscripcion__campo {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  background: var(--color-blanco);
+  font: inherit;
+}
+
+.suscripcion__campo:focus {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 2px;
+}
+
+.suscripcion__boton {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.footer__inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--color-borde);
+  font-size: 0.8rem;
+  color: var(--color-texto-suave);
+}
+
+.footer__legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__legal a:hover {
+  color: var(--color-primario);
+}
+
+.whatsapp-flotante {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.whatsapp-flotante__texto {
+  margin: 0;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radio);
+  background: var(--color-blanco);
+  box-shadow: var(--sombra);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.whatsapp-flotante__boton {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primario);
+  box-shadow: var(--sombra);
+  transition: background 0.2s;
+}
+
+.whatsapp-flotante__boton:hover {
+  background: var(--color-btn-hover);
 }
 
 
