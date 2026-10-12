@@ -14,6 +14,101 @@
 </head>
 
 <body>
+    <header>
+        <div class="contenedor encabezado">
+            <h2 class="logo">MascotaFeliz 🐾</h2>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="carrito.html">Carrito</a>
+                <a href="consejos.html">Consejos</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Presentación -->
+        <section>
+            <h1>🛒 Mi carrito de compras</h1>
+            <p>Revisa los productos que deseas comprar para tu mascota.</p>
+        </section>
+
+        <!-- Productos del carrito -->
+        <section>
+            <h2>Productos seleccionados</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ricocan Adulto Carne</td>
+                        <td>Alimento para perro adulto de raza pequeña</td>
+                        <td>S/ 39.90</td>
+                        <td>
+                            <input type="number" min="1" value="1">
+                        </td>
+                        <td>S/ 39.90</td>
+                        <td>
+                            <button type="button">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Pelota de Caucho</td>
+                        <td>Juguete para perros y juegos activos</td>
+                        <td>S/ 18.90</td>
+                        <td>
+                            <input type="number" min="1" value="1">
+                        </td>
+                        <td>S/ 18.90</td>
+                        <td>
+                            <button type="button">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Ricocat Adulto Pescado</td>
+                        <td>Alimento para gato adulto</td>
+                        <td>S/ 45.90</td>
+                        <td>
+                            <input type="number" min="1" value="1">
+                        </td>
+                        <td>S/ 45.90</td>
+                        <td>
+                            <button type="button">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- Resumen de compra -->
+        <section>
+            <h2>Resumen de compra</h2>
+
+            <p>Subtotal: S/ 104.70</p>
+            <p>Costo de envío: S/ 10.00</p>
+            <h3>Total: S/ 114.70</h3>
+
+            <button type="button">Continuar comprando</button>
+            <button type="button">Finalizar compra</button>
+        </section>
+
+    </main>
 
 </body>
 
