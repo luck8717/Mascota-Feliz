@@ -2,16 +2,18 @@
 <html lang="es">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="<link rel=" stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    ">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>MascotaFeliz - Inicio</title>
@@ -23,11 +25,18 @@
             <div class="contenedor">
                 <address class="header__contacto">
                     <span class="header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">emergency</span>
                         Urgencias 24/7:
-                        <a href="tel:+51987654321" rel="noopener noreferrer">+51 987 654 321</a>
+                        <a href="tel:+51987654321">+51 987 654 321</a>
                     </span>
-                    <span class="header__dato">Lun-Sáb: 8:00-20:00</span>
-                    <span class="header__dato">Av. Principal de las Mascotas 42, Lima</span>
+                    <span class="header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+                        Lun-Sáb: 8:00-20:00
+                    </span>
+                    <span class="header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                        Av. Principal de las Mascotas 42, Lima
+                    </span>
                 </address>
             </div>
         </div>
@@ -35,10 +44,10 @@
         <div class="header__principal">
             <div class="header__barra contenedor">
                 <a class="marca" href="index.html">
-                    <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz ir al inicio">
+                    <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz, ir al inicio">
                 </a>
 
-                <nav class="menu" aria-label="Navegación Principal">
+                <nav class="menu" aria-label="Navegación principal">
                     <ul class="menu__lista">
                         <li><a class="menu__enlace" href="index.html" aria-current="page">Inicio</a></li>
                         <li><a class="menu__enlace" href="servicios.html">Servicios Médicos</a></li>
@@ -49,8 +58,13 @@
 
                 <div class="header__acciones">
                     <a class="btn btn--primario" href="https://wa.me/51999999999" target="_blank"
-                        rel="noopener noreferrer">Agendar Cita</a>
-                    <a class="carrito" href="carrito.html">Carrito de Compras</a>
+                        rel="noopener noreferrer">
+                        <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                        Agendar Cita
+                    </a>
+                    <a class="carrito" href="catalogo.html" aria-label="Carrito de compras">
+                        <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -60,7 +74,8 @@
         <section class="hero">
             <div class="hero__contenedor contenedor">
                 <div class="hero__texto">
-                    <p class="etiqueta">Centro Veterinario Colegiado & Farmacia</p>
+                    <p class="etiqueta"> <span class="material-symbols-outlined" aria-hidden="true">pets</span> Centro
+                        Veterinario Colegiado & Farmacia</p>
                     <h1 class="hero__titulo">El cuidado y amor que tus mejores amigos merecen: <span>Perros, Gatos y
                             Aves</span></h1>
                     <p class="hero__descripcion">Atención médica integral, medicina preventiva, especialistas en aves
@@ -70,27 +85,44 @@
 
                     <div class="hero__acciones">
                         <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer"
-                            class="btn btn--whatsapp">Reservar Cita por
+                            class="btn btn--whatsapp"><span class="material-symbols-outlined"
+                                aria-hidden="true">chat</span>Reservar Cita por
                             WhatsApp</a>
-                        <a href="catalogo.html" class="btn btn--secundario">Explorar Tienda y Farmacia</a>
+                        <a href="catalogo.html" class="btn btn--secundario">
+                            <span class="material-symbols-outlined" aria-hidden="true">storefront</span>
+                            Explorar Tienda y Farmacia
+                        </a>
                     </div>
 
                     <ul class="hero__datos">
                         <li class="hero__dato">
-                            <strong>+15,000</strong>
-                            <span>Pacientes</span>
+                            <span class="material-symbols-outlined hero__dato-icono" aria-hidden="true">pets</span>
+                            <div class="hero__dato-texto">
+                                <strong>+15,000</strong>
+                                <span>Pacientes</span>
+                            </div>
                         </li>
                         <li class="hero__dato">
-                            <strong>Urgencias</strong>
-                            <span>24 Horas 365D</span>
+                            <span class="material-symbols-outlined hero__dato-icono" aria-hidden="true">emergency</span>
+                            <div class="hero__dato-texto">
+                                <strong>Urgencias</strong>
+                                <span>24 Horas 365D</span>
+                            </div>
                         </li>
                         <li class="hero__dato">
-                            <strong>Especialistas</strong>
-                            <span>Aves & Exóticos</span>
+                            <span class="material-symbols-outlined hero__dato-icono"
+                                aria-hidden="true">flutter_dash</span>
+                            <div class="hero__dato-texto">
+                                <strong>Especialistas</strong>
+                                <span>Aves & Exóticos</span>
+                            </div>
                         </li>
                         <li class="hero__dato">
-                            <strong>4.9/5.0</strong>
-                            <span>Google Reviews</span>
+                            <span class="material-symbols-outlined hero__dato-icono" aria-hidden="true">star</span>
+                            <div class="hero__dato-texto">
+                                <strong>4.9/5.0</strong>
+                                <span>Google Reviews</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -102,16 +134,24 @@
                     </figure>
 
                     <div class="hero__tarjeta hero__tarjeta--doctora">
-                        <div class="hero__tarjeta-fila">
-                            <p>Dra. Sarah Jenkins</p>
-                            <span class="hero__estado">Hoy libre</span>
+                        <span class="material-symbols-outlined hero__tarjeta-icono"
+                            aria-hidden="true">medical_services</span>
+
+                        <div class="hero__tarjeta-cuerpo">
+                            <div class="hero__tarjeta-fila">
+                                <p>Dra. Sarah Jenkins</p>
+                                <span class="hero__estado">Hoy libre</span>
+                            </div>
+                            <p>3 turnos disponibles</p>
                         </div>
-                        <p>3 turnos disponibles</p>
                     </div>
 
                     <div class="hero__tarjeta hero__tarjeta--urgencia">
-                        <p>Atención Inmediata</p>
-                        <span>Triaje médico directo por WhatsApp</span>
+                        <span class="material-symbols-outlined hero__tarjeta-icono" aria-hidden="true">verified</span>
+                        <div>
+                            <p>Atención Inmediata</p>
+                            <span>Triaje médico directo por WhatsApp</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,8 +172,7 @@
 
                 <div class="especies">
                     <article class="especie especie--perro">
-                        <span class="especie__icono" aria-hidden="true"></span>
-
+                        <span class="especie__icono material-symbols-outlined" aria-hidden="true">pets</span>
                         <div class="especie__encabezado">
                             <h3 class="especie__nombre">Perros</h3>
                             <span class="especie__etiqueta">Caninos</span>
@@ -154,7 +193,7 @@
                     </article>
 
                     <article class="especie especie--gato">
-                        <span class="especie__icono" aria-hidden="true"></span>
+                        <span class="especie__icono material-symbols-outlined" aria-hidden="true">cruelty_free</span>
                         <div class="especie__encabezado">
                             <h3 class="especie__nombre">Gatos</h3>
                             <span class="especie__etiqueta">Cat-Friendly</span>
@@ -173,7 +212,7 @@
                     </article>
 
                     <article class="especie especie--ave">
-                        <span class="especie__icono" aria-hidden="true"></span>
+                        <span class="especie__icono material-symbols-outlined" aria-hidden="true">flutter_dash</span>
                         <div class="especie__encabezado">
                             <h3 class="especie__nombre">Aves y Exóticos</h3>
                             <span class="especie__etiqueta">Especialidad</span>
@@ -225,8 +264,10 @@
                         </div>
 
                         <a class="btn btn--primario servicio__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">Agendar por
-                            WhatsApp</a>
+                            rel="noopener noreferrer">
+                            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                            Agendar por WhatsApp
+                        </a>
                     </article>
 
                     <article class="servicio">
@@ -246,8 +287,10 @@
                             <strong>S/ 35</strong>
                         </div>
                         <a class="btn btn--primario servicio__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">Agendar por
-                            WhatsApp</a>
+                            rel="noopener noreferrer">
+                            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                            Agendar por WhatsApp
+                        </a>
                     </article>
 
                     <article class="servicio">
@@ -268,8 +311,10 @@
                             <strong>S/ 20</strong>
                         </div>
                         <a class="btn btn--primario servicio__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">Agendar por
-                            WhatsApp</a>
+                            rel="noopener noreferrer">
+                            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                            Agendar por WhatsApp
+                        </a>
                     </article>
 
                     <article class="servicio servicio--urgencia">
@@ -288,9 +333,11 @@
                             <span>Atención Inmediata</span>
                             <strong>Urgencias</strong>
                         </div>
-                        <a class="btn btn--urgencia servicio__boton" href="https://wa.me/51987654321" target="_blank"
-                            rel="noopener noreferrer">Pedir Urgencia por
-                            WhatsApp</a>
+                        <a class="btn btn--urgencia servicio__boton" href="https://wa.me/51999999999" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="material-symbols-outlined" aria-hidden="true">emergency</span>
+                            Pedir Urgencia por WhatsApp
+                        </a>
                     </article>
                 </div>
             </div>
@@ -308,7 +355,7 @@
                 </header>
 
                 <div class="productos">
-                    <article class="producto producto-perro">
+                    <article class="producto producto--perro">
                         <div class="producto__media">
                             <img class="producto__imagen" src="assets/img/productos/royal-canin.jpg"
                                 alt="Bolsa de alimentos para perros de raza grande">
@@ -325,12 +372,14 @@
                         <p class="producto__descripcion">Para cachorros de razas grandes hasta los 15 meses.</p>
 
                         <div class="producto__pie">
-                            <div class="producto__precio">
+                            <div class="producto__precios">
                                 <strong class="producto__precio">S/ 68.00</strong>
                                 <del class="producto__precio-anterior">S/ 79.90</del>
                             </div>
                             <button class="producto__carrito" type="button"
-                                aria-label="Agregar Royal Canin Maxi Puppy al carrito"></button>
+                                aria-label="Agregar Royal Canin Maxi Puppy al carrito"><span
+                                    class="material-symbols-outlined"
+                                    aria-hidden="true">add_shopping_cart</span></button>
                         </div>
                     </article>
 
@@ -353,7 +402,9 @@
                         <div class="producto__pie">
                             <strong class="producto__precio">S/ 32.50</strong>
                             <button class="producto__carrito" type="button"
-                                aria-label="Agregar Bravecto Antipulgas Perros M al carrito"></button>
+                                aria-label="Agregar Bravecto Antipulgas Perros M al carrito"><span
+                                    class="material-symbols-outlined"
+                                    aria-hidden="true">add_shopping_cart</span></button>
                         </div>
                     </article>
 
@@ -376,7 +427,9 @@
                         <div class="producto__pie">
                             <strong class="producto__precio">S/ 18.00</strong>
                             <button class="producto__carrito" type="button"
-                                aria-label="Agregar Arena Sanitaria Aglomerante al carrito"></button>
+                                aria-label="Agregar Arena Sanitaria Aglomerante al carrito"><span
+                                    class="material-symbols-outlined"
+                                    aria-hidden="true">add_shopping_cart</span></button>
                         </div>
                     </article>
 
@@ -399,7 +452,9 @@
                         <div class="producto__pie">
                             <strong class="producto__precio">S/ 14.90</strong>
                             <button class="producto__carrito" type="button"
-                                aria-label="Agregar Mezcla Premium Loros y Aves al carrito"></button>
+                                aria-label="Agregar Mezcla Premium Loros y Aves al carrito"><span
+                                    class="material-symbols-outlined"
+                                    aria-hidden="true">add_shopping_cart</span></button>
                         </div>
                     </article>
                 </div>
@@ -416,7 +471,7 @@
                     </p>
 
                     <div class="respaldo">
-                        <span class="respaldo__icono" aria-hidden="true"></span>
+                        <span class="respaldo__icono material-symbols-outlined" aria-hidden="true">verified_user</span>
                         <div>
                             <h3 class="respaldo__titulo">Colegiatura y Certificaciones Oficiales</h3>
                             <p class="respaldo__texto">Todos nuestros médicos están colegiados por el Colegio Médico
@@ -427,28 +482,29 @@
 
                 <ul class="ventajas">
                     <li class="ventaja">
-                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <span class="ventaja__icono material-symbols-outlined"
+                            aria-hidden="true">medical_services</span>
                         <h3 class="ventaja__titulo">Médicos Certificados</h3>
                         <p class="ventaja__texto">Especialistas con formación de postgrado en medicina felina, medicina
                             interna canina y ornitología clínica.</p>
                     </li>
 
                     <li class="ventaja ventaja--instalaciones">
-                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <span class="ventaja__icono material-symbols-outlined" aria-hidden="true">meeting_room</span>
                         <h3 class="ventaja__titulo">Instalaciones Libres de Estrés</h3>
                         <p class="ventaja__texto">Salas de espera y consultas físicamente separadas para gatos y perros,
                             difusores de feromonas y reducción acústica.</p>
                     </li>
 
                     <li class="ventaja ventaja--farmacia">
-                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <span class="ventaja__icono material-symbols-outlined" aria-hidden="true">vaccines</span>
                         <h3 class="ventaja__titulo">Farmacia Veterinaria Completa</h3>
                         <p class="ventaja__texto">Disponibilidad inmediata de tratamientos crónicos, antibióticos
                             específicos y fármacos especializados para aves y exóticos.</p>
                     </li>
 
                     <li class="ventaja">
-                        <span class="ventaja__icono" aria-hidden="true"></span>
+                        <span class="ventaja__icono material-symbols-outlined" aria-hidden="true">chat</span>
                         <h3 class="ventaja__titulo">Seguimiento Post-Consulta Vía WhatsApp</h3>
                         <p class="ventaja__texto">No te dejamos solo tras la visita: monitorizamos la recuperación y
                             absorción de medicamentos vía mensaje directo con tu doctor.</p>
@@ -461,7 +517,10 @@
             <div class="contenedor">
                 <div class="guardia">
                     <div class="guardia__texto">
-                        <p class="guardia__etiqueta">Veterinario de Guardia Disponible</p>
+                        <p class="guardia__etiqueta">
+                            <span class="guardia__punto" aria-hidden="true"></span>
+                            Veterinario de Guardia Disponible
+                        </p>
                         <h2 class="guardia__titulo">¿Dudas sobre los síntomas de tu mascota?</h2>
                         <p class="guardia__descripcion">Habla directamente con nuestro veterinario de turno por
                             WhatsApp. Te orientamos al instante, evaluamos la gravedad y agendamos tu turno prioritario.
@@ -470,8 +529,14 @@
 
                     <div class="guardia__accion">
                         <a class="btn btn--whatsapp guardia__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">Escribir al Veterinario Ahora</a>
-                        <span class="guardia__nota">Respuesta típica en menos de 5 minutos</span>
+                            rel="noopener noreferrer">
+                            <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+                            Escribir al Veterinario Ahora
+                        </a>
+                        <span class="guardia__nota">
+                            <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+                            Respuesta típica en menos de 5 minutos
+                        </span>
                     </div>
                 </div>
             </div>
@@ -487,15 +552,25 @@
                     bienestar y cariño de tus
                     compañeros peludos y alados.</p>
                 <ul class="footer__datos">
-                    <li>Equipo Médico Colegiado N.º 95130</li>
-                    <li>Urgencias 24h: <a class="footer__urgencia" href="tel:+51987654321">+51 987 654 321</a></li>
-                    <li><a class="footer__enlace-subrayado" href="#">Ver sedes en Google Maps</a></li>
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                        Equipo Médico Colegiado N.º 95130
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined footer__icono-urgencia" aria-hidden="true">call</span>
+                        <span>Urgencias 24h: <a class="footer__urgencia" href="tel:+51987654321">+51 987 654
+                                321</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                        <a class="footer__enlace-subrayado" href="#">Ver sedes en Google Maps</a>
+                    </li>
                 </ul>
             </div>
 
             <nav class="footer__columna" aria-label="Servicios y Productos">
                 <h2 class="footer__titulo">Servicios y Productos por Especie</h2>
-                <ul class="footer_lista">
+                <ul class="footer__lista">
                     <li><a class="footer__enlace" href="#">Medicina Integral para Perros</a></li>
                     <li><a class="footer__enlace" href="#">Cuidados Especiales y Vacunación Felina</a></li>
                     <li><a class="footer__enlace" href="#">Clínica y Bienestar de Aves Exóticas</a></li>
@@ -540,7 +615,7 @@
 
         <div class="footer__inferior contenedor">
             <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
-            <ul class="footer_legal">
+            <ul class="footer__legal">
                 <li><a href="#">Aviso Legal</a></li>
                 <li><a href="#">Política de Privacidad</a></li>
             </ul>
@@ -549,7 +624,9 @@
         <div class="whatsapp-flotante">
             <p class="whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
             <a class="whatsapp-flotante__boton" aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999"
-                target="_blank" rel="noopener noreferrer"></a>
+                target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+            </a>
         </div>
     </footer>
 </body>

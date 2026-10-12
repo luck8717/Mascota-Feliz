@@ -1029,6 +1029,181 @@ ul {
   background: var(--color-btn-hover);
 }
 
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.header__dato {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.header__dato .material-symbols-outlined {
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carrito {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-neutro);
+}
+
+.carrito:hover {
+  background: var(--color-fondo-suave);
+}
+
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.etiqueta .material-symbols-outlined {
+  font-size: 1rem;
+}
+
+.hero__dato {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.hero__dato-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__dato-icono {
+  font-size: 1.1rem;
+  color: var(--color-secundario);
+}
+
+.hero__tarjeta--doctora,
+.hero__tarjeta--urgencia {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero__tarjeta-icono {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--color-secundario-claro);
+  color: var(--color-urgencia);
+}
+
+.hero__tarjeta--doctora .hero__tarjeta-icono {
+  background: var(--color-primario-claro);
+  color: var(--color-primario);
+}
+
+.hero__tarjeta-cuerpo {
+  flex: 1;
+}
+
+.especie__icono {
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  color: var(--especie-texto);
+}
+
+.servicio__boton {
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.producto__carrito {
+  display: grid;
+  place-items: center;
+  color: var(--color-blanco);
+}
+
+.ventaja__icono {
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  color: var(--color-primario);
+}
+
+.respaldo__icono {
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  color: var(--color-blanco);
+}
+
+.ventaja--instalaciones .ventaja__icono {
+  color: var(--color-urgencia);
+}
+
+.guardia__etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.guardia__punto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-terciario);
+}
+
+.guardia__nota {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.guardia__nota .material-symbols-outlined {
+  font-size: 0.9rem;
+  color: var(--color-secundario);
+}
+
+.footer__datos li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__datos .material-symbols-outlined {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  color: var(--color-primario);
+}
+
+.footer__datos .footer__icono-urgencia {
+  color: var(--color-urgencia);
+}
+
+.whatsapp-flotante__boton {
+  display: grid;
+  place-items: center;
+  color: var(--color-blanco);
+}
+
+.whatsapp-flotante__boton .material-symbols-outlined {
+  font-size: 1.6rem;
+}
+
 
 /*SERVICIOS*/
 
