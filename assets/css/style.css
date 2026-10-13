@@ -969,6 +969,7 @@ button:focus-visible {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  color: var(--color-blanco);
 }
 
 .mf-guardia__punto {
@@ -989,6 +990,7 @@ button:focus-visible {
   margin: 0;
   font-size: 0.95rem;
   opacity: 0.9;
+  color: var(--color-blanco);
 }
 
 .mf-guardia__accion {
@@ -1071,6 +1073,7 @@ button:focus-visible {
 .mf-footer__titulo {
   margin: 0 0 1rem;
   font-size: 1rem;
+  color: var(--color-neutro);
 }
 
 .mf-footer__lista {
@@ -1089,12 +1092,19 @@ button:focus-visible {
 
 .mf-footer__enlace-subrayado {
   text-decoration: underline;
+  color: var(--color-texto-suave);
 }
 
-.mf-footer__urgencia {
+.mf-footer--equipo--medico {
+  color: var(--color-texto-suave);
+}
+
+.mf-footer__urgencia,
+.mf-footer__link--urgencia {
   font-weight: 700;
   color: var(--color-urgencia);
 }
+
 
 .mf-footer__enlace-verde {
   color: var(--color-primario-oscuro);
@@ -1116,6 +1126,7 @@ button:focus-visible {
 
 .mf-footer__sede-detalle {
   margin: 0;
+  color: var(--color-texto-suave);
 }
 
 .mf-suscripcion {
