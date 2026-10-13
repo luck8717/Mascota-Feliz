@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MascotaFeliz: clínica veterinaria y farmacia en Lima con urgencias 24/7, especialistas en aves exóticas y tienda para perros, gatos y aves.">
+    <title>MascotaFeliz - Inicio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,53 +19,55 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>MascotaFeliz - Inicio</title>
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__topbar">
-            <div class="contenedor">
-                <address class="header__contacto">
-                    <span class="header__dato">
+    <header class="mf-header">
+        <div class="mf-header__topbar">
+            <div class="mf-contenedor">
+                <ul class="mf-header__contacto">
+                    <li class="mf-header__dato">
                         <span class="material-symbols-outlined" aria-hidden="true">emergency</span>
                         Urgencias 24/7:
                         <a href="tel:+51987654321">+51 987 654 321</a>
-                    </span>
-                    <span class="header__dato">
+                    </li>
+                    <li class="mf-header__dato">
                         <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
                         Lun-Sáb: 8:00-20:00
-                    </span>
-                    <span class="header__dato">
+                    </li>
+                    <li class="mf-header__dato">
                         <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
                         Av. Principal de las Mascotas 42, Lima
-                    </span>
-                </address>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div class="header__principal">
-            <div class="header__barra contenedor">
-                <a class="marca" href="index.html">
-                    <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz, ir al inicio">
+        <div class="mf-header__principal">
+            <div class="mf-header__barra mf-contenedor">
+                <a class="mf-marca" href="index.html">
+                    <!-- Ajusta width y height a las medidas reales de tu logo -->
+                    <img class="mf-marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz, ir al inicio"
+                        width="150" height="48">
                 </a>
 
-                <nav class="menu" aria-label="Navegación principal">
-                    <ul class="menu__lista">
-                        <li><a class="menu__enlace" href="index.html" aria-current="page">Inicio</a></li>
-                        <li><a class="menu__enlace" href="servicios.html">Servicios Médicos</a></li>
-                        <li><a class="menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
-                        <li><a class="menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+                <nav class="mf-menu" aria-label="Navegación principal">
+                    <ul class="mf-menu__lista">
+                        <li><a class="mf-menu__enlace" href="index.html" aria-current="page">Inicio</a></li>
+                        <li><a class="mf-menu__enlace" href="servicios.html">Servicios Médicos</a></li>
+                        <li><a class="mf-menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
+                        <li><a class="mf-menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
                     </ul>
                 </nav>
 
-                <div class="header__acciones">
-                    <a class="btn btn--primario" href="https://wa.me/51999999999" target="_blank"
+                <div class="mf-header__acciones">
+                    <a class="mf-btn mf-btn--primario" href="https://wa.me/51999999999" target="_blank"
                         rel="noopener noreferrer">
                         <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
                         Agendar Cita
                     </a>
-                    <a class="carrito" href="catalogo.html" aria-label="Carrito de compras">
+                    <a class="mf-carrito" href="catalogo.html" aria-label="Carrito de compras">
                         <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
                     </a>
                 </div>
@@ -71,270 +76,267 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero__contenedor contenedor">
-                <div class="hero__texto">
-                    <p class="etiqueta"> <span class="material-symbols-outlined" aria-hidden="true">pets</span> Centro
-                        Veterinario Colegiado & Farmacia</p>
-                    <h1 class="hero__titulo">El cuidado y amor que tus mejores amigos merecen: <span>Perros, Gatos y
-                            Aves</span></h1>
-                    <p class="hero__descripcion">Atención médica integral, medicina preventiva, especialistas en aves
-                        exóticas y la mejor tienda
-                        de
-                        alimentos y salud para tus consentidos.</p>
+        <section class="mf-hero">
+            <div class="mf-hero__contenedor mf-contenedor">
+                <div class="mf-hero__texto">
+                    <p class="mf-etiqueta">
+                        <span class="material-symbols-outlined" aria-hidden="true">pets</span>
+                        Centro Veterinario Colegiado &amp; Farmacia
+                    </p>
+                    <h1 class="mf-hero__titulo">El cuidado y amor que tus mejores amigos merecen: <span
+                            class="mf-hero__destacado">Perros, Gatos y Aves</span></h1>
+                    <p class="mf-hero__descripcion">Atención médica integral, medicina preventiva, especialistas en aves
+                        exóticas y la mejor tienda de alimentos y salud para tus consentidos.</p>
 
-                    <div class="hero__acciones">
-                        <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer"
-                            class="btn btn--whatsapp"><span class="material-symbols-outlined"
-                                aria-hidden="true">chat</span>Reservar Cita por
-                            WhatsApp</a>
-                        <a href="catalogo.html" class="btn btn--secundario">
+                    <div class="mf-hero__acciones">
+                        <a class="mf-btn mf-btn--whatsapp" href="https://wa.me/51999999999" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+                            Reservar Cita por WhatsApp
+                        </a>
+                        <a class="mf-btn mf-btn--secundario" href="catalogo.html">
                             <span class="material-symbols-outlined" aria-hidden="true">storefront</span>
                             Explorar Tienda y Farmacia
                         </a>
                     </div>
 
-                    <ul class="hero__datos">
-                        <li class="hero__dato">
-                            <span class="material-symbols-outlined hero__dato-icono" aria-hidden="true">pets</span>
-                            <div class="hero__dato-texto">
-                                <strong>+15,000</strong>
-                                <span>Pacientes</span>
+                    <ul class="mf-hero__datos">
+                        <li class="mf-hero__dato">
+                            <span class="material-symbols-outlined mf-hero__dato-icono" aria-hidden="true">pets</span>
+                            <div class="mf-hero__dato-texto">
+                                <strong class="mf-hero__dato-titulo">+15,000</strong>
+                                <span class="mf-hero__dato-detalle">Pacientes</span>
                             </div>
                         </li>
-                        <li class="hero__dato">
-                            <span class="material-symbols-outlined hero__dato-icono" aria-hidden="true">emergency</span>
-                            <div class="hero__dato-texto">
-                                <strong>Urgencias</strong>
-                                <span>24 Horas 365D</span>
+                        <li class="mf-hero__dato">
+                            <span class="material-symbols-outlined mf-hero__dato-icono"
+                                aria-hidden="true">emergency</span>
+                            <div class="mf-hero__dato-texto">
+                                <strong class="mf-hero__dato-titulo">Urgencias</strong>
+                                <span class="mf-hero__dato-detalle">24 Horas 365D</span>
                             </div>
                         </li>
-                        <li class="hero__dato">
-                            <span class="material-symbols-outlined hero__dato-icono"
+                        <li class="mf-hero__dato">
+                            <span class="material-symbols-outlined mf-hero__dato-icono"
                                 aria-hidden="true">flutter_dash</span>
-                            <div class="hero__dato-texto">
-                                <strong>Especialistas</strong>
-                                <span>Aves & Exóticos</span>
+                            <div class="mf-hero__dato-texto">
+                                <strong class="mf-hero__dato-titulo">Especialistas</strong>
+                                <span class="mf-hero__dato-detalle">Aves &amp; Exóticos</span>
                             </div>
                         </li>
-                        <li class="hero__dato">
-                            <span class="material-symbols-outlined hero__dato-icono" aria-hidden="true">star</span>
-                            <div class="hero__dato-texto">
-                                <strong>4.9/5.0</strong>
-                                <span>Google Reviews</span>
+                        <li class="mf-hero__dato">
+                            <span class="material-symbols-outlined mf-hero__dato-icono" aria-hidden="true">star</span>
+                            <div class="mf-hero__dato-texto">
+                                <strong class="mf-hero__dato-titulo">4.9/5.0</strong>
+                                <span class="mf-hero__dato-detalle">Google Reviews</span>
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                <div class="hero__visual">
-                    <figure class="hero__figura">
-                        <img class="hero__imagen" src="assets/img/hero/imagen-inicio.jpg"
-                            alt="Veterinaria atendiendo a un perro">
+                <div class="mf-hero__visual">
+                    <figure class="mf-hero__figura">
+                        <img class="mf-hero__imagen" src="assets/img/hero/imagen-inicio.jpg"
+                            alt="Veterinaria atendiendo a un perro" width="800" height="600">
                     </figure>
 
-                    <div class="hero__tarjeta hero__tarjeta--doctora">
-                        <span class="material-symbols-outlined hero__tarjeta-icono"
+                    <div class="mf-hero__tarjeta mf-hero__tarjeta--doctora">
+                        <span class="material-symbols-outlined mf-hero__tarjeta-icono"
                             aria-hidden="true">medical_services</span>
 
-                        <div class="hero__tarjeta-cuerpo">
-                            <div class="hero__tarjeta-fila">
-                                <p>Dra. Sarah Jenkins</p>
-                                <span class="hero__estado">Hoy libre</span>
+                        <div class="mf-hero__tarjeta-cuerpo">
+                            <div class="mf-hero__tarjeta-fila">
+                                <p class="mf-hero__tarjeta-titulo">Dra. Sarah Jenkins</p>
+                                <span class="mf-hero__estado">Hoy libre</span>
                             </div>
-                            <p>3 turnos disponibles</p>
+                            <p class="mf-hero__tarjeta-detalle">3 turnos disponibles</p>
                         </div>
                     </div>
 
-                    <div class="hero__tarjeta hero__tarjeta--urgencia">
-                        <span class="material-symbols-outlined hero__tarjeta-icono" aria-hidden="true">verified</span>
-                        <div>
-                            <p>Atención Inmediata</p>
-                            <span>Triaje médico directo por WhatsApp</span>
+                    <div class="mf-hero__tarjeta mf-hero__tarjeta--urgencia">
+                        <span class="material-symbols-outlined mf-hero__tarjeta-icono"
+                            aria-hidden="true">verified</span>
+                        <div class="mf-hero__tarjeta-cuerpo">
+                            <p class="mf-hero__tarjeta-titulo">Atención Inmediata</p>
+                            <p class="mf-hero__tarjeta-detalle">Triaje médico directo por WhatsApp</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="seccion">
-            <div class="contenedor">
-                <header class="seccion__cabecera">
+        <section class="mf-seccion">
+            <div class="mf-contenedor">
+                <header class="mf-seccion__cabecera">
                     <div>
-                        <p class="sobretitulo">Atención Personalizada</p>
-                        <h2 class="seccion__titulo">Cuidado especializado por especie</h2>
+                        <p class="mf-sobretitulo">Atención Personalizada</p>
+                        <h2 class="mf-seccion__titulo">Cuidado especializado por especie</h2>
                     </div>
 
-                    <p class="seccion__descripcion">Diseñamos protocolos clínicos y espacios exclusivos adaptados a la
-                        fisonomía y comportamiento de
-                        tu mascota.</p>
+                    <p class="mf-seccion__descripcion">Diseñamos protocolos clínicos y espacios exclusivos adaptados a
+                        la fisonomía y comportamiento de tu mascota.</p>
                 </header>
 
-                <div class="especies">
-                    <article class="especie especie--perro">
-                        <span class="especie__icono material-symbols-outlined" aria-hidden="true">pets</span>
-                        <div class="especie__encabezado">
-                            <h3 class="especie__nombre">Perros</h3>
-                            <span class="especie__etiqueta">Caninos</span>
+                <div class="mf-especies">
+                    <article class="mf-especie mf-especie--perro">
+                        <span class="mf-especie__icono material-symbols-outlined" aria-hidden="true">pets</span>
+                        <div class="mf-especie__encabezado">
+                            <h3 class="mf-especie__nombre">Perros</h3>
+                            <span class="mf-especie__etiqueta">Caninos</span>
                         </div>
 
-                        <p class="especie__descripcion">Medicina preventiva integral, desparasitación rigurosa, estética
-                            canina hipoalergénica y la
-                            mejor
-                            nutrición premium para cada etapa de su vida.</p>
+                        <p class="mf-especie__descripcion">Medicina preventiva integral, desparasitación rigurosa,
+                            estética canina hipoalergénica y la mejor nutrición premium para cada etapa de su vida.</p>
 
-                        <ul class="especie__lista">
-                            <li>Plan Cachorro & Senior</li>
+                        <ul class="mf-especie__lista">
+                            <li>Plan Cachorro &amp; Senior</li>
                             <li>Peluquería y baños medicados</li>
                             <li>Traumatología y ortopedia</li>
                         </ul>
 
-                        <a class="especie__enlace" href="#">Ver servicios para perros</a>
+                        <a class="mf-especie__enlace" href="servicios.html#perros">Ver servicios para perros</a>
                     </article>
 
-                    <article class="especie especie--gato">
-                        <span class="especie__icono material-symbols-outlined" aria-hidden="true">cruelty_free</span>
-                        <div class="especie__encabezado">
-                            <h3 class="especie__nombre">Gatos</h3>
-                            <span class="especie__etiqueta">Cat-Friendly</span>
+                    <article class="mf-especie mf-especie--gato">
+                        <span class="mf-especie__icono material-symbols-outlined" aria-hidden="true">cruelty_free</span>
+                        <div class="mf-especie__encabezado">
+                            <h3 class="mf-especie__nombre">Gatos</h3>
+                            <span class="mf-especie__etiqueta">Cat-Friendly</span>
                         </div>
 
-                        <p class="especie__descripcion">Salas clínicas exclusivas sin aromas de perros ni estrés sonoro,
-                            nutrición renal / urinaria y
-                            vacunación triple felina certificada.</p>
-                        <ul class="especie__lista">
+                        <p class="mf-especie__descripcion">Salas clínicas exclusivas sin aromas de perros ni estrés
+                            sonoro, nutrición renal / urinaria y vacunación triple felina certificada.</p>
+
+                        <ul class="mf-especie__lista">
                             <li>Consultorios 100% Cat-Friendly</li>
                             <li>Control renal y endocrino</li>
                             <li>Hospitalización felina aislada</li>
                         </ul>
 
-                        <a class="especie__enlace" href="#">Ver servicios felinos</a>
+                        <a class="mf-especie__enlace" href="servicios.html#gatos">Ver servicios felinos</a>
                     </article>
 
-                    <article class="especie especie--ave">
-                        <span class="especie__icono material-symbols-outlined" aria-hidden="true">flutter_dash</span>
-                        <div class="especie__encabezado">
-                            <h3 class="especie__nombre">Aves y Exóticos</h3>
-                            <span class="especie__etiqueta">Especialidad</span>
+                    <article class="mf-especie mf-especie--ave">
+                        <span class="mf-especie__icono material-symbols-outlined" aria-hidden="true">flutter_dash</span>
+                        <div class="mf-especie__encabezado">
+                            <h3 class="mf-especie__nombre">Aves y Exóticos</h3>
+                            <span class="mf-especie__etiqueta">Especialidad</span>
                         </div>
 
-                        <p class="especie__descripcion">Médicos expertos en psitácidos, canarios y paseriformes: arreglo
-                            de pico y plumas,
-                            diagnóstico de
-                            parasitosis y asesoría de enriquecimiento ambiental.</p>
+                        <p class="mf-especie__descripcion">Médicos expertos en psitácidos, canarios y paseriformes:
+                            arreglo de pico y plumas, diagnóstico de parasitosis y asesoría de enriquecimiento
+                            ambiental.</p>
 
-                        <ul class="especie__lista">
+                        <ul class="mf-especie__lista">
                             <li>Corte y pulido de picos y uñas</li>
                             <li>Análisis coprológico y sexado</li>
                             <li>Dietas orgánicas y semillas premium</li>
                         </ul>
 
-                        <a class="especie__enlace" href="#">Ver servicios para aves</a>
+                        <a class="mf-especie__enlace" href="servicios.html#aves">Ver servicios para aves</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="seccion">
-            <div class="contenedor">
-                <header class="seccion__cabecera seccion__cabecera--centrada">
-                    <p class="sobretitulo">Servicios clínicos</p>
-                    <h2 class="seccion__titulo">Medicina preventiva y atención avanzada</h2>
-                    <p class="seccion__descripcion">Tarifas transparentes, médicos especializados y protocolos clínicos
-                        del más alto rigor
-                        científico.
-                    </p>
+        <section class="mf-seccion">
+            <div class="mf-contenedor">
+                <header class="mf-seccion__cabecera mf-seccion__cabecera--centrada">
+                    <p class="mf-sobretitulo">Servicios clínicos</p>
+                    <h2 class="mf-seccion__titulo">Medicina preventiva y atención avanzada</h2>
+                    <p class="mf-seccion__descripcion">Tarifas transparentes, médicos especializados y protocolos
+                        clínicos del más alto rigor científico.</p>
                 </header>
 
-                <div class="servicios">
-                    <article class="servicio">
-                        <div class="servicio__media">
-                            <img class="servicio__imagen" src="assets/img/servicios/servicios-perro.jpg"
-                                alt="Doctora atendiendo a un perro">
-                            <span class="servicio__etiqueta">Consulta General</span>
+                <div class="mf-servicios">
+                    <article class="mf-servicio">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-perro.jpg"
+                                alt="Doctora atendiendo a un perro" width="640" height="480" loading="lazy">
+                            <span class="mf-servicio__etiqueta">Consulta General</span>
                         </div>
 
-                        <h3 class="servicio__titulo">Consulta Médica General & Preventiva</h3>
-                        <p class="servicio__descripcion">Examen físico completo, revisión dental, peso, auscultación y
-                            plan nutricional adaptado.</p>
+                        <h3 class="mf-servicio__titulo">Consulta Médica General &amp; Preventiva</h3>
+                        <p class="mf-servicio__descripcion">Examen físico completo, revisión dental, peso, auscultación
+                            y plan nutricional adaptado.</p>
 
-                        <div class="servicio__precio">
+                        <div class="mf-servicio__precio">
                             <span>Tarifa desde</span>
-                            <strong>S/ 25</strong>
+                            <strong class="mf-servicio__precio-valor">S/ 25</strong>
                         </div>
 
-                        <a class="btn btn--primario servicio__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">
+                        <a class="mf-btn mf-btn--primario mf-servicio__boton" href="https://wa.me/51999999999"
+                            target="_blank" rel="noopener noreferrer">
                             <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
                             Agendar por WhatsApp
                         </a>
                     </article>
 
-                    <article class="servicio">
-                        <div class="servicio__media">
-                            <img class="servicio__imagen" src="assets/img/servicios/servicios-ave.jpg"
-                                alt="Doctora atendiendo a un loro">
-                            <span class="servicio__etiqueta">Aves & Exóticos</span>
+                    <article class="mf-servicio">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-ave.jpg"
+                                alt="Doctora atendiendo a un loro" width="640" height="480" loading="lazy">
+                            <span class="mf-servicio__etiqueta">Aves &amp; Exóticos</span>
                         </div>
 
-                        <h3 class="servicio__titulo">Especialidad en Aves y Pequeños Animales</h3>
-                        <p class="servicio__descripcion">Diagnóstico aviar por especialistas titulados, chequeos de
-                            plumaje, corte de pico y pautas de
-                            hábitat.</p>
+                        <h3 class="mf-servicio__titulo">Especialidad en Aves y Pequeños Animales</h3>
+                        <p class="mf-servicio__descripcion">Diagnóstico aviar por especialistas titulados, chequeos de
+                            plumaje, corte de pico y pautas de hábitat.</p>
 
-                        <div class="servicio__precio">
+                        <div class="mf-servicio__precio">
                             <span>Tarifa desde</span>
-                            <strong>S/ 35</strong>
+                            <strong class="mf-servicio__precio-valor">S/ 35</strong>
                         </div>
-                        <a class="btn btn--primario servicio__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">
+
+                        <a class="mf-btn mf-btn--primario mf-servicio__boton" href="https://wa.me/51999999999"
+                            target="_blank" rel="noopener noreferrer">
                             <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
                             Agendar por WhatsApp
                         </a>
                     </article>
 
-                    <article class="servicio">
-                        <div class="servicio__media">
-                            <img class="servicio__imagen" src="assets/img/servicios/servicios-gato.jpg"
-                                alt="Doctora atendiendo a un gato">
-                            <span class="servicio__etiqueta">Inmunización</span>
+                    <article class="mf-servicio">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-gato.jpg"
+                                alt="Doctora atendiendo a un gato" width="640" height="480" loading="lazy">
+                            <span class="mf-servicio__etiqueta">Inmunización</span>
                         </div>
 
-                        <h3 class="servicio__titulo">Vacunación y Desparasitación al Día</h3>
-                        <p class="servicio__descripcion">Cartilla sanitaria oficial, microchip internacional, rabia,
-                            pentavalente canina y triple
-                            felina.
-                        </p>
+                        <h3 class="mf-servicio__titulo">Vacunación y Desparasitación al Día</h3>
+                        <p class="mf-servicio__descripcion">Cartilla sanitaria oficial, microchip internacional, rabia,
+                            pentavalente canina y triple felina.</p>
 
-                        <div class="servicio__precio">
+                        <div class="mf-servicio__precio">
                             <span>Tarifa desde</span>
-                            <strong>S/ 20</strong>
+                            <strong class="mf-servicio__precio-valor">S/ 20</strong>
                         </div>
-                        <a class="btn btn--primario servicio__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">
+
+                        <a class="mf-btn mf-btn--primario mf-servicio__boton" href="https://wa.me/51999999999"
+                            target="_blank" rel="noopener noreferrer">
                             <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
                             Agendar por WhatsApp
                         </a>
                     </article>
 
-                    <article class="servicio servicio--urgencia">
-                        <div class="servicio__media">
-                            <img class="servicio__imagen" src="assets/img/servicios/servicios-24-7.jpg"
-                                alt="Doctora realizando una cirugía a una mascota">
-                            <span class="servicio__etiqueta">Guardia 24 Horas</span>
+                    <article class="mf-servicio mf-servicio--urgencia">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-24-7.jpg"
+                                alt="Doctora realizando una cirugía a una mascota" width="640" height="480"
+                                loading="lazy">
+                            <span class="mf-servicio__etiqueta">Guardia 24 Horas</span>
                         </div>
 
-                        <h3 class="servicio__titulo">Cirugía y Laboratorio Clínico 24/7</h3>
-                        <p class="servicio__descripcion">Quirófanos equipados, anestesia inhalatoria, ecografía Doppler
-                            y analíticas sanguíneas en 15
-                            minutos.</p>
+                        <h3 class="mf-servicio__titulo">Cirugía y Laboratorio Clínico 24/7</h3>
+                        <p class="mf-servicio__descripcion">Quirófanos equipados, anestesia inhalatoria, ecografía
+                            Doppler y analíticas sanguíneas en 15 minutos.</p>
 
-                        <div class="servicio__precio">
+                        <div class="mf-servicio__precio">
                             <span>Atención Inmediata</span>
-                            <strong>Urgencias</strong>
+                            <strong class="mf-servicio__precio-valor">Urgencias</strong>
                         </div>
-                        <a class="btn btn--urgencia servicio__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">
+
+                        <a class="mf-btn mf-btn--urgencia mf-servicio__boton" href="https://wa.me/51999999999"
+                            target="_blank" rel="noopener noreferrer">
                             <span class="material-symbols-outlined" aria-hidden="true">emergency</span>
                             Pedir Urgencia por WhatsApp
                         </a>
@@ -343,197 +345,205 @@
             </div>
         </section>
 
-        <section class="seccion">
-            <div class="contenedor">
-                <header class="seccion__cabecera">
+        <section class="mf-seccion">
+            <div class="mf-contenedor">
+                <header class="mf-seccion__cabecera">
                     <div>
-                        <p class="sobretitulo sobretitulo--naranja">Farmacia y Nutrición</p>
-                        <h2 class="seccion__titulo">Los favoritos de nuestra tienda</h2>
+                        <p class="mf-sobretitulo mf-sobretitulo--naranja">Farmacia y Nutrición</p>
+                        <h2 class="mf-seccion__titulo">Los favoritos de nuestra tienda</h2>
                     </div>
 
-                    <a class="enlace-flecha" href="catalogo.html">Ver catálogo completo</a>
+                    <a class="mf-enlace-flecha" href="catalogo.html">Ver catálogo completo</a>
                 </header>
 
-                <div class="productos">
-                    <article class="producto producto--perro">
-                        <div class="producto__media">
-                            <img class="producto__imagen" src="assets/img/productos/royal-canin.jpg"
-                                alt="Bolsa de alimentos para perros de raza grande">
-                            <span class="producto__categoria">Perro Cachorro</span>
-                            <span class="producto__descuento">-15% OFF</span>
+                <div class="mf-productos">
+                    <article class="mf-producto">
+                        <div class="mf-producto__media">
+                            <img class="mf-producto__imagen" src="assets/img/productos/royal-canin.jpg"
+                                alt="Bolsa de alimentos para perros de raza grande" width="300" height="300"
+                                loading="lazy">
+                            <span class="mf-producto__categoria">Perro Cachorro</span>
+                            <span class="mf-producto__descuento">-15% OFF</span>
                         </div>
 
-                        <div class="producto__valoracion">
-                            <span class="producto__estrellas" role="img" aria-label="4.5 de 5 estrellas">★★★★★</span>
-                            <span class="producto__resenas">(142)</span>
+                        <div class="mf-producto__valoracion">
+                            <span class="mf-producto__estrellas" role="img" aria-label="4.5 de 5 estrellas"
+                                style="--mf-valoracion: 4.5">★★★★★</span>
+                            <span class="mf-producto__resenas">(142)</span>
                         </div>
 
-                        <h3 class="producto__nombre">Royal Canin Maxi Puppy 15kg</h3>
-                        <p class="producto__descripcion">Para cachorros de razas grandes hasta los 15 meses.</p>
+                        <h3 class="mf-producto__nombre">Royal Canin Maxi Puppy 15kg</h3>
+                        <p class="mf-producto__descripcion">Para cachorros de razas grandes hasta los 15 meses.</p>
 
-                        <div class="producto__pie">
-                            <div class="producto__precios">
-                                <strong class="producto__precio">S/ 68.00</strong>
-                                <del class="producto__precio-anterior">S/ 79.90</del>
+                        <div class="mf-producto__pie">
+                            <div class="mf-producto__precios">
+                                <strong class="mf-producto__precio">S/ 68.00</strong>
+                                <del class="mf-producto__precio-anterior">S/ 79.90</del>
                             </div>
-                            <button class="producto__carrito" type="button"
-                                aria-label="Agregar Royal Canin Maxi Puppy al carrito"><span
-                                    class="material-symbols-outlined"
-                                    aria-hidden="true">add_shopping_cart</span></button>
+                            <button class="mf-producto__carrito" type="button"
+                                aria-label="Agregar Royal Canin Maxi Puppy al carrito">
+                                <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
+                            </button>
                         </div>
                     </article>
 
-                    <article class="producto producto--perro">
-                        <div class="producto__media">
-                            <img class="producto__imagen" src="assets/img/productos/bravecto.jpg"
-                                alt="Paquete de producto antipulgas para perros">
-                            <span class="producto__categoria">Farmacia Canina</span>
+                    <article class="mf-producto">
+                        <div class="mf-producto__media">
+                            <img class="mf-producto__imagen" src="assets/img/productos/bravecto.jpg"
+                                alt="Paquete de producto antipulgas para perros" width="300" height="300"
+                                loading="lazy">
+                            <span class="mf-producto__categoria">Farmacia Canina</span>
                         </div>
 
-                        <div class="producto__valoracion">
-                            <span class="producto__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-                            <span class="producto__resenas">(289)</span>
+                        <div class="mf-producto__valoracion">
+                            <span class="mf-producto__estrellas" role="img" aria-label="5 de 5 estrellas"
+                                style="--mf-valoracion: 5">★★★★★</span>
+                            <span class="mf-producto__resenas">(289)</span>
                         </div>
 
-                        <h3 class="producto__nombre">Bravecto Antipulgas Perros M (10-20kg)</h3>
-                        <p class="producto__descripcion">Protección continua por 12 semanas contra pulgas y garrapatas.
-                        </p>
+                        <h3 class="mf-producto__nombre">Bravecto Antipulgas Perros M (10-20kg)</h3>
+                        <p class="mf-producto__descripcion">Protección continua por 12 semanas contra pulgas y
+                            garrapatas.</p>
 
-                        <div class="producto__pie">
-                            <strong class="producto__precio">S/ 32.50</strong>
-                            <button class="producto__carrito" type="button"
-                                aria-label="Agregar Bravecto Antipulgas Perros M al carrito"><span
-                                    class="material-symbols-outlined"
-                                    aria-hidden="true">add_shopping_cart</span></button>
-                        </div>
-                    </article>
-
-                    <article class="producto producto--gato">
-                        <div class="producto__media">
-                            <img class="producto__imagen" src="assets/img/productos/arena-sanitaria.jpg"
-                                alt="Paquete de arena sanitaria para gatos">
-                            <span class="producto__categoria">Gatos Higiene</span>
-                        </div>
-
-                        <div class="producto__valoracion">
-                            <span class="producto__estrellas" role="img" aria-label="4 de 5 estrellas">★★★★☆</span>
-                            <span class="producto__resenas">(96)</span>
-                        </div>
-
-                        <h3 class="producto__nombre">Arena Sanitaria Aglomerante Gatos 10kg</h3>
-                        <p class="producto__descripcion">Ultra aglomeración, libre de polvo en un 99.8% y neutralizador
-                            de olores.</p>
-
-                        <div class="producto__pie">
-                            <strong class="producto__precio">S/ 18.00</strong>
-                            <button class="producto__carrito" type="button"
-                                aria-label="Agregar Arena Sanitaria Aglomerante al carrito"><span
-                                    class="material-symbols-outlined"
-                                    aria-hidden="true">add_shopping_cart</span></button>
+                        <div class="mf-producto__pie">
+                            <strong class="mf-producto__precio">S/ 32.50</strong>
+                            <button class="mf-producto__carrito" type="button"
+                                aria-label="Agregar Bravecto Antipulgas Perros M al carrito">
+                                <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
+                            </button>
                         </div>
                     </article>
 
-                    <article class="producto producto--ave">
-                        <div class="producto__media">
-                            <img class="producto__imagen" src="assets/img/productos/mezcla-premium.jpg"
-                                alt="Paquete de Mezcla Premium para loros y aves">
-                            <span class="producto__categoria">Aves Nutrición</span>
+                    <article class="mf-producto mf-producto--gato">
+                        <div class="mf-producto__media">
+                            <img class="mf-producto__imagen" src="assets/img/productos/arena-sanitaria.jpg"
+                                alt="Paquete de arena sanitaria para gatos" width="300" height="300" loading="lazy">
+                            <span class="mf-producto__categoria">Gatos Higiene</span>
                         </div>
 
-                        <div class="producto__valoracion">
-                            <span class="producto__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-                            <span class="producto__resenas">(53)</span>
+                        <div class="mf-producto__valoracion">
+                            <span class="mf-producto__estrellas" role="img" aria-label="4 de 5 estrellas"
+                                style="--mf-valoracion: 4">★★★★★</span>
+                            <span class="mf-producto__resenas">(96)</span>
                         </div>
 
-                        <h3 class="producto__nombre">Mezcla Premium Loros y Aves 2kg</h3>
-                        <p class="producto__descripcion">Semillas seleccionadas, frutos deshidratados y vitaminas
+                        <h3 class="mf-producto__nombre">Arena Sanitaria Aglomerante Gatos 10kg</h3>
+                        <p class="mf-producto__descripcion">Ultra aglomeración, libre de polvo en un 99.8% y
+                            neutralizador de olores.</p>
+
+                        <div class="mf-producto__pie">
+                            <strong class="mf-producto__precio">S/ 18.00</strong>
+                            <button class="mf-producto__carrito" type="button"
+                                aria-label="Agregar Arena Sanitaria Aglomerante al carrito">
+                                <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="mf-producto">
+                        <div class="mf-producto__media">
+                            <img class="mf-producto__imagen" src="assets/img/productos/mezcla-premium.jpg"
+                                alt="Paquete de Mezcla Premium para loros y aves" width="300" height="300"
+                                loading="lazy">
+                            <span class="mf-producto__categoria">Aves Nutrición</span>
+                        </div>
+
+                        <div class="mf-producto__valoracion">
+                            <span class="mf-producto__estrellas" role="img" aria-label="5 de 5 estrellas"
+                                style="--mf-valoracion: 5">★★★★★</span>
+                            <span class="mf-producto__resenas">(53)</span>
+                        </div>
+
+                        <h3 class="mf-producto__nombre">Mezcla Premium Loros y Aves 2kg</h3>
+                        <p class="mf-producto__descripcion">Semillas seleccionadas, frutos deshidratados y vitaminas
                             añadidas.</p>
 
-                        <div class="producto__pie">
-                            <strong class="producto__precio">S/ 14.90</strong>
-                            <button class="producto__carrito" type="button"
-                                aria-label="Agregar Mezcla Premium Loros y Aves al carrito"><span
-                                    class="material-symbols-outlined"
-                                    aria-hidden="true">add_shopping_cart</span></button>
+                        <div class="mf-producto__pie">
+                            <strong class="mf-producto__precio">S/ 14.90</strong>
+                            <button class="mf-producto__carrito" type="button"
+                                aria-label="Agregar Mezcla Premium Loros y Aves al carrito">
+                                <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
+                            </button>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="seccion">
-            <div class="diferencia contenedor">
-                <div class="diferencia__texto">
-                    <p class="sobretitulo">Nuestra Diferencia</p>
-                    <h2 class="seccion__titulo">Veterinaria pensada con el corazón y respaldada por la ciencia</h2>
-                    <p class="diferencia__descripcion">No somos solo una clínica: somos un ecosistema de bienestar
+        <section class="mf-seccion">
+            <div class="mf-diferencia mf-contenedor">
+                <div class="mf-diferencia__texto">
+                    <p class="mf-sobretitulo">Nuestra Diferencia</p>
+                    <h2 class="mf-seccion__titulo">Veterinaria pensada con el corazón y respaldada por la ciencia</h2>
+                    <p class="mf-diferencia__descripcion">No somos solo una clínica: somos un ecosistema de bienestar
                         animal donde la empatía, el silencio y la tecnología eliminan el miedo de las visitas médicas.
                     </p>
 
-                    <div class="respaldo">
-                        <span class="respaldo__icono material-symbols-outlined" aria-hidden="true">verified_user</span>
+                    <div class="mf-respaldo">
+                        <span class="mf-respaldo__icono material-symbols-outlined"
+                            aria-hidden="true">verified_user</span>
                         <div>
-                            <h3 class="respaldo__titulo">Colegiatura y Certificaciones Oficiales</h3>
-                            <p class="respaldo__texto">Todos nuestros médicos están colegiados por el Colegio Médico
+                            <h3 class="mf-respaldo__titulo">Colegiatura y Certificaciones Oficiales</h3>
+                            <p class="mf-respaldo__texto">Todos nuestros médicos están colegiados por el Colegio Médico
                                 Veterinario del Perú.</p>
                         </div>
                     </div>
                 </div>
 
-                <ul class="ventajas">
-                    <li class="ventaja">
-                        <span class="ventaja__icono material-symbols-outlined"
+                <ul class="mf-ventajas">
+                    <li class="mf-ventaja">
+                        <span class="mf-ventaja__icono material-symbols-outlined"
                             aria-hidden="true">medical_services</span>
-                        <h3 class="ventaja__titulo">Médicos Certificados</h3>
-                        <p class="ventaja__texto">Especialistas con formación de postgrado en medicina felina, medicina
-                            interna canina y ornitología clínica.</p>
+                        <h3 class="mf-ventaja__titulo">Médicos Certificados</h3>
+                        <p class="mf-ventaja__texto">Especialistas con formación de postgrado en medicina felina,
+                            medicina interna canina y ornitología clínica.</p>
                     </li>
 
-                    <li class="ventaja ventaja--instalaciones">
-                        <span class="ventaja__icono material-symbols-outlined" aria-hidden="true">meeting_room</span>
-                        <h3 class="ventaja__titulo">Instalaciones Libres de Estrés</h3>
-                        <p class="ventaja__texto">Salas de espera y consultas físicamente separadas para gatos y perros,
-                            difusores de feromonas y reducción acústica.</p>
+                    <li class="mf-ventaja mf-ventaja--instalaciones">
+                        <span class="mf-ventaja__icono material-symbols-outlined" aria-hidden="true">meeting_room</span>
+                        <h3 class="mf-ventaja__titulo">Instalaciones Libres de Estrés</h3>
+                        <p class="mf-ventaja__texto">Salas de espera y consultas físicamente separadas para gatos y
+                            perros, difusores de feromonas y reducción acústica.</p>
                     </li>
 
-                    <li class="ventaja ventaja--farmacia">
-                        <span class="ventaja__icono material-symbols-outlined" aria-hidden="true">vaccines</span>
-                        <h3 class="ventaja__titulo">Farmacia Veterinaria Completa</h3>
-                        <p class="ventaja__texto">Disponibilidad inmediata de tratamientos crónicos, antibióticos
+                    <li class="mf-ventaja mf-ventaja--farmacia">
+                        <span class="mf-ventaja__icono material-symbols-outlined" aria-hidden="true">vaccines</span>
+                        <h3 class="mf-ventaja__titulo">Farmacia Veterinaria Completa</h3>
+                        <p class="mf-ventaja__texto">Disponibilidad inmediata de tratamientos crónicos, antibióticos
                             específicos y fármacos especializados para aves y exóticos.</p>
                     </li>
 
-                    <li class="ventaja">
-                        <span class="ventaja__icono material-symbols-outlined" aria-hidden="true">chat</span>
-                        <h3 class="ventaja__titulo">Seguimiento Post-Consulta Vía WhatsApp</h3>
-                        <p class="ventaja__texto">No te dejamos solo tras la visita: monitorizamos la recuperación y
+                    <li class="mf-ventaja">
+                        <span class="mf-ventaja__icono material-symbols-outlined" aria-hidden="true">chat</span>
+                        <h3 class="mf-ventaja__titulo">Seguimiento Post-Consulta Vía WhatsApp</h3>
+                        <p class="mf-ventaja__texto">No te dejamos solo tras la visita: monitorizamos la recuperación y
                             absorción de medicamentos vía mensaje directo con tu doctor.</p>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="seccion">
-            <div class="contenedor">
-                <div class="guardia">
-                    <div class="guardia__texto">
-                        <p class="guardia__etiqueta">
-                            <span class="guardia__punto" aria-hidden="true"></span>
+        <section class="mf-seccion">
+            <div class="mf-contenedor">
+                <div class="mf-guardia">
+                    <div class="mf-guardia__texto">
+                        <p class="mf-guardia__etiqueta">
+                            <span class="mf-guardia__punto" aria-hidden="true"></span>
                             Veterinario de Guardia Disponible
                         </p>
-                        <h2 class="guardia__titulo">¿Dudas sobre los síntomas de tu mascota?</h2>
-                        <p class="guardia__descripcion">Habla directamente con nuestro veterinario de turno por
+                        <h2 class="mf-guardia__titulo">¿Dudas sobre los síntomas de tu mascota?</h2>
+                        <p class="mf-guardia__descripcion">Habla directamente con nuestro veterinario de turno por
                             WhatsApp. Te orientamos al instante, evaluamos la gravedad y agendamos tu turno prioritario.
                         </p>
                     </div>
 
-                    <div class="guardia__accion">
-                        <a class="btn btn--whatsapp guardia__boton" href="https://wa.me/51999999999" target="_blank"
-                            rel="noopener noreferrer">
+                    <div class="mf-guardia__accion">
+                        <a class="mf-btn mf-btn--whatsapp mf-guardia__boton" href="https://wa.me/51999999999"
+                            target="_blank" rel="noopener noreferrer">
                             <span class="material-symbols-outlined" aria-hidden="true">chat</span>
                             Escribir al Veterinario Ahora
                         </a>
-                        <span class="guardia__nota">
+                        <span class="mf-guardia__nota">
                             <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
                             Respuesta típica en menos de 5 minutos
                         </span>
@@ -543,92 +553,101 @@
         </section>
     </main>
 
-    <footer class="footer">
-
-        <div class="footer__principal contenedor">
-            <div class="footer__columna">
-                <p class="footer__marca">Mascota<span class="footer__acento">Feliz</span></p>
-                <p class="footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
-                    bienestar y cariño de tus
-                    compañeros peludos y alados.</p>
-                <ul class="footer__datos">
+    <footer class="mf-footer">
+        <div class="mf-footer__principal mf-contenedor">
+            <div class="mf-footer__columna">
+                <p class="mf-footer__marca">Mascota<span class="mf-footer__acento">Feliz</span></p>
+                <p class="mf-footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
+                    bienestar y cariño de tus compañeros peludos y alados.</p>
+                <ul class="mf-footer__datos">
                     <li>
                         <span class="material-symbols-outlined" aria-hidden="true">verified</span>
                         Equipo Médico Colegiado N.º 95130
                     </li>
                     <li>
-                        <span class="material-symbols-outlined footer__icono-urgencia" aria-hidden="true">call</span>
-                        <span>Urgencias 24h: <a class="footer__urgencia" href="tel:+51987654321">+51 987 654
+                        <span class="material-symbols-outlined mf-footer__icono-urgencia" aria-hidden="true">call</span>
+                        <span>Urgencias 24h: <a class="mf-footer__urgencia" href="tel:+51987654321">+51 987 654
                                 321</a></span>
                     </li>
                     <li>
                         <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
-                        <a class="footer__enlace-subrayado" href="#">Ver sedes en Google Maps</a>
+                        <a class="mf-footer__enlace-subrayado"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Principal+de+las+Mascotas+42%2C+Lima"
+                            target="_blank" rel="noopener noreferrer">Ver sedes en Google Maps</a>
                     </li>
                 </ul>
             </div>
 
-            <nav class="footer__columna" aria-label="Servicios y Productos">
-                <h2 class="footer__titulo">Servicios y Productos por Especie</h2>
-                <ul class="footer__lista">
-                    <li><a class="footer__enlace" href="#">Medicina Integral para Perros</a></li>
-                    <li><a class="footer__enlace" href="#">Cuidados Especiales y Vacunación Felina</a></li>
-                    <li><a class="footer__enlace" href="#">Clínica y Bienestar de Aves Exóticas</a></li>
-                    <li><a class="footer__enlace" href="#">Farmacia Veterinaria y Fármacos</a></li>
-                    <li><a class="footer__enlace" href="#">Peluquería Dermatológica e Higiene</a></li>
-                    <li><a class="footer__enlace" href="#">Cirugía y Hospitalización 24/7</a></li>
+            <nav class="mf-footer__columna" aria-label="Servicios y Productos">
+                <h2 class="mf-footer__titulo">Servicios y Productos por Especie</h2>
+                <ul class="mf-footer__lista">
+                    <li><a class="mf-footer__enlace" href="servicios.html#perros">Medicina Integral para Perros</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#gatos">Cuidados Especiales y Vacunación
+                            Felina</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#aves">Clínica y Bienestar de Aves Exóticas</a>
+                    </li>
+                    <li><a class="mf-footer__enlace" href="catalogo.html">Farmacia Veterinaria y Fármacos</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#peluqueria">Peluquería Dermatológica e
+                            Higiene</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#urgencias">Cirugía y Hospitalización 24/7</a>
+                    </li>
                 </ul>
             </nav>
 
-            <div class="footer__columna">
-                <h2 class="footer__titulo">Atención & Sedes</h2>
-                <address class="footer__sede">
-                    <strong>Sede Central Lima</strong>
-                    <p>Av. Principal de las Mascotas 160.</p>
-                    <p>Lun a Sáb de 8:00 a 20:00</p>
-                </address>
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Atención &amp; Sedes</h2>
 
-                <address class="footer__sede">
-                    <strong>Centro Hospitalario Urgencias</strong>
-                    <p>Calle del Rescate 20, Lima</p><span>Abierto 24 Horas / 365 Días</span>
-                </address>
-                <div class="footer__sede">
-                    <strong>WhatsApp Atención al Cliente:</strong>
-                    <a class="footer__enlace-verde" href="https://wa.me/51999999999" target="_blank"
-                        rel="noopener noreferrer">+51 999 999 999</a>
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Sede Central Lima</strong>
+                    <address class="mf-footer__sede-contacto">Av. Principal de las Mascotas 42, Lima</address>
+                    <p class="mf-footer__sede-detalle">Lun a Sáb de 8:00 a 20:00</p>
+                </div>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Centro Hospitalario Urgencias</strong>
+                    <address class="mf-footer__sede-contacto">Calle del Rescate 20, Lima</address>
+                    <p class="mf-footer__sede-detalle">Abierto 24 Horas / 365 Días</p>
+                </div>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">WhatsApp Atención al Cliente:</strong>
+                    <address class="mf-footer__sede-contacto">
+                        <a class="mf-footer__enlace-verde" href="https://wa.me/51999999999" target="_blank"
+                            rel="noopener noreferrer">+51 999 999 999</a>
+                    </address>
                 </div>
             </div>
 
-            <div class="footer__columna">
-                <h2 class="footer__titulo">Consejos & Comunidad</h2>
-                <p class="footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
-                    promociones de nuestra
-                    tienda.</p>
-                <form class="suscripcion" action="#" method="post">
-                    <label class="visualmente-oculto" for="correo-boletin">Correo electrónico</label>
-                    <input class="suscripcion__campo" type="email" name="correo" id="correo-boletin"
-                        placeholder="Introduce tu correo electrónico" required>
-                    <button class="btn btn--primario suscripcion__boton" type="submit">Suscribirme gratis</button>
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Consejos &amp; Comunidad</h2>
+                <p class="mf-footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
+                    promociones de nuestra tienda.</p>
+                <form class="mf-suscripcion" action="#" method="post">
+                    <label class="mf-solo-lectores" for="correo-boletin">Correo electrónico</label>
+                    <input class="mf-suscripcion__campo" type="email" name="correo" id="correo-boletin"
+                        placeholder="Introduce tu correo electrónico" autocomplete="email" required>
+                    <button class="mf-btn mf-btn--primario mf-suscripcion__boton" type="submit">Suscribirme
+                        gratis</button>
                 </form>
             </div>
         </div>
 
-        <div class="footer__inferior contenedor">
+        <div class="mf-footer__inferior mf-contenedor">
             <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
-            <ul class="footer__legal">
-                <li><a href="#">Aviso Legal</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
+            <ul class="mf-footer__legal">
+                <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
             </ul>
         </div>
-
-        <div class="whatsapp-flotante">
-            <p class="whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
-            <a class="whatsapp-flotante__boton" aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999"
-                target="_blank" rel="noopener noreferrer">
-                <span class="material-symbols-outlined" aria-hidden="true">chat</span>
-            </a>
-        </div>
     </footer>
+
+    <div class="mf-whatsapp-flotante">
+        <p class="mf-whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
+        <a class="mf-whatsapp-flotante__boton" aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999"
+            target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+        </a>
+    </div>
 </body>
 
 </html>
