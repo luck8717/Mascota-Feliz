@@ -80,14 +80,12 @@ ul {
   padding: 0;
 }
 
-/* Foco visible para quien navega con teclado */
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--color-secundario);
   outline-offset: 2px;
 }
 
-/* Iconos de Google (esta clase es de Google: no se renombra) */
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
   font-size: 1.25rem;
@@ -95,7 +93,6 @@ button:focus-visible {
 }
 
 
-/* 3. LAYOUT Y UTILIDADES -------------------------------------------------- */
 .mf-contenedor {
   max-width: 1200px;
   margin-inline: auto;
@@ -115,7 +112,6 @@ button:focus-visible {
 }
 
 
-/* 4. BOTONES -------------------------------------------------------------- */
 .mf-btn {
   display: inline-flex;
   align-items: center;
@@ -128,7 +124,6 @@ button:focus-visible {
   transition: background-color 0.2s, filter 0.2s;
 }
 
-/* Texto oscuro en verde WhatsApp y naranja: el blanco no cumple el contraste 4.5:1 */
 .mf-btn--primario {
   background: var(--color-primario);
   color: var(--color-blanco);
@@ -149,7 +144,6 @@ button:focus-visible {
   color: var(--color-blanco);
 }
 
-/* Hover: cada variante tiene el suyo (antes .btn:hover pintaba todos de verde) */
 .mf-btn:hover {
   filter: brightness(0.92);
 }
@@ -164,10 +158,6 @@ button:focus-visible {
   filter: none;
 }
 
-
-/* 5. COMPONENTES ---------------------------------------------------------- */
-
-/* ----- Header ----- */
 .mf-header__topbar {
   background: var(--color-primario);
   color: var(--color-blanco);
@@ -260,8 +250,6 @@ button:focus-visible {
   background: var(--color-fondo-suave);
 }
 
-
-/* ----- Etiqueta (píldora con icono) ----- */
 .mf-etiqueta {
   display: inline-flex;
   align-items: center;
@@ -279,8 +267,6 @@ button:focus-visible {
   font-size: 1rem;
 }
 
-
-/* ----- Hero ----- */
 .mf-hero {
   background: var(--color-fondo-suave);
   padding-block: 3rem;
@@ -388,7 +374,6 @@ button:focus-visible {
   bottom: 1.5rem;
 }
 
-/* Antes no tenía posición: un elemento absoluto sin top/right/bottom/left queda descolocado */
 .mf-hero__tarjeta--urgencia {
   top: 1.5rem;
   right: 1rem;
@@ -441,8 +426,6 @@ button:focus-visible {
   font-weight: 700;
 }
 
-
-/* ----- Secciones (cabeceras reutilizables) ----- */
 .mf-seccion {
   padding-block: 4rem;
 }
@@ -487,7 +470,6 @@ button:focus-visible {
   color: var(--color-primario);
 }
 
-/* El naranja puro no llega a 4.5:1 sobre el fondo claro; se usa el naranja oscuro */
 .mf-sobretitulo--naranja {
   color: var(--color-urgencia);
 }
@@ -506,8 +488,6 @@ button:focus-visible {
   text-decoration: underline;
 }
 
-
-/* ----- Especies ----- */
 .mf-especies {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -600,7 +580,6 @@ button:focus-visible {
   font-weight: 700;
 }
 
-/* El fondo sigue el color de la especie y el texto tiene contraste suficiente */
 .mf-especie__enlace {
   margin-top: auto;
   padding: 0.7rem 1rem;
@@ -620,8 +599,6 @@ button:focus-visible {
   filter: brightness(0.95);
 }
 
-
-/* ----- Servicios ----- */
 .mf-servicios {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -705,7 +682,6 @@ button:focus-visible {
 }
 
 
-/* ----- Productos ----- */
 .mf-productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -723,7 +699,6 @@ button:focus-visible {
   box-shadow: var(--sombra);
 }
 
-/* Naranja oscuro: el blanco sobre el naranja puro no cumple el contraste */
 .mf-producto--gato {
   --producto-categoria: var(--color-urgencia);
 }
@@ -776,8 +751,6 @@ button:focus-visible {
   font-size: 0.7rem;
 }
 
-/* Estrellas: siempre se escriben ★★★★★ y la variable --mf-valoracion (0 a 5,
-   admite decimales) decide cuánto se rellena. Así 4.5 se ve como 4.5. */
 .mf-producto__estrellas {
   --mf-relleno: calc(var(--mf-valoracion, 5) / 5 * 100%);
 
@@ -796,7 +769,6 @@ button:focus-visible {
   color: var(--color-texto-suave);
 }
 
-/* Máximo 2 líneas con "…" (antes se cortaba en una sola línea) */
 .mf-producto__nombre {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -855,8 +827,6 @@ button:focus-visible {
   background: var(--color-btn-hover);
 }
 
-
-/* ----- Diferencia ----- */
 .mf-diferencia {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -951,8 +921,6 @@ button:focus-visible {
   color: var(--color-texto-suave);
 }
 
-
-/* ----- Guardia (llamado a la acción) ----- */
 .mf-guardia {
   position: relative;
   overflow: hidden;
@@ -1049,8 +1017,6 @@ button:focus-visible {
   color: var(--color-secundario);
 }
 
-
-/* ----- Footer ----- */
 .mf-footer {
   background: var(--color-fondo-suave);
   border-top: 1px solid var(--color-borde);
@@ -1134,7 +1100,6 @@ button:focus-visible {
   color: var(--color-primario-oscuro);
 }
 
-/* Las 3 sedes comparten la misma estructura: título + contacto + detalle */
 .mf-footer__sede {
   margin-bottom: 1rem;
   color: var(--color-texto-suave);
@@ -1201,8 +1166,6 @@ button:focus-visible {
   color: var(--color-primario);
 }
 
-
-/* ----- WhatsApp flotante ----- */
 .mf-whatsapp-flotante {
   position: fixed;
   right: 1.5rem;
@@ -1243,10 +1206,6 @@ button:focus-visible {
   font-size: 1.6rem;
 }
 
-
-/* 6. RESPONSIVE (de escritorio hacia móvil) -------------------------------- */
-
-/* Respeta a quien pide menos animaciones */
 @media (prefers-reduced-motion: reduce) {
 
   .mf-btn,
@@ -1263,7 +1222,6 @@ button:focus-visible {
     gap: 0.75rem 1rem;
   }
 
-  /* El menú baja a su propia fila */
   .mf-menu {
     order: 3;
     flex-basis: 100%;
@@ -1299,7 +1257,6 @@ button:focus-visible {
     gap: 1rem;
   }
 
-  /* Debe ir después de .mf-seccion__cabecera para recuperar el centrado */
   .mf-seccion__cabecera--centrada {
     align-items: center;
   }
@@ -1336,7 +1293,6 @@ button:focus-visible {
     width: 100%;
   }
 
-  /* Las tarjetas flotantes pasan debajo de la imagen */
   .mf-hero__visual {
     display: grid;
     gap: 0.75rem;
@@ -1370,6 +1326,114 @@ button:focus-visible {
 /*CATALOGO*/
 
 /*NOSOTROS*/
+
+.contenedor {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.seccion {
+  padding-block: 4rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radio);
+  font-weight: 700;
+  white-space: nowrap;
+  transition: filter 0.2s;
+}
+
+.btn--primario {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+.btn--primario:hover {
+  background: var(--color-btn-hover);
+}
+
+.header__topbar {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  font-size: 0.8rem;
+  padding-block: 0.5rem;
+}
+
+.header__contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-style: normal;
+}
+
+.header__dato {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.header__principal {
+  background: var(--color-blanco);
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.header__barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-block: 0.75rem;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.marca__logo {
+  width: auto;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu__lista {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu__enlace {
+  font-weight: 500;
+  padding-block: 0.25rem;
+  white-space: nowrap;
+}
+
+.menu__enlace:hover,
+.menu__enlace[aria-current="page"] {
+  color: var(--color-primario);
+}
+
+.header__acciones {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carrito {
+  white-space: nowrap;
+  color: var(--color-neutro);
+}
 
 .seccion-hero {
   padding: 60px 0;
