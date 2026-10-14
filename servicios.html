@@ -2,115 +2,412 @@
 <html lang="es">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Servicios médicos de MascotaFeliz: consulta, vacunación, aves exóticas, peluquería e higiene, cirugía y urgencias 24/7 en Lima.">
+    <title>Servicios Médicos - MascotaFeliz</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/styleServicios.css">
-    <title>Servicios - MascotaFeliz</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/servicios.css">
 </head>
 
 <body>
+    <header class="mf-header">
+        <div class="mf-header__topbar">
+            <div class="mf-contenedor">
+                <ul class="mf-header__contacto">
+                    <li class="mf-header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">emergency</span>
+                        Urgencias 24/7:
+                        <a href="tel:+51987654321">+51 987 654 321</a>
+                    </li>
+                    <li class="mf-header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+                        Lun-Sáb: 8:00-20:00
+                    </li>
+                    <li class="mf-header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                        Av. Principal de las Mascotas 42, Lima
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <header>
-        <h1>MascotaFeliz</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="consejos.html">Consejos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-            </ul>
-        </nav>
+        <div class="mf-header__principal">
+            <div class="mf-header__barra mf-contenedor">
+                <a class="mf-marca" href="index.html">
+                    <img class="mf-marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz, ir al inicio"
+                        width="150" height="48">
+                </a>
+
+                <nav class="mf-menu" aria-label="Navegación principal">
+                    <ul class="mf-menu__lista">
+                        <li><a class="mf-menu__enlace" href="index.html">Inicio</a></li>
+                        <li><a class="mf-menu__enlace" href="servicios.html" aria-current="page">Servicios Médicos</a></li>
+                        <li><a class="mf-menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
+                        <li><a class="mf-menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mf-header__acciones">
+                    <a class="mf-btn mf-btn--primario" href="https://wa.me/51999999999" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                        Agendar Cita
+                    </a>
+                    <a class="mf-carrito" href="carrito.html" aria-label="Carrito de compras">
+                        <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-
-        <section>
-            <h2>Nuestros Servicios de Grooming</h2>
-
-            <article>
-                <h3>Baño e Higiene Completa</h3>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJtYfbBNaq4gwo6w17WqiYluO06lfWZcQasj8tBPbqDd54k24aAXwgcLc&s=10"
-                    alt="Perro recibiendo baño con champú en tina especial">
-                <p>Ofrecemos servicio completo de baño con champú dermatológico especial según el tipo de pelaje, secado
-                    profesional, cepillado y limpieza de oídos y glándulas.</p>
-            </article>
-
-            <article>
-                <h3>Peluquería Canina y Felina</h3>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlk1op3vHcpyvDxGYBlAtlGX_yU2xmFp6z9Wm0K8tuyA&s=10"
-                    alt="Especialista realizando corte de pelo a un perro">
-                <p>Cortes de pelo especializados según la raza de tu mascota, deslanado profundo y corte de uñas
-                    ejecutado por especialistas para evitar el estrés de tu engreído.</p>
-            </article>
+        <section class="mf-banner">
+            <div class="mf-contenedor">
+                <nav class="mf-migas" aria-label="Migas de pan">
+                    <a href="index.html">Inicio</a>
+                    <span aria-hidden="true">›</span>
+                    <span aria-current="page">Servicios Médicos</span>
+                </nav>
+                <p class="mf-sobretitulo">Servicios Médicos</p>
+                <h1 class="mf-banner__titulo">Cuidado clínico y estético para tu mascota</h1>
+                <p class="mf-banner__texto">Medicina preventiva, especialistas por especie, peluquería dermatológica y urgencias las 24 horas.</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Agendado Rápido por WhatsApp</h2>
-            <p>¿Prefieres una atención inmediata? Escríbenos directamente a nuestro WhatsApp oficial para coordinar una
-                cita:</p>
-            <a href="https://wa.me/51999999999?text=Hola,%20quisiera%20agendar%20un%20servicio%20para%20mi%20mascota"
-                target="_blank" class="btn-whatsapp">
-                Reservar Cita por WhatsApp
-            </a>
+        <section class="mf-seccion">
+            <div class="mf-contenedor">
+                <header class="mf-seccion__cabecera">
+                    <div>
+                        <p class="mf-sobretitulo">Atención Personalizada</p>
+                        <h2 class="mf-seccion__titulo">Cuidado especializado por especie</h2>
+                    </div>
+                    <p class="mf-seccion__descripcion">Diseñamos protocolos clínicos y espacios exclusivos adaptados a la fisonomía y comportamiento de tu mascota.</p>
+                </header>
+
+                <div class="mf-especies">
+                    <article class="mf-especie mf-especie--perro" id="perros">
+                        <span class="mf-especie__icono material-symbols-outlined" aria-hidden="true">pets</span>
+                        <div class="mf-especie__encabezado">
+                            <h3 class="mf-especie__nombre">Perros</h3>
+                            <span class="mf-especie__etiqueta">Caninos</span>
+                        </div>
+                        <p class="mf-especie__descripcion">Medicina preventiva integral, desparasitación rigurosa, estética canina hipoalergénica y la mejor nutrición premium para cada etapa de su vida.</p>
+                        <ul class="mf-especie__lista">
+                            <li>Plan Cachorro &amp; Senior</li>
+                            <li>Peluquería y baños medicados</li>
+                            <li>Traumatología y ortopedia</li>
+                        </ul>
+                        <a class="mf-especie__enlace" href="#reserva">Reservar cita para mi perro</a>
+                    </article>
+
+                    <article class="mf-especie mf-especie--gato" id="gatos">
+                        <span class="mf-especie__icono material-symbols-outlined" aria-hidden="true">cruelty_free</span>
+                        <div class="mf-especie__encabezado">
+                            <h3 class="mf-especie__nombre">Gatos</h3>
+                            <span class="mf-especie__etiqueta">Cat-Friendly</span>
+                        </div>
+                        <p class="mf-especie__descripcion">Salas clínicas exclusivas sin aromas de perros ni estrés sonoro, nutrición renal / urinaria y vacunación triple felina certificada.</p>
+                        <ul class="mf-especie__lista">
+                            <li>Consultorios 100% Cat-Friendly</li>
+                            <li>Control renal y endocrino</li>
+                            <li>Hospitalización felina aislada</li>
+                        </ul>
+                        <a class="mf-especie__enlace" href="#reserva">Reservar cita para mi gato</a>
+                    </article>
+
+                    <article class="mf-especie mf-especie--ave" id="aves">
+                        <span class="mf-especie__icono material-symbols-outlined" aria-hidden="true">flutter_dash</span>
+                        <div class="mf-especie__encabezado">
+                            <h3 class="mf-especie__nombre">Aves y Exóticos</h3>
+                            <span class="mf-especie__etiqueta">Especialidad</span>
+                        </div>
+                        <p class="mf-especie__descripcion">Médicos expertos en psitácidos, canarios y paseriformes: arreglo de pico y plumas, diagnóstico de parasitosis y asesoría de enriquecimiento ambiental.</p>
+                        <ul class="mf-especie__lista">
+                            <li>Corte y pulido de picos y uñas</li>
+                            <li>Análisis coprológico y sexado</li>
+                            <li>Dietas orgánicas y semillas premium</li>
+                        </ul>
+                        <a class="mf-especie__enlace" href="#reserva">Reservar cita para mi ave</a>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Formulario de Reserva de Citas</h2>
-            <form action="#" method="POST">
+        <section class="mf-seccion">
+            <div class="mf-contenedor">
+                <header class="mf-seccion__cabecera mf-seccion__cabecera--centrada">
+                    <p class="mf-sobretitulo">Servicios clínicos</p>
+                    <h2 class="mf-seccion__titulo">Medicina preventiva y atención avanzada</h2>
+                    <p class="mf-seccion__descripcion">Tarifas transparentes, médicos especializados y protocolos clínicos del más alto rigor científico.</p>
+                </header>
 
-                <div>
-                    <label for="nombre">Nombre del Cliente:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                <div class="mf-servicios">
+                    <article class="mf-servicio">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-perro.jpg" alt="Doctora atendiendo a un perro" width="640" height="480" loading="lazy">
+                            <span class="mf-servicio__etiqueta">Consulta General</span>
+                        </div>
+                        <h3 class="mf-servicio__titulo">Consulta Médica General &amp; Preventiva</h3>
+                        <p class="mf-servicio__descripcion">Examen físico completo, revisión dental, peso, auscultación y plan nutricional adaptado.</p>
+                        <div class="mf-servicio__precio">
+                            <span>Tarifa desde</span>
+                            <strong class="mf-servicio__precio-valor">S/ 25</strong>
+                        </div>
+                        <a class="mf-btn mf-btn--primario mf-servicio__boton" href="#reserva">
+                            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                            Reservar cita
+                        </a>
+                    </article>
+
+                    <article class="mf-servicio">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-ave.jpg" alt="Doctora atendiendo a un loro" width="640" height="480" loading="lazy">
+                            <span class="mf-servicio__etiqueta">Aves &amp; Exóticos</span>
+                        </div>
+                        <h3 class="mf-servicio__titulo">Especialidad en Aves y Pequeños Animales</h3>
+                        <p class="mf-servicio__descripcion">Diagnóstico aviar por especialistas titulados, chequeos de plumaje, corte de pico y pautas de hábitat.</p>
+                        <div class="mf-servicio__precio">
+                            <span>Tarifa desde</span>
+                            <strong class="mf-servicio__precio-valor">S/ 35</strong>
+                        </div>
+                        <a class="mf-btn mf-btn--primario mf-servicio__boton" href="#reserva">
+                            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                            Reservar cita
+                        </a>
+                    </article>
+
+                    <article class="mf-servicio">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-gato.jpg" alt="Doctora atendiendo a un gato" width="640" height="480" loading="lazy">
+                            <span class="mf-servicio__etiqueta">Inmunización</span>
+                        </div>
+                        <h3 class="mf-servicio__titulo">Vacunación y Desparasitación al Día</h3>
+                        <p class="mf-servicio__descripcion">Cartilla sanitaria oficial, microchip internacional, rabia, pentavalente canina y triple felina.</p>
+                        <div class="mf-servicio__precio">
+                            <span>Tarifa desde</span>
+                            <strong class="mf-servicio__precio-valor">S/ 20</strong>
+                        </div>
+                        <a class="mf-btn mf-btn--primario mf-servicio__boton" href="#reserva">
+                            <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                            Reservar cita
+                        </a>
+                    </article>
+
+                    <article class="mf-servicio mf-servicio--urgencia" id="urgencias">
+                        <div class="mf-servicio__media">
+                            <img class="mf-servicio__imagen" src="assets/img/servicios/servicios-24-7.jpg" alt="Doctora realizando una cirugía a una mascota" width="640" height="480" loading="lazy">
+                            <span class="mf-servicio__etiqueta">Guardia 24 Horas</span>
+                        </div>
+                        <h3 class="mf-servicio__titulo">Cirugía y Laboratorio Clínico 24/7</h3>
+                        <p class="mf-servicio__descripcion">Quirófanos equipados, anestesia inhalatoria, ecografía Doppler y analíticas sanguíneas en 15 minutos.</p>
+                        <div class="mf-servicio__precio">
+                            <span>Urgencias</span>
+                            <strong class="mf-servicio__precio-valor">24/7</strong>
+                        </div>
+                        <a class="mf-btn mf-btn--urgencia mf-servicio__boton" href="tel:+51987654321">
+                            <span class="material-symbols-outlined" aria-hidden="true">call</span>
+                            Llamar a urgencias
+                        </a>
+                    </article>
                 </div>
-
-                <div>
-                    <label for="telefono">Teléfono / Celular:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" required>
-                </div>
-
-                <div>
-                    <label for="mascota">Tipo de Mascota:</label>
-                    <select id="mascota" name="mascota" required>
-                        <option value="">-- Selecciona una opción --</option>
-                        <option value="perro">Perro</option>
-                        <option value="gato">Gato</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="servicio">Servicio Requerido:</label>
-                    <select id="servicio" name="servicio" required>
-                        <option value="">-- Selecciona un servicio --</option>
-                        <option value="bano">Baño e Higiene</option>
-                        <option value="peluqueria">Corte y Peluquería</option>
-                        <option value="completo">Servicio Completo (Baño + Corte)</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="comentarios">Detalles o Indicaciones Especiales:</label>
-                    <textarea id="comentarios" name="comentarios" rows="4"
-                        placeholder="Ej. Alérgico a ciertos champús, temeroso con la secadora..."></textarea>
-                </div>
-
-                <button type="submit">Enviar Reserva</button>
-
-            </form>
+            </div>
         </section>
 
+        <section class="mf-seccion" id="peluqueria">
+            <div class="mf-contenedor">
+                <header class="mf-seccion__cabecera mf-seccion__cabecera--centrada">
+                    <p class="mf-sobretitulo">Peluquería e higiene</p>
+                    <h2 class="mf-seccion__titulo">Nuestros Servicios de Grooming</h2>
+                </header>
+
+                <div class="mf-grooming">
+                    <article class="mf-grooming__tarjeta">
+                        <img class="mf-grooming__imagen"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJtYfbBNaq4gwo6w17WqiYluO06lfWZcQasj8tBPbqDd54k24aAXwgcLc&s=10"
+                            alt="Perro recibiendo baño con champú en tina especial" loading="lazy">
+                        <h3 class="mf-grooming__titulo">Baño e Higiene Completa</h3>
+                        <p class="mf-grooming__texto">Ofrecemos servicio completo de baño con champú dermatológico especial según el tipo de pelaje, secado profesional, cepillado y limpieza de oídos y glándulas.</p>
+                    </article>
+
+                    <article class="mf-grooming__tarjeta">
+                        <img class="mf-grooming__imagen"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlk1op3vHcpyvDxGYBlAtlGX_yU2xmFp6z9Wm0K8tuyA&s=10"
+                            alt="Especialista realizando corte de pelo a un perro" loading="lazy">
+                        <h3 class="mf-grooming__titulo">Peluquería Canina y Felina</h3>
+                        <p class="mf-grooming__texto">Cortes de pelo especializados según la raza de tu mascota, deslanado profundo y corte de uñas ejecutado por especialistas para evitar el estrés de tu engreído.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mf-seccion" id="reserva">
+            <div class="mf-contenedor mf-reserva">
+                <div class="mf-reserva__whatsapp">
+                    <h2 class="mf-reserva__titulo">Agendado Rápido por WhatsApp</h2>
+                    <p class="mf-reserva__texto">¿Prefieres una atención inmediata? Escríbenos directamente a nuestro WhatsApp oficial para coordinar una cita.</p>
+                    <a class="mf-btn mf-btn--whatsapp"
+                        href="https://wa.me/51999999999?text=Hola,%20quisiera%20agendar%20un%20servicio%20para%20mi%20mascota"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+                        Reservar Cita por WhatsApp
+                    </a>
+                </div>
+
+                <form class="mf-formulario" action="#" method="post">
+                    <h2 class="mf-formulario__titulo">Formulario de Reserva de Citas</h2>
+
+                    <div class="mf-campo">
+                        <label for="nombre">Nombre del Cliente:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" autocomplete="name" required>
+                    </div>
+
+                    <div class="mf-campo">
+                        <label for="telefono">Teléfono / Celular:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321" autocomplete="tel" required>
+                    </div>
+
+                    <div class="mf-campo">
+                        <label for="mascota">Tipo de Mascota:</label>
+                        <select id="mascota" name="mascota" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="mf-campo">
+                        <label for="servicio">Servicio Requerido:</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">-- Selecciona un servicio --</option>
+                            <option value="bano">Baño e Higiene</option>
+                            <option value="peluqueria">Corte y Peluquería</option>
+                            <option value="completo">Servicio Completo (Baño + Corte)</option>
+                        </select>
+                    </div>
+
+                    <div class="mf-campo">
+                        <label for="comentarios">Detalles o Indicaciones Especiales:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"
+                            placeholder="Ej. Alérgico a ciertos champús, temeroso con la secadora..."></textarea>
+                    </div>
+
+                    <button class="mf-btn mf-btn--primario" type="submit">Enviar Reserva</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 MascotaFeliz - Todos los derechos reservados.</p>
+    <footer class="mf-footer">
+        <div class="mf-footer__principal mf-contenedor">
+            <div class="mf-footer__columna">
+                <p class="mf-footer__marca">Mascota<span class="mf-footer__acento">Feliz</span></p>
+                <p class="mf-footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
+                    bienestar y cariño de tus compañeros peludos y alados.</p>
+                <ul class="mf-footer__datos">
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                        <p class="mf-footer--equipo--medico">Equipo Médico Colegiado N.º 95130</p>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined mf-footer__icono-urgencia" aria-hidden="true">call</span>
+                        <span class="mf-footer__link--urgencia">Urgencias 24h: <a class="mf-footer__urgencia"
+                                href="tel:+51987654321">+51 987 654
+                                321</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                        <a class="mf-footer__enlace-subrayado"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Principal+de+las+Mascotas+42%2C+Lima"
+                            target="_blank" rel="noopener noreferrer">Ver sedes en Google Maps</a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="mf-footer__columna" aria-label="Servicios y Productos">
+                <h2 class="mf-footer__titulo">Servicios y Productos por Especie</h2>
+                <ul class="mf-footer__lista">
+                    <li><a class="mf-footer__enlace" href="servicios.html#perros">Medicina Integral para Perros</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#gatos">Cuidados Especiales y Vacunación
+                            Felina</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#aves">Clínica y Bienestar de Aves Exóticas</a>
+                    </li>
+                    <li><a class="mf-footer__enlace" href="catalogo.html">Farmacia Veterinaria y Fármacos</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#peluqueria">Peluquería Dermatológica e
+                            Higiene</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#urgencias">Cirugía y Hospitalización 24/7</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Atención &amp; Sedes</h2>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Sede Central Lima</strong>
+                    <address class="mf-footer__sede-contacto">Av. Principal de las Mascotas 42, Lima</address>
+                    <p class="mf-footer__sede-detalle">Lun a Sáb de 8:00 a 20:00</p>
+                </div>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Centro Hospitalario Urgencias</strong>
+                    <address class="mf-footer__sede-contacto">Calle del Rescate 20, Lima</address>
+                    <p class="mf-footer__sede-detalle">Abierto 24 Horas / 365 Días</p>
+                </div>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">WhatsApp Atención al Cliente:</strong>
+                    <address class="mf-footer__sede-contacto">
+                        <a class="mf-footer__enlace-verde" href="https://wa.me/51999999999" target="_blank"
+                            rel="noopener noreferrer">+51 999 999 999</a>
+                    </address>
+                </div>
+            </div>
+
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Consejos &amp; Comunidad</h2>
+                <p class="mf-footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
+                    promociones de nuestra tienda.</p>
+                <form class="mf-suscripcion" action="#" method="post">
+                    <label class="mf-solo-lectores" for="correo-boletin">Correo electrónico</label>
+                    <input class="mf-suscripcion__campo" type="email" name="correo" id="correo-boletin"
+                        placeholder="Introduce tu correo electrónico" autocomplete="email" required>
+                    <button class="mf-btn mf-btn--primario mf-suscripcion__boton" type="submit">Suscribirme
+                        gratis</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mf-footer__inferior mf-contenedor">
+            <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
+            <ul class="mf-footer__legal">
+                <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </div>
     </footer>
 
+    <div class="mf-whatsapp-flotante">
+        <p class="mf-whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
+        <a class="mf-whatsapp-flotante__boton" aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999"
+            target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+        </a>
+    </div>
 </body>
 
 </html>
