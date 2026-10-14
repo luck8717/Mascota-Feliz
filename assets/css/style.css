@@ -1331,12 +1331,35 @@ button:focus-visible {
   }
 }
 
+/* ----- Efecto de elevación ----- */
+.mf-hero__dato,
+.mf-especie,
+.mf-servicio,
+.mf-producto,
+.mf-ventaja {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-/*SERVICIOS*/
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
 
-/*CATALOGO*/
+  .mf-hero__dato:hover,
+  .mf-especie:hover,
+  .mf-especie:focus-within,
+  .mf-servicio:hover,
+  .mf-servicio:focus-within,
+  .mf-producto:hover,
+  .mf-producto:focus-within,
+  .mf-ventaja:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(30, 41, 59, 0.14);
+  }
 
-/*NOSOTROS*/
+  .mf-btn:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/*---------------*/
 
 .contenedor {
   max-width: 1200px;
@@ -2274,10 +2297,12 @@ button:focus-visible {
   background-color: rgba(0, 0, 0, 0.25);
   transform: translateY(-2px);
 }
+
 /* ==========================================================================
    RESPONSIVE DESIGN (TABLETS Y PANTALLAS MEDIANAS <= 992px)
    ========================================================================== */
 @media (max-width: 992px) {
+
   /* Header y navegación */
   .header__barra {
     flex-wrap: wrap;
@@ -2345,6 +2370,7 @@ button:focus-visible {
    RESPONSIVE DESIGN (MÓVILES <= 600px)
    ========================================================================== */
 @media (max-width: 600px) {
+
   /* Contenedores con padding lateral seguro */
   .contenedor {
     width: 92%;
