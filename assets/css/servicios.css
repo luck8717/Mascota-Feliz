@@ -1,0 +1,125 @@
+
+/* Peluquería e higiene */
+.mf-grooming {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.mf-grooming__tarjeta {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--color-blanco);
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+}
+
+.mf-grooming__imagen {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: 16px;
+  background: var(--color-fondo-suave);
+}
+
+.mf-grooming__titulo {
+  color: var(--color-primario);
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.mf-grooming__texto {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-texto-suave);
+}
+
+/* Reserva: WhatsApp + formulario */
+.mf-reserva {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: start;
+  gap: 2rem;
+}
+
+.mf-reserva__whatsapp {
+  padding: 2rem;
+  background: var(--color-primario);
+  border-radius: 24px;
+  color: var(--color-blanco);
+}
+
+.mf-reserva__titulo {
+  margin: 0 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.mf-reserva__texto {
+  margin: 0 0 1.5rem;
+  opacity: 0.9;
+}
+
+/* Formulario */
+.mf-formulario {
+  display: grid;
+  gap: 1.25rem;
+  padding: 2rem;
+  background: var(--color-blanco);
+  border-radius: 24px;
+  box-shadow: var(--sombra);
+}
+
+.mf-formulario__titulo {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.mf-campo {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.mf-campo label {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.mf-campo input,
+.mf-campo select,
+.mf-campo textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  background: var(--color-fondo);
+  color: var(--color-neutro);
+  font: inherit;
+}
+
+.mf-campo textarea {
+  resize: vertical;
+}
+
+.mf-campo input:focus,
+.mf-campo select:focus,
+.mf-campo textarea:focus {
+  outline: 2px solid var(--color-primario);
+  outline-offset: 1px;
+  background: var(--color-blanco);
+}
+
+@media (max-width: 960px) {
+  .mf-grooming,
+  .mf-reserva {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .mf-reserva__whatsapp,
+  .mf-formulario {
+    padding: 1.25rem;
+  }
+}
