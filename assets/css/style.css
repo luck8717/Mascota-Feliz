@@ -1873,7 +1873,6 @@ button:focus-visible {
 
 .card-sede.card-urgente {
   border-color: rgba(240, 106, 56, 0.3);
-  /* Borde suave naranja */
 }
 
 
@@ -2086,7 +2085,6 @@ button:focus-visible {
 
 .card-testimonio {
   background-color: var(--color-fondo-suave);
-  /* Fondo azul/celeste suave (#F1F4FF) */
   border-radius: 20px;
   padding: 32px 28px;
   display: flex;
@@ -2097,7 +2095,6 @@ button:focus-visible {
 
 .estrellas {
   color: var(--color-secundario);
-  /* Color naranja para las 5 estrellas */
   font-size: 1.1rem;
   letter-spacing: 2px;
   margin-bottom: 16px;
@@ -2119,7 +2116,6 @@ button:focus-visible {
   line-height: 1.6;
   margin-bottom: 28px;
   flex-grow: 1;
-  /* Mantiene la misma altura para todos los testimonios */
 }
 
 
@@ -2277,6 +2273,181 @@ button:focus-visible {
 .btn-reserva:hover {
   background-color: rgba(0, 0, 0, 0.25);
   transform: translateY(-2px);
+}
+/* ==========================================================================
+   RESPONSIVE DESIGN (TABLETS Y PANTALLAS MEDIANAS <= 992px)
+   ========================================================================== */
+@media (max-width: 992px) {
+  /* Header y navegación */
+  .header__barra {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .menu__lista {
+    gap: 16px;
+  }
+
+  /* Hero: pasa a 1 columna apilada */
+  .hero-grid {
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  .hero-content,
+  .hero-media {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero-img-wrapper {
+    min-height: 340px;
+  }
+
+  /* Métricas: de 4 columnas a cuadrícula 2x2 */
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Pilares y Sedes: pasan a 2 columnas */
+  .pilares-grid,
+  .sedes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonios: 2 columnas */
+  .testimonios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Banner CTA: apilado */
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-content {
+    max-width: 100%;
+  }
+
+  .cta-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-actions {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MÓVILES <= 600px)
+   ========================================================================== */
+@media (max-width: 600px) {
+  /* Contenedores con padding lateral seguro */
+  .contenedor {
+    width: 92%;
+  }
+
+  .seccion,
+  .seccion-hero,
+  .seccion-pilares,
+  .seccion-testimonios,
+  .seccion-sedes {
+    padding: 40px 0;
+  }
+
+  /* Topbar en una sola columna o más compacta */
+  .header__topbar {
+    font-size: 0.75rem;
+    padding: 6px 0;
+  }
+
+  .header__contacto {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+  }
+
+  /* Menú principal */
+  .header__barra {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu__lista {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header__acciones {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Título Hero más proporcionado en pantalla chica */
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .badge-tagline {
+    font-size: 0.75rem;
+  }
+
+  .hero-tags {
+    gap: 8px;
+  }
+
+  .tag-item {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  /* Estadísticas: 1 columna completa para no apretujar texto */
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tarjeta flotante en móvil */
+  .badge-flotante {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 14px;
+  }
+
+  /* Pilares, Sedes y Testimonios: 1 columna vertical fluida */
+  .pilares-grid,
+  .sedes-grid,
+  .testimonios-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* Sedes Header */
+  .sedes-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sedes-header-badges {
+    flex-wrap: wrap;
+  }
+
+  /* Banner CTA */
+  .cta-banner {
+    padding: 40px 20px;
+  }
+
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-content p {
+    font-size: 0.95rem;
+  }
 }
 
 /*CARRITO*/

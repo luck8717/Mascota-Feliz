@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="header">
@@ -422,20 +424,107 @@
         <span>Escribir por WhatsApp</span>
       </a>
 
-      <a href="#" class="btn btn-reserva">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
-          <line x1="16" x2="16" y1="2" y2="6"/>
-          <line x1="8" x2="8" y1="2" y2="6"/>
-          <line x1="3" x2="21" y1="10" y2="10"/>
-        </svg>
-        <span>Reservar Primera Consulta</span>
-      </a>
     </div>
 
   </div>
 </section>
+<footer class="mf-footer">
+        <div class="mf-footer__principal mf-contenedor">
+            <div class="mf-footer__columna">
+                <p class="mf-footer__marca">Mascota<span class="mf-footer__acento">Feliz</span></p>
+                <p class="mf-footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
+                    bienestar y cariño de tus compañeros peludos y alados.</p>
+                <ul class="mf-footer__datos">
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                        <p class="mf-footer--equipo--medico">Equipo Médico Colegiado N.º 95130</p>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined mf-footer__icono-urgencia" aria-hidden="true">call</span>
+                        <span class="mf-footer__link--urgencia">Urgencias 24h: <a class="mf-footer__urgencia"
+                                href="tel:+51987654321">+51 987 654
+                                321</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                        <a class="mf-footer__enlace-subrayado"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Principal+de+las+Mascotas+42%2C+Lima"
+                            target="_blank" rel="noopener noreferrer">Ver sedes en Google Maps</a>
+                    </li>
+                </ul>
+            </div>
 
+            <nav class="mf-footer__columna" aria-label="Servicios y Productos">
+                <h2 class="mf-footer__titulo">Servicios y Productos por Especie</h2>
+                <ul class="mf-footer__lista">
+                    <li><a class="mf-footer__enlace" href="servicios.html#perros">Medicina Integral para Perros</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#gatos">Cuidados Especiales y Vacunación
+                            Felina</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#aves">Clínica y Bienestar de Aves Exóticas</a>
+                    </li>
+                    <li><a class="mf-footer__enlace" href="catalogo.html">Farmacia Veterinaria y Fármacos</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#peluqueria">Peluquería Dermatológica e
+                            Higiene</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#urgencias">Cirugía y Hospitalización 24/7</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Atención &amp; Sedes</h2>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Sede Central Lima</strong>
+                    <address class="mf-footer__sede-contacto">Av. Principal de las Mascotas 42, Lima</address>
+                    <p class="mf-footer__sede-detalle">Lun a Sáb de 8:00 a 20:00</p>
+                </div>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Centro Hospitalario Urgencias</strong>
+                    <address class="mf-footer__sede-contacto">Calle del Rescate 20, Lima</address>
+                    <p class="mf-footer__sede-detalle">Abierto 24 Horas / 365 Días</p>
+                </div>
+
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">WhatsApp Atención al Cliente:</strong>
+                    <address class="mf-footer__sede-contacto">
+                        <a class="mf-footer__enlace-verde" href="https://wa.me/51999999999" target="_blank"
+                            rel="noopener noreferrer">+51 999 999 999</a>
+                    </address>
+                </div>
+            </div>
+
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Consejos &amp; Comunidad</h2>
+                <p class="mf-footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
+                    promociones de nuestra tienda.</p>
+                <form class="mf-suscripcion" action="#" method="post">
+                    <label class="mf-solo-lectores" for="correo-boletin">Correo electrónico</label>
+                    <input class="mf-suscripcion__campo" type="email" name="correo" id="correo-boletin"
+                        placeholder="Introduce tu correo electrónico" autocomplete="email" required>
+                    <button class="mf-btn mf-btn--primario mf-suscripcion__boton" type="submit">Suscribirme
+                        gratis</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mf-footer__inferior mf-contenedor">
+            <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
+            <ul class="mf-footer__legal">
+                <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="mf-whatsapp-flotante">
+        <p class="mf-whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
+        <a class="mf-whatsapp-flotante__boton" aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999"
+            target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+        </a>
+    </div>
+</body>
     </main>
 
 </body>
