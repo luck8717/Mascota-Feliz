@@ -2,189 +2,205 @@
 <html lang="es">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="description" content="Tienda y farmacia veterinaria MascotaFeliz: alimentos, antipulgas, farmacia y accesorios para perros, gatos y aves con envío exprés.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tienda y farmacia veterinaria MascotaFeliz: alimentos, antipulgas, farmacia y accesorios para perros, gatos y aves con envío exprés.">
+    <title>MascotaFeliz - Tienda y Farmacia Veterinaria</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/escatalogo.css">
-    <link 
-    <title>MascotaFeliz - Tienda y Farmacia Veterinaria</title>
 </head>
 
 <body>
-  <!-- Menú de navegación -->
-<body>
-  <header class="header">
-    <div class="header__topbar">
-      <div class="contenedor">
-        <address class="header__contacto">
-          <span class="header__dato">
-            Urgencias 24/7:
-            <a href="tel:+519****4321" rel="noopener noreferrer">+51 987 654 321</a>
-          </span>
-          <span class="header__dato">Lun-Sáb: 8:00-20:00</span>
-          <span class="header__dato">Av. Principal de las Mascotas 42, Lima</span>
-        </address>
-      </div>
-    </div>
-
-    <div class="header__principal">
-      <div class="header__barra contenedor">
-        <a class="marca" href="index.html">
-          <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz ir al inicio">
-        </a>
-
-        <nav class="menu" aria-label="Navegación Principal">
-          <ul class="menu__lista">
-            <li><a class="menu__enlace" href="index.html">Inicio</a></li>
-            <li><a class="menu__enlace" href="servicios.html">Servicios Médicos</a></li>
-            <li><a class="menu__enlace" href="catalogo.html" aria-current="page">Tienda de Mascotas</a></li>
-            <li><a class="menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
-          </ul>
-        </nav>
-
-        <div class="header__acciones">
-          <a class="btn btn--primario" href="https://wa.me/51999999999" target="_blank"
-            rel="noopener noreferrer">Agendar Cita</a>
-          <a class="carrito" href="carrito.html">Carrito de Compras</a>
+    <header class="mf-header">
+        <div class="mf-header__topbar">
+            <div class="mf-contenedor">
+                <ul class="mf-header__contacto">
+                    <li class="mf-header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">emergency</span>
+                        Urgencias 24/7:
+                        <a href="tel:+51987654321">+51 987 654 321</a>
+                    </li>
+                    <li class="mf-header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+                        Lun-Sáb: 8:00-20:00
+                    </li>
+                    <li class="mf-header__dato">
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                        Av. Principal de las Mascotas 42, Lima
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
 
-  <main>
+        <div class="mf-header__principal">
+            <div class="mf-header__barra mf-contenedor">
+                <a class="mf-marca" href="index.html">
+                    <img class="mf-marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz, ir al inicio"
+                        width="150" height="48">
+                </a>
+
+                <nav class="mf-menu" aria-label="Navegación principal">
+                    <ul class="mf-menu__lista">
+                        <li><a class="mf-menu__enlace" href="index.html">Inicio</a></li>
+                        <li><a class="mf-menu__enlace" href="servicios.html">Servicios Médicos</a></li>
+                        <li><a class="mf-menu__enlace" href="catalogo.html" aria-current="page">Tienda para tus Mascotas</a></li>
+                        <li><a class="mf-menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mf-header__acciones">
+                    <a class="mf-btn mf-btn--primario" href="https://wa.me/51999999999" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                        Agendar Cita
+                    </a>
+                    <a class="mf-carrito" href="carrito.html" aria-label="Carrito de compras">
+                        <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
     <!-- Migas de pan -->
-    <nav class="migas contenedor" aria-label="Migas de pan">
+    <nav class="mf-migas mf-contenedor" aria-label="Migas de pan">
       <a href="index.html">Inicio</a>
       <span aria-hidden="true">›</span>
       <span aria-current="page">Tienda de Mascotas</span>
     </nav>
 
     <!-- Cabecera de la tienda -->
-    <section class="tienda__cabecera contenedor">
-      <p class="tienda__insignia">✚ Farmacia y Nutrición Certificada</p>
-      <h1 class="tienda__titulo">Tienda &amp; Farmacia Veterinaria <span>MascotaFeliz</span></h1>
-      <p class="tienda__subtitulo">Nutrición de alta gama, farmacia certificada, antipulgas y accesorios para
+    <section class="mf-tienda__cabecera mf-contenedor">
+      <p class="mf-tienda__insignia">✚ Farmacia y Nutrición Certificada</p>
+      <h1 class="mf-tienda__titulo">Tienda &amp; Farmacia Veterinaria <span>MascotaFeliz</span></h1>
+      <p class="mf-tienda__subtitulo">Nutrición de alta gama, farmacia certificada, antipulgas y accesorios para
         consentir a perros, gatos y aves con envío a domicilio en 24h.</p>
 
-      <ul class="tienda__puntos">
+      <ul class="mf-tienda__puntos">
         <li>🚚 <strong>Envío Exprés 24h</strong><span>Gratis desde S/ 149</span></li>
-        <li>🛡️ <strong>Control Clínico</span><span>Supervisado por veterinarios</span></li>
+        <li>🛡️ <strong>Control Clínico</strong><span>Supervisado por veterinarios</span></li>
       </ul>
     </section>
 
     <!-- Barra de envíos -->
-    <div class="tienda__envios">
-      <div class="contenedor tienda__envios-interior">
+    <div class="mf-tienda__envios">
+      <div class="mf-contenedor mf-tienda__envios-interior">
         <p>⚡ Envíos exprés en el día para pedidos antes de las 14:00 | Retiro gratis en clínica en 30 minutos</p>
         <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">¿Dudas o recetas?
           Consúltanos</a>
       </div>
     </div>
-    <div class="contenedor tienda__layout">
+    <div class="mf-contenedor mf-tienda__layout">
 
-      <!-- ============ FILTROS LATERALES ============ -->
-      <aside class="filtros" aria-label="Filtros de productos">
-        <div class="filtros__cabecera">
+      <!-- Filtros laterales -->
+      <aside class="mf-filtros" aria-label="Filtros de productos">
+        <div class="mf-filtros__cabecera">
           <h2>🎚️ Filtros</h2>
           <a href="catalogo.html">Limpiar todo</a>
         </div>
 
         <form action="catalogo.html" method="get">
 
-          <fieldset class="filtros__grupo">
+          <fieldset class="mf-filtros__grupo">
             <legend>Filtro por Mascota</legend>
 
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="mascota" value="perros" checked>
-              🐶 Perros <span class="filtros__cantidad">142</span>
+              🐶 Perros <span class="mf-filtros__cantidad">142</span>
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="mascota" value="gatos">
-              🐱 Gatos <span class="filtros__cantidad">98</span>
+              🐱 Gatos <span class="mf-filtros__cantidad">98</span>
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="mascota" value="aves">
-              🐦 Aves <span class="filtros__cantidad">45</span>
+              🐦 Aves <span class="mf-filtros__cantidad">45</span>
             </label>
           </fieldset>
 
-          <fieldset class="filtros__grupo">
+          <fieldset class="mf-filtros__grupo">
             <legend>Categorías Especializadas</legend>
 
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="categoria" value="alimentos" checked>
-              🍖 Alimentos y Snacks <span class="filtros__cantidad">110</span>
+              🍖 Alimentos y Snacks <span class="mf-filtros__cantidad">110</span>
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="categoria" value="farmacia">
-              ✚ Farmacia y Suplementos <span class="filtros__cantidad">64</span>
+              ✚ Farmacia y Suplementos <span class="mf-filtros__cantidad">64</span>
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="categoria" value="antipulgas">
-              🛡️ Antipulgas y Pipetas <span class="filtros__cantidad">38</span>
+              🛡️ Antipulgas y Pipetas <span class="mf-filtros__cantidad">38</span>
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="categoria" value="juguetes">
-              🧸 Juguetes y Hábitats <span class="filtros__cantidad">49</span>
+              🧸 Juguetes y Hábitats <span class="mf-filtros__cantidad">49</span>
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="categoria" value="higiene">
-              🧼 Higiene y Belleza <span class="filtros__cantidad">24</span>
+              🧼 Higiene y Belleza <span class="mf-filtros__cantidad">24</span>
             </label>
           </fieldset>
 
-          <fieldset class="filtros__grupo">
-            <legend>Rango de Precio <span class="filtros__max">Hasta S/ 120</span></legend>
+          <fieldset class="mf-filtros__grupo">
+            <legend>Rango de Precio <span class="mf-filtros__max">Hasta S/ 120</span></legend>
 
-            <input class="filtros__rango" type="range" name="precio" min="5" max="120" value="120"
+            <input class="mf-filtros__rango" type="range" name="precio" min="5" max="120" value="120"
               aria-label="Precio máximo">
-            <div class="filtros__rango-marcas">
+            <div class="mf-filtros__rango-marcas">
               <span>S/ 5</span><span>S/ 60</span><span>S/ 120</span>
             </div>
           </fieldset>
 
-          <fieldset class="filtros__grupo">
+          <fieldset class="mf-filtros__grupo">
             <legend>Marcas Destacadas</legend>
 
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="marca" value="royal-canin" checked>
               Royal Canin
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="marca" value="bravecto">
               Bravecto
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="marca" value="versele-laga">
               Versele-Laga
             </label>
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="marca" value="zupreem">
               ZuPreem
             </label>
           </fieldset>
 
-          <fieldset class="filtros__grupo">
+          <fieldset class="mf-filtros__grupo">
             <legend>Disponibilidad</legend>
 
-            <label class="filtros__opcion">
+            <label class="mf-filtros__opcion">
               <input type="checkbox" name="stock" value="hoy" checked>
               📦 En stock para entrega hoy
-              <span class="filtros__nota">Despacho desde clínica local</span>
+              <span class="mf-filtros__nota">Despacho desde clínica local</span>
             </label>
           </fieldset>
 
-          <button class="filtros__aplicar btn btn--primario" type="submit">Aplicar filtros</button>
+          <button class="mf-filtros__aplicar mf-btn mf-btn--primario" type="submit">Aplicar filtros</button>
         </form>
 
-        <div class="filtros__receta">
+        <div class="mf-filtros__receta">
           <h3>✚ Farmacia con Receta</h3>
           <p>¿Tu mascota necesita medicamentos sujetos a prescripción? Envíanos la orden médica por WhatsApp y
             la validamos.</p>
@@ -192,21 +208,21 @@
             médica</a>
         </div>
       </aside>
-      <!-- ============ PRODUCTOS ============ -->
-      <section class="productos" aria-label="Listado de productos">
+      <!-- Productos -->
+      <section class="mf-listado" aria-label="Listado de productos">
 
-        <div class="productos__barra">
-          <p class="productos__contador">Mostrando <strong>12</strong> de 285 productos</p>
-          <p class="productos__stock">✔ Stock verificado en tiempo real</p>
+        <div class="mf-listado__barra">
+          <p class="mf-listado__contador">Mostrando <strong>12</strong> de 285 productos</p>
+          <p class="mf-listado__stock">✔ Stock verificado en tiempo real</p>
 
-          <div class="productos__herramientas">
-            <label class="productos__buscar">
-              <span class="productos__buscar-icono" aria-hidden="true">🔍</span>
+          <div class="mf-listado__herramientas">
+            <label class="mf-listado__buscar">
+              <span class="mf-listado__buscar-icono" aria-hidden="true">🔍</span>
               <input type="search" name="buscar" placeholder="Buscar en farmacia y pienso"
                 aria-label="Buscar productos">
             </label>
 
-            <label class="productos__ordenar">
+            <label class="mf-listado__ordenar">
               Ordenar:
               <select name="ordenar">
                 <option value="populares">Más populares</option>
@@ -218,286 +234,286 @@
           </div>
         </div>
 
-        <ul class="productos__activos" aria-label="Filtros activos">
+        <ul class="mf-listado__activos" aria-label="Filtros activos">
           <li>Filtros activos:</li>
           <li><a href="catalogo.html">🐶 Perros </a></li>
           <li><a href="catalogo.html">Royal Canin / Hill's </a></li>
           <li><a href="catalogo.html">📦 En Stock hoy </a></li>
         </ul>
-        <div class="productos__rejilla">
+        <div class="mf-listado__rejilla">
           <!-- Producto 1 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas">
-              <span class="etiqueta etiqueta--categoria">🐶 Perros</span>
-              <span class="etiqueta etiqueta--oferta">-12% DTO</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">🐶 Perros</span>
+              <span class="mf-chip mf-chip--oferta">-12% DTO</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/royal-canin.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/royal-canin.jpg"
               alt="Bolsa de alimento Royal Canin Mini Adult 7.5kg">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating">
-              <span class="tarjeta__estrellas" role="img" aria-label="4.9 de 5 estrellas">★★★★★</span>
-              4.9 <span class="tarjeta__resenas">(124 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="4.9 de 5 estrellas">★★★★★</span>
+              4.9 <span class="mf-tarjeta__resenas">(124 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">Royal Canin Mini Adult 7.5kg</h3>
-            <p class="tarjeta__descripcion">Nutrición equilibrada para razas pequeñas con soporte digestivo
+            <h3 class="mf-tarjeta__nombre">Royal Canin Mini Adult 7.5kg</h3>
+            <p class="mf-tarjeta__descripcion">Nutrición equilibrada para razas pequeñas con soporte digestivo
               y salud articular.</p>
-            <div class="tarjeta__precio">
+            <div class="mf-tarjeta__precio">
               <strong>S/ 42.00</strong>
               <del>S/ 48.00</del>
             </div>
-            <div class="tarjeta__compra">
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dudas de dosificación por WhatsApp</a>
           </article>
 
           <!-- Producto 2 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas">
-              <span class="etiqueta etiqueta--categoria">✚ Farmacia</span>
-              <span class="etiqueta etiqueta--top">Antipulgar Top</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">✚ Farmacia</span>
+              <span class="mf-chip mf-chip--top">Antipulgar Top</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/bravecto.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/bravecto.jpg"
               alt="Blíster de Bravecto comprimido masticable para perros">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating">
-              <span class="tarjeta__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-              5.0 <span class="tarjeta__resenas">(89 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+              5.0 <span class="mf-tarjeta__resenas">(89 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">Bravecto Comprimido Masticable Perros (10–20kg)</h3>
-            <p class="tarjeta__descripcion">Protección continua contra pulgas y garrapatas por 12 semanas
+            <h3 class="mf-tarjeta__nombre">Bravecto Comprimido Masticable Perros (10–20kg)</h3>
+            <p class="mf-tarjeta__descripcion">Protección continua contra pulgas y garrapatas por 12 semanas
               completas.</p>
-            <div class="tarjeta__precio">
+            <div class="mf-tarjeta__precio">
               <strong>S/ 34.50</strong>
             </div>
-            <div class="tarjeta__compra>
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dudas de dosificación por WhatsApp</a>
           </article>
 
           <!-- Producto 3 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas>
-              <span class="etiqueta etiqueta--categoria">🐱 Gatos</span>
-              <span class="etiqueta etiqueta--info">Dieta Veterinaria</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">🐱 Gatos</span>
+              <span class="mf-chip mf-chip--info">Dieta Veterinaria</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/royal-canin.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/royal-canin.jpg"
               alt="Bolsa de Hill's Prescription Diet Feline c/d Multicare 3.8kg">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating>
-              <span class="tarjeta__estrellas" role="img" aria-label="4.8 de 5 estrellas">★★★★★</span>
-              4.8 <span class="tarjeta__resenas">(67 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="4.8 de 5 estrellas">★★★★★</span>
+              4.8 <span class="mf-tarjeta__resenas">(67 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">Hill's Prescription Diet Feline c/d Multicare 3.8kg</h3>
-            <p class="tarjeta__descripcion">Soporte urinario comprobado para prevenir cálculos de estruvita
+            <h3 class="mf-tarjeta__nombre">Hill's Prescription Diet Feline c/d Multicare 3.8kg</h3>
+            <p class="mf-tarjeta__descripcion">Soporte urinario comprobado para prevenir cálculos de estruvita
               en gatos.</p>
-            <div class="tarjeta__precio>
+            <div class="mf-tarjeta__precio">
               <strong>S/ 52.00</strong>
             </div>
-            <div class="tarjeta__compra>
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dudas de nutrición por WhatsApp</a>
           </article>
 
           <!-- Producto 4 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas>
-              <span class="etiqueta etiqueta--categoria">🐦 Aves</span>
-              <span class="etiqueta etiqueta--info">Fruta Natural</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">🐦 Aves</span>
+              <span class="mf-chip mf-chip--info">Fruta Natural</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/mezcla-premium.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/mezcla-premium.jpg"
               alt="Bolsa de ZuPreem FruitBlend alimento completo para loros 1.6kg">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating>
-              <span class="tarjeta__estrellas" role="img" aria-label="4.9 de 5 estrellas">★★★★★</span>
-              4.9 <span class="tarjeta__resenas">(42 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="4.9 de 5 estrellas">★★★★★</span>
+              4.9 <span class="mf-tarjeta__resenas">(42 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">ZuPreem FruitBlend Alimento Completo para Loros 1.6kg</h3>
-            <p class="tarjeta__descripcion">Pellets enriquecidos con vitaminas esenciales y sabores a frutas
+            <h3 class="mf-tarjeta__nombre">ZuPreem FruitBlend Alimento Completo para Loros 1.6kg</h3>
+            <p class="mf-tarjeta__descripcion">Pellets enriquecidos con vitaminas esenciales y sabores a frutas
               naturales.</p>
-            <div class="tarjeta__precio>
+            <div class="mf-tarjeta__precio">
               <strong>S/ 21.50</strong>
             </div>
-            <div class="tarjeta__compra>
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dudas de dosificación por WhatsApp</a>
           </article>
 
          <!-- Producto 5 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas>
-              <span class="etiqueta etiqueta--categoria">🐱 Gatos</span>
-              <span class="etiqueta etiqueta--oferta">-17% DTO</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">🐱 Gatos</span>
+              <span class="mf-chip mf-chip--oferta">-17% DTO</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/arena-sanitaria.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/arena-sanitaria.jpg"
               alt="Rascador torre mult nivel para gatos con hamaca">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating>
-              <span class="tarjeta__estrellas" role="img" aria-label="4.7 de 5 estrellas">★★★★★</span>
-              4.7 <span class="tarjeta__resenas">(53 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="4.7 de 5 estrellas">★★★★★</span>
+              4.7 <span class="mf-tarjeta__resenas">(53 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">Rascador Torre Multinivel para Gatos con Hamaca</h3>
-            <p class="tarjeta__descripcion">Estructura reforzada con postes de sisal natural, plataforma
+            <h3 class="mf-tarjeta__nombre">Rascador Torre Multinivel para Gatos con Hamaca</h3>
+            <p class="mf-tarjeta__descripcion">Estructura reforzada con postes de sisal natural, plataforma
               acolchada y zona de descanso.</p>
-            <div class="tarjeta__precio>
+            <div class="mf-tarjeta__precio">
               <strong>S/ 65.00</strong>
               <del>S/ 79.00</del>
             </div>
-            <div class="tarjeta__compra>
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dimensiones por WhatsApp</a>
           </article>
 
           <!-- Producto 6 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas>
-              <span class="etiqueta etiqueta--categoria">🐦 Aves</span>
-              <span class="etiqueta etiqueta--info">100% Limpio</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">🐦 Aves</span>
+              <span class="mf-chip mf-chip--info">100% Limpio</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/mezcla-premium.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/mezcla-premium.jpg"
               alt="Bolsa de Versele-Laga Prestige Mezcla de Semillas para Canarios 1kg">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating>
-              <span class="tarjeta__estrellas" role="img" aria-label="4.8 de 5 estrellas">★★★★★</span>
-              4.8 <span class="tarjeta__resenas">(35 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="4.8 de 5 estrellas">★★★★★</span>
+              4.8 <span class="mf-tarjeta__resenas">(35 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">Versele-Laga Prestige Mezcla de Semillas para Canarios 1kg</h3>
-            <p class="tarjeta__descripcion">Fórmula tradicional de semillas selectas y linaza para el canto y
+            <h3 class="mf-tarjeta__nombre">Versele-Laga Prestige Mezcla de Semillas para Canarios 1kg</h3>
+            <p class="mf-tarjeta__descripcion">Fórmula tradicional de semillas selectas y linaza para el canto y
               la vitalidad.</p>
-            <div class="tarjeta__precio>
+            <div class="mf-tarjeta__precio">
               <strong>S/ 8.90</strong>
             </div>
-            <div class="tarjeta__compra>
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dudas de nutrición por WhatsApp</a>
           </article>
 
           <!-- Producto 7 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas>
-              <span class="etiqueta etiqueta--categoria">✚ Farmacia</span>
-              <span class="etiqueta etiqueta--top">Recomendado Vet.</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">✚ Farmacia</span>
+              <span class="mf-chip mf-chip--top">Recomendado Vet.</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/bravecto.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/bravecto.jpg"
               alt="Frasco de suplemento articular condroprotector para mascotas 60 comprimidos">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating>
-              <span class="tarjeta__estrellas" role="img" aria-label="4.9 de 5 estrellas">★★★★★</span>
-              4.9 <span class="tarjeta__resenas">(98 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="4.9 de 5 estrellas">★★★★★</span>
+              4.9 <span class="mf-tarjeta__resenas">(98 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">Suplemento Articular Condroprotector Mascotas 60 comprimidos</h3>
-            <p class="tarjeta__descripcion">Glucosamina, condroitina y colágeno hidrolizado para mejorar la
+            <h3 class="mf-tarjeta__nombre">Suplemento Articular Condroprotector Mascotas 60 comprimidos</h3>
+            <p class="mf-tarjeta__descripcion">Glucosamina, condroitina y colágeno hidrolizado para mejorar la
               movilidad articular.</p>
-            <div class="tarjeta__precio>
+            <div class="mf-tarjeta__precio">
               <strong>S/ 28.00</strong>
             </div>
-            <div class="tarjeta__compra>
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dudas de dosificación por WhatsApp</a>
           </article>
 
           <!-- Producto 8 -->
-          <article class="tarjeta">
-            <div class="tarjeta__etiquetas>
-              <span class="etiqueta etiqueta--categoria">🐦 Aves</span>
-              <span class="etiqueta etiqueta--info">Incluye Perchas</span>
+          <article class="mf-tarjeta">
+            <div class="mf-tarjeta__etiquetas">
+              <span class="mf-chip mf-chip--categoria">🐦 Aves</span>
+              <span class="mf-chip mf-chip--info">Incluye Perchas</span>
             </div>
-            <img class="tarjeta__imagen" src="assets/img/productos/mezcla-premium.jpg"
+            <img class="mf-tarjeta__imagen" src="assets/img/productos/mezcla-premium.jpg"
               alt="Jaula espaciosa para ninfas y agapornis con accesorios">
-            <p class="tarjeta__stock">● En Stock en Clínica</p>
-            <p class="tarjeta__rating>
-              <span class="tarjeta__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-              5.0 <span class="tarjeta__resenas">(19 reseñas)</span>
+            <p class="mf-tarjeta__stock">● En Stock en Clínica</p>
+            <p class="mf-tarjeta__rating">
+              <span class="mf-tarjeta__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+              5.0 <span class="mf-tarjeta__resenas">(19 reseñas)</span>
             </p>
-            <h3 class="tarjeta__nombre">Jaula Espaciosa para Ninfas y Agapornis con Accesorios</h3>
-            <p class="tarjeta__descripcion">Barrotes con recubrimiento no tóxico, bandeja extraíble y apertura
+            <h3 class="mf-tarjeta__nombre">Jaula Espaciosa para Ninfas y Agapornis con Accesorios</h3>
+            <p class="mf-tarjeta__descripcion">Barrotes con recubrimiento no tóxico, bandeja extraíble y apertura
               superior de juego.</p>
-            <div class="tarjeta__precio>
+            <div class="mf-tarjeta__precio">
               <strong>S/ 89.00</strong>
             </div>
-            <div class="tarjeta__compra>
-              <div class="tarjeta__cantidad" aria-label="Cantidad">
+            <div class="mf-tarjeta__compra">
+              <div class="mf-tarjeta__cantidad" aria-label="Cantidad">
                 <button type="button" aria-label="Disminuir cantidad">−</button>
                 <span>1</span>
                 <button type="button" aria-label="Aumentar cantidad">+</button>
               </div>
-              <button class="tarjeta__anadir btn btn--primario" type="button">🛒 Añadir al Carrito</button>
+              <button class="mf-tarjeta__anadir mf-btn mf-btn--primario" type="button">🛒 Añadir al Carrito</button>
             </div>
-            <a class="tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
+            <a class="mf-tarjeta__whatsapp" href="https://wa.me/51999999999" target="_blank"
               rel="noopener noreferrer">💬 Consultar dimensiones por WhatsApp</a>
           </article>
 
         </div>
 
         <!-- Paginación (estática)-->
-        <nav class="paginacion" aria-label="Paginación del catálogo">
-          <p class="paginacion__info">Página 1 de 24 <span>(285 resultados en catálogo)</span></p>
-          <ol class="paginacion__lista">
-            <li><a class="paginacion__enlace paginacion__enlace--actual" href="catalogo.html"
+        <nav class="mf-paginacion" aria-label="Paginación del catálogo">
+          <p class="mf-paginacion__info">Página 1 de 24 <span>(285 resultados en catálogo)</span></p>
+          <ol class="mf-paginacion__lista">
+            <li><a class="mf-paginacion__enlace mf-paginacion__enlace--actual" href="catalogo.html"
               aria-current="page">1</a></li>
-            <li><a class="paginacion__enlace" href="catalogo.html">2</a></li>
-            <li><a class="paginacion__enlace" href="catalogo.html">3</a></li>
-            <li><span class="paginacion__puntos">…</span></li>
-            <li><a class="paginacion__enlace" href="catalogo.html">24</a></li>
-            <li><a class="paginacion__enlace paginacion__enlace--siguiente"
+            <li><a class="mf-paginacion__enlace" href="catalogo.html">2</a></li>
+            <li><a class="mf-paginacion__enlace" href="catalogo.html">3</a></li>
+            <li><span class="mf-paginacion__puntos">…</span></li>
+            <li><a class="mf-paginacion__enlace" href="catalogo.html">24</a></li>
+            <li><a class="mf-paginacion__enlace mf-paginacion__enlace--siguiente"
               href="catalogo.html">›</a></li>
           </ol>
         </nav>
       </section>
     </div>
 
-    <!-- ============ GARANTÍAS ============ -->
-    <section class="garantias contenedor" aria-label="Garantías de compra">
-      <article class="garantias__item">
-        <span class="garantias__icono" aria-hidden="true">🧊</span>
+    <!-- Garantías -->
+    <section class="mf-garantias mf-contenedor" aria-label="Garantías de compra">
+      <article class="mf-garantias__item">
+        <span class="mf-garantias__icono" aria-hidden="true">🧊</span>
         <div>
           <h2>Garantía Farmacéutica</h2>
           <p>Todos los productos se almacenan con control de temperatura y trazabilidad por veterinarios
@@ -505,8 +521,8 @@
         </div>
       </article>
 
-      <article class="garantias__item">
-        <span class="garantias__icono" aria-hidden="true">🛵</span>
+      <article class="mf-garantias__item">
+        <span class="mf-garantias__icono" aria-hidden="true">🛵</span>
         <div>
           <h2>Reparto Local Urgente</h2>
           <p>Si tu mascota necesita antibióticos o alimento medicinal de urgencia, te lo entregamos en menos
@@ -514,8 +530,8 @@
         </div>
       </article>
 
-      <article class="garantias__item">
-        <span class="garantias__icono" aria-hidden="true">↩️</span>
+      <article class="mf-garantias__item">
+        <span class="mf-garantias__icono" aria-hidden="true">↩️</span>
         <div>
           <h2>Devolución Segura</h2>
           <p>30 días para cambios en accesorios o devoluciones asistidas en cualquiera de nuestras clínicas
@@ -523,81 +539,104 @@
         </div>
       </article>
     </section>
-  </main>
+    </main>
 
-  <!-- ============ FOOTER (idéntico al index) ============ -->
-  <footer class="footer">
-    <div class="footer__grid contenedor">
-      <div class="footer__marca">
-        <p class="footer__logo">Mascota<span>Feliz</span></p>
-        <p>Clínica veterinaria y farmacia especializada comprometida con la salud, bienestar y cariño de tus
-          compañeros peludos y alados.</p>
-        <ul>
-          <li>Equipo Médico Colegiado N.º 95130</li>
-          <li>Urgencias 24h: <a href="tel:+519****4321">+51 987 654 321</a></li>
-          <li><a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Ver sedes en Google
-                  Maps</a></li>
-        </ul>
-      </div>
+    <footer class="mf-footer">
+        <div class="mf-footer__principal mf-contenedor">
+            <div class="mf-footer__columna">
+                <p class="mf-footer__marca">Mascota<span class="mf-footer__acento">Feliz</span></p>
+                <p class="mf-footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
+                    bienestar y cariño de tus compañeros peludos y alados.</p>
+                <ul class="mf-footer__datos">
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                        <p class="mf-footer--equipo--medico">Equipo Médico Colegiado N.º 95130</p>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined mf-footer__icono-urgencia" aria-hidden="true">call</span>
+                        <span class="mf-footer__link--urgencia">Urgencias 24h: <a class="mf-footer__urgencia"
+                                href="tel:+51987654321">+51 987 654
+                                321</a></span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined" aria-hidden="true">location_on</span>
+                        <a class="mf-footer__enlace-subrayado"
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Principal+de+las+Mascotas+42%2C+Lima"
+                            target="_blank" rel="noopener noreferrer">Ver sedes en Google Maps</a>
+                    </li>
+                </ul>
+            </div>
 
-      <nav class="footer__nav" aria-label="Servicios y Productos">
-        <h2>Servicios y Productos por Especie</h2>
-        <ul>
-          <li><a href="servicios.html">Medicina Integral para Perros</a></li>
-          <li><a href="servicios.html">Cuidados Especiales y Vacunación Felina</a></li>
-          <li><a href="servicios.html">Clínica y Bienestar de Aves Exóticas</a></li>
-          <li><a href="catalogo.html">Farmacia Veterinaria y Fármacos</a></li>
-          <li><a href="servicios.html">Peluquería Dermatológica e Higiene</a></li>
-          <li><a href="servicios.html">Cirugía y Hospitalización 24/7</a></li>
-        </ul>
-      </nav>
+            <nav class="mf-footer__columna" aria-label="Servicios y Productos">
+                <h2 class="mf-footer__titulo">Servicios y Productos por Especie</h2>
+                <ul class="mf-footer__lista">
+                    <li><a class="mf-footer__enlace" href="servicios.html#perros">Medicina Integral para Perros</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#gatos">Cuidados Especiales y Vacunación
+                            Felina</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#aves">Clínica y Bienestar de Aves Exóticas</a>
+                    </li>
+                    <li><a class="mf-footer__enlace" href="catalogo.html">Farmacia Veterinaria y Fármacos</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#peluqueria">Peluquería Dermatológica e
+                            Higiene</a></li>
+                    <li><a class="mf-footer__enlace" href="servicios.html#urgencias">Cirugía y Hospitalización 24/7</a>
+                    </li>
+                </ul>
+            </nav>
 
-      <div class="footer__sedes">
-        <h2>Atención &amp; Sedes</h2>
-        <address>
-          <strong>Sede Central Lima</strong>
-          <p>Av. Principal de las Mascotas 160.</p>
-          <p>Lun a Sáb de 8:00 a 20:00</p>
-        </address>
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Atención &amp; Sedes</h2>
 
-        <address>
-          <strong>Centro Hospitalario Urgencias</strong>
-          <p>Calle del Rescate 20, Lima</p>
-          <span>Abierto 24 Horas / 365 Días</span>
-        </address>
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Sede Central Lima</strong>
+                    <address class="mf-footer__sede-contacto">Av. Principal de las Mascotas 42, Lima</address>
+                    <p class="mf-footer__sede-detalle">Lun a Sáb de 8:00 a 20:00</p>
+                </div>
 
-        <strong>WhatsApp Atención al Cliente:</strong>
-        <a href="https://wa.me/51999999999" target="_blank" rel="noopener noreferrer">+51 999 999 999</a>
-      </div>
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">Centro Hospitalario Urgencias</strong>
+                    <address class="mf-footer__sede-contacto">Calle del Rescate 20, Lima</address>
+                    <p class="mf-footer__sede-detalle">Abierto 24 Horas / 365 Días</p>
+                </div>
 
-      <div class="footer__boletin">
-        <h2>Consejos &amp; Comunidad</h2>
-        <p>Suscríbete para recibir guías de nutrición, recordatorios de vacunación y promociones de nuestra
-          tienda.</p>
-        <form action="#" method="post">
-          <label for="correo-boletin">Correo electrónico</label>
-          <input type="email" name="correo" id="correo-boletin" placeholder="Introduce tu correo electrónico"
-            required>
-          <button class="btn btn--primario" type="submit">Suscribirme gratis</button>
-        </form>
-      </div>
+                <div class="mf-footer__sede">
+                    <strong class="mf-footer__sede-titulo">WhatsApp Atención al Cliente:</strong>
+                    <address class="mf-footer__sede-contacto">
+                        <a class="mf-footer__enlace-verde" href="https://wa.me/51999999999" target="_blank"
+                            rel="noopener noreferrer">+51 999 999 999</a>
+                    </address>
+                </div>
+            </div>
+
+            <div class="mf-footer__columna">
+                <h2 class="mf-footer__titulo">Consejos &amp; Comunidad</h2>
+                <p class="mf-footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
+                    promociones de nuestra tienda.</p>
+                <form class="mf-suscripcion" action="#" method="post">
+                    <label class="mf-solo-lectores" for="correo-boletin">Correo electrónico</label>
+                    <input class="mf-suscripcion__campo" type="email" name="correo" id="correo-boletin"
+                        placeholder="Introduce tu correo electrónico" autocomplete="email" required>
+                    <button class="mf-btn mf-btn--primario mf-suscripcion__boton" type="submit">Suscribirme
+                        gratis</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mf-footer__inferior mf-contenedor">
+            <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
+            <ul class="mf-footer__legal">
+                <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="mf-whatsapp-flotante">
+        <p class="mf-whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
+        <a class="mf-whatsapp-flotante__boton" aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999"
+            target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+        </a>
     </div>
-
-    <div class="footer__legal contenedor">
-      <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
-      <ul>
-        <li><a href="#">Aviso Legal</a></li>
-        <li><a href="#">Política de Privacidad</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__flotante">
-      <p>¿Necesitas cita o consulta? ¡Escríbenos!</p>
-      <a aria-label="Escribir por WhatsApp" href="https://wa.me/51999999999" target="_blank"
-        rel="noopener noreferrer">💬</a>
-    </div>
-  </footer>
-
 </body>
 
 </html>
