@@ -596,3 +596,50 @@
     flex: 1;
   }
 }
+
+
+
+
+
+/* ===== MODO OSCURO: catálogo ===== */
+
+.modo-oscuro .mf-tienda__insignia {
+  color: #1E293B;
+}
+
+.modo-oscuro .mf-tienda__envios,
+.modo-oscuro .mf-chip--oferta,
+.modo-oscuro .mf-chip--top,
+.modo-oscuro .mf-paginacion__enlace--actual,
+.modo-oscuro .mf-paginacion__enlace--actual:hover {
+  color: #FFFFFF;
+}
+
+.modo-oscuro .mf-tienda__titulo span,
+.modo-oscuro .mf-filtros__cabecera a,
+.modo-oscuro .mf-filtros__max,
+.modo-oscuro .mf-listado__stock,
+.modo-oscuro .mf-tarjeta__stock,
+.modo-oscuro .mf-tarjeta__nombre,
+.modo-oscuro .mf-tarjeta__precio strong,
+.modo-oscuro .mf-tarjeta__whatsapp,
+.modo-oscuro .mf-paginacion__enlace:hover {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .mf-filtros__cantidad {
+  background: #334155;
+}
+
+.modo-oscuro .mf-filtros__receta {
+  background: rgba(240, 106, 56, 0.15);
+}
+
+.modo-oscuro .mf-filtros__receta h3,
+.modo-oscuro .mf-filtros__receta a {
+  color: #FDBA9B;
+}
+
+.modo-oscuro .mf-tarjeta__cantidad button {
+  color: var(--color-neutro);
+}

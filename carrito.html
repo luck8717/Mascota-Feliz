@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Carrito de Compras</title>
@@ -15,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="cabecera-carrito">
         <div class="contenedor encabezado">
             <img class="marca__logo" src="assets/img/logos/logo.jpg" alt="MascotaFeliz ir al inicio">
 
@@ -26,18 +29,20 @@
                 <a href="consejos.html">Consejos</a>
                 <a href="servicios.html">Servicios</a>
             </nav>
+            <button class="mf-carrito" id="btn-tema" type="button" aria-label="Cambiar modo oscuro">
+                <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+            </button>
         </div>
     </header>
 
-    <main>
+    <main class="contenedor carrito-pagina">
 
-        
         <section>
             <h1>🛒 Mi carrito de compras</h1>
             <p>Revisa los productos que deseas comprar para tu mascota.</p>
         </section>
 
-       
+
         <section>
             <h2>Productos seleccionados</h2>
 
@@ -97,7 +102,7 @@
 
         </section>
 
-        
+
         <section>
             <h2>Resumen de compra</h2>
 

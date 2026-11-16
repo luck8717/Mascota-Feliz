@@ -2978,19 +2978,34 @@ footer p {
   color: #1E293B;
 }
 
-.modo-oscuro .mf-menu__enlace { color: #E2E8F0; }
+.modo-oscuro .mf-menu__enlace {
+  color: #E2E8F0;
+}
 
 .modo-oscuro .mf-menu__enlace:hover,
 .modo-oscuro .mf-menu__enlace[aria-current="page"] {
   color: var(--color-primario-claro);
 }
 
-.modo-oscuro .mf-seccion__titulo { color: #E2E8F0; }
-.modo-oscuro .mf-sobretitulo { color: var(--color-primario-claro); }
-.modo-oscuro .mf-hero__tarjeta-titulo { color: #E2E8F0; }
+.modo-oscuro .mf-seccion__titulo {
+  color: #E2E8F0;
+}
 
-.modo-oscuro .mf-especie--ave { --especie-texto: #1E293B; }
-.modo-oscuro .mf-especie--perro { --especie-enlace: var(--color-primario-claro); }
+.modo-oscuro .mf-sobretitulo {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .mf-hero__tarjeta-titulo {
+  color: #E2E8F0;
+}
+
+.modo-oscuro .mf-especie--ave {
+  --especie-texto: #1E293B;
+}
+
+.modo-oscuro .mf-especie--perro {
+  --especie-enlace: var(--color-primario-claro);
+}
 
 .modo-oscuro .mf-marca__logo {
   background: #FFFFFF;
@@ -2999,11 +3014,150 @@ footer p {
 }
 
 #btn-tema {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
   background: transparent;
   color: var(--color-neutro);
-  padding: 0;
 }
+
 #btn-tema:hover {
   background: var(--color-fondo-suave);
   transform: none;
+}
+
+
+.modo-oscuro .menu__enlace,
+.modo-oscuro .breadcrumbs a {
+  color: #E2E8F0;
+}
+
+.modo-oscuro .menu__enlace:hover,
+.modo-oscuro .menu__enlace[aria-current="page"] {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .marca__logo {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
+.modo-oscuro .btn--primario,
+.modo-oscuro .btn-verde-bloque,
+.modo-oscuro .btn-naranja-bloque,
+.modo-oscuro .badge-categoria,
+.modo-oscuro .header__topbar {
+  color: #FFFFFF;
+}
+
+.modo-oscuro .badge-tagline {
+  background-color: rgba(240, 106, 56, 0.15);
+}
+
+.modo-oscuro .tag-item {
+  background-color: #334155;
+}
+
+.modo-oscuro .stat-numero.azul {
+  color: #A5B4FC;
+}
+
+.modo-oscuro .badge-flotante {
+  background: rgba(30, 41, 59, 0.92);
+}
+
+.modo-oscuro .badge-icono {
+  background-color: rgba(13, 130, 103, 0.25);
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .seccion-pilares {
+  background-color: #0B1220;
+}
+
+.modo-oscuro .icono-pilar.verde {
+  background-color: rgba(13, 130, 103, 0.25);
+}
+
+.modo-oscuro .icono-pilar.naranja {
+  background-color: rgba(240, 106, 56, 0.2);
+}
+
+.modo-oscuro .pilar-numero.verde,
+.modo-oscuro .pilar-footer.verde {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .badge-estado-activo {
+  background-color: rgba(13, 130, 103, 0.25);
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .pill-horario.azul {
+  background-color: #312E81;
+  color: #C7D2FE;
+}
+
+.modo-oscuro .pill-horario.naranja {
+  background-color: rgba(192, 56, 24, 0.25);
+  color: #FDBA9B;
+}
+
+.modo-oscuro .btn-azul-suave-bloque {
+  background-color: #334155;
+  color: #C7D2FE;
+}
+
+.modo-oscuro .btn-whatsapp {
+  background-color: #FFFFFF;
+  color: var(--color-primario);
+}
+
+.modo-oscuro .cabecera-carrito {
+  background-color: var(--color-blanco);
+  border-bottom-color: var(--color-borde);
+}
+
+.modo-oscuro .cabecera-carrito nav a {
+  color: #E2E8F0;
+}
+
+.modo-oscuro .cabecera-carrito nav a:hover {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .carrito-pagina h2 {
+  color: var(--color-neutro);
+}
+
+.modo-oscuro .carrito-pagina p {
+  color: var(--color-texto-suave);
+}
+
+.modo-oscuro .carrito-pagina h3 {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .carrito-pagina table {
+  background-color: var(--color-blanco);
+}
+
+.modo-oscuro .carrito-pagina td {
+  color: var(--color-neutro);
+  border-bottom-color: var(--color-borde);
+}
+
+.modo-oscuro .carrito-pagina tbody tr:nth-child(even) {
+  background-color: #273449;
+}
+
+/* Cajas de cantidad */
+.modo-oscuro .carrito-pagina input {
+  background-color: #0F172A;
+  color: var(--color-neutro);
+  border-color: var(--color-borde);
 }
