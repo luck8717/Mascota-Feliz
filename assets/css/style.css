@@ -2943,3 +2943,67 @@ footer p {
     font-size: 12px;
   }
 }
+
+.mf-seccion__cabecera {
+  background: transparent;
+  border-top: 0;
+}
+
+
+/*Para JavaScript*/
+
+/* ===== MODO OSCURO ===== */
+
+.modo-oscuro {
+  --color-fondo: #0F172A;
+  --color-fondo-suave: #1E293B;
+  --color-azul-claro: #1E293B;
+  --color-blanco: #1E293B;
+  --color-neutro: #E2E8F0;
+  --color-texto-suave: #94A3B8;
+  --color-borde: #334155;
+  --sombra: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.modo-oscuro .mf-header__topbar,
+.modo-oscuro .mf-btn--primario,
+.modo-oscuro .mf-btn--urgencia {
+  color: #FFFFFF;
+}
+
+.modo-oscuro .mf-btn--secundario,
+.modo-oscuro .mf-btn--whatsapp,
+.modo-oscuro .mf-etiqueta,
+.modo-oscuro .mf-hero__estado {
+  color: #1E293B;
+}
+
+.modo-oscuro .mf-menu__enlace { color: #E2E8F0; }
+
+.modo-oscuro .mf-menu__enlace:hover,
+.modo-oscuro .mf-menu__enlace[aria-current="page"] {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .mf-seccion__titulo { color: #E2E8F0; }
+.modo-oscuro .mf-sobretitulo { color: var(--color-primario-claro); }
+.modo-oscuro .mf-hero__tarjeta-titulo { color: #E2E8F0; }
+
+.modo-oscuro .mf-especie--ave { --especie-texto: #1E293B; }
+.modo-oscuro .mf-especie--perro { --especie-enlace: var(--color-primario-claro); }
+
+.modo-oscuro .mf-marca__logo {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
+#btn-tema {
+  background: transparent;
+  color: var(--color-neutro);
+  padding: 0;
+}
+#btn-tema:hover {
+  background: var(--color-fondo-suave);
+  transform: none;
+}
