@@ -1,6 +1,18 @@
 const botones = document.querySelectorAll('.mf-producto__carrito');
+const contador = document.getElementById('contador-carrito');
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+// Suma las cantidades y actualiza el numerito del header
+function actualizarContador() {
+  let total = 0;
+  carrito.forEach((producto) => {
+    total += producto.cantidad;
+  });
+
+  contador.textContent = total;
+  contador.hidden = total === 0;
+}
 
 botones.forEach((boton) => {
   boton.addEventListener('click', () => {
@@ -16,6 +28,9 @@ botones.forEach((boton) => {
     }
 
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    console.table(carrito);
+    actualizarContador();
   });
 });
+
+// Al cargar la página, mostrar lo que ya estaba guardado
+actualizarContador();
