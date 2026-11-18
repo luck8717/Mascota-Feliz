@@ -735,6 +735,7 @@ button:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .mf-btn,
   .mf-whatsapp-flotante__boton {
     transition: none;
@@ -853,4 +854,66 @@ button:focus-visible {
 /* Evita que los anclajes (#perros, #reserva...) queden pegados al borde */
 [id] {
   scroll-margin-top: 1.5rem;
+}
+
+
+
+
+/* ===== MODO OSCURO (base compartida) ===== */
+
+.modo-oscuro {
+  color-scheme: dark;
+  --color-fondo: #0F172A;
+  --color-fondo-suave: #1E293B;
+  --color-azul-claro: #1E293B;
+  --color-blanco: #1E293B;
+  --color-neutro: #E2E8F0;
+  --color-texto-suave: #94A3B8;
+  --color-borde: #334155;
+  --sombra: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.modo-oscuro .mf-header__topbar,
+.modo-oscuro .mf-btn--primario,
+.modo-oscuro .mf-btn--urgencia,
+.modo-oscuro .mf-whatsapp-flotante__boton {
+  color: #FFFFFF;
+}
+
+.modo-oscuro .mf-btn--secundario,
+.modo-oscuro .mf-btn--whatsapp,
+.modo-oscuro .mf-etiqueta {
+  color: #1E293B;
+}
+
+.modo-oscuro .mf-menu__enlace:hover,
+.modo-oscuro .mf-menu__enlace[aria-current="page"],
+.modo-oscuro .mf-migas a,
+.modo-oscuro .mf-footer__marca,
+.modo-oscuro .mf-footer__enlace:hover,
+.modo-oscuro .mf-footer__enlace-verde,
+.modo-oscuro .mf-footer__datos .material-symbols-outlined,
+.modo-oscuro .mf-especie__nombre,
+.modo-oscuro .mf-servicio__titulo {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .mf-footer__urgencia,
+.modo-oscuro .mf-footer__link--urgencia,
+.modo-oscuro .mf-footer__datos .mf-footer__icono-urgencia {
+  color: #FDBA9B;
+}
+
+.modo-oscuro .mf-especie--ave {
+  --especie-texto: #1E293B;
+}
+
+.modo-oscuro .mf-especie--perro {
+  --especie-enlace: var(--color-primario-claro);
+}
+
+.modo-oscuro .mf-marca__logo {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 2px 6px;
 }

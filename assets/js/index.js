@@ -32,3 +32,28 @@ botones.forEach((boton) => {
 });
 
 actualizarContador();
+
+const formulario = document.querySelector('.mf-suscripcion');
+const campoCorreo = document.getElementById('correo-boletin');
+const mensaje = document.getElementById('mensaje-suscripcion');
+
+function mostrarMensaje(texto, esExito) {
+  mensaje.textContent = texto;
+  mensaje.className = esExito
+    ? 'mf-suscripcion__mensaje mf-suscripcion__mensaje--ok'
+    : 'mf-suscripcion__mensaje mf-suscripcion__mensaje--error';
+}
+
+formulario.addEventListener('submit', (evento) => {
+  evento.preventDefault();
+  const correo = campoCorreo.value.trim();
+
+  if (correo === '') {
+    mostrarMensaje('Escribe tu correo electrónico.', false);
+  } else if (!correo.includes('@') || !correo.includes('.')) {
+    mostrarMensaje('El correo no es válido. Ejemplo: nombre@correo.com', false);
+  } else {
+    mostrarMensaje('¡Gracias por suscribirte!', true);
+    formulario.reset();
+  }
+});
