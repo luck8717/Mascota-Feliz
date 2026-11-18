@@ -46,7 +46,6 @@ function mostrarMensaje(texto, esExito) {
 
 formulario.addEventListener('submit', (evento) => {
   evento.preventDefault();
-
   const correo = campoCorreo.value.trim();
 
   if (correo === '') {
