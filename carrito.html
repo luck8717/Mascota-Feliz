@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Carrito de Compras</title>
+
     <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/theme.js" defer></script>
 </head>
 
 <body>
@@ -22,9 +24,11 @@
 
             <nav>
                 <a href="index.html">Inicio</a>
-                <a href="catalogo.html">Catálogo</a>
+                <a href="servicios.html">Servicios Médicos</a>
+                <a href="catalogo.html">Tienda para tus Mascotas</a>
                 <a href="carrito.html">Carrito</a>
                 <a href="consejos.html">Consejos</a>
+
             </nav>
         </div>
     </header>
@@ -53,45 +57,7 @@
                     </tr>
                 </thead>
 
-                <tbody>
-                    <tr>
-                        <td>Ricocan Adulto Carne</td>
-                        <td>Alimento para perro adulto de raza pequeña</td>
-                        <td>S/ 39.90</td>
-                        <td>
-                            <input type="number" min="1" value="1">
-                        </td>
-                        <td>S/ 39.90</td>
-                        <td>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Pelota de Caucho</td>
-                        <td>Juguete para perros y juegos activos</td>
-                        <td>S/ 18.90</td>
-                        <td>
-                            <input type="number" min="1" value="1">
-                        </td>
-                        <td>S/ 18.90</td>
-                        <td>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Ricocat Adulto Pescado</td>
-                        <td>Alimento para gato adulto</td>
-                        <td>S/ 45.90</td>
-                        <td>
-                            <input type="number" min="1" value="1">
-                        </td>
-                        <td>S/ 45.90</td>
-                        <td>
-                            <button type="button">Eliminar</button>
-                        </td>
-                    </tr>
+                <tbody id="lista-carrito" >
                 </tbody>
             </table>
 
@@ -99,18 +65,103 @@
 
 
         <section>
-            <h2>Resumen de compra</h2>
+    <h2>Resumen de compra</h2>
 
-            <p>Subtotal: S/ 104.70</p>
-            <p>Costo de envío: S/ 10.00</p>
-            <h3>Total: S/ 114.70</h3>
+    <p>
+        Subtotal:
+        <span id="subtotal-general">S/ 0.00</span>
+    </p>
 
-            <button type="button">Continuar comprando</button>
-            <button type="button">Finalizar compra</button>
-        </section>
+    <p>
+        Costo de envío:
+        <span id="costo-envio">S/ 0.00</span>
+    </p>
+
+    <h3>
+        Total:
+        <span id="total-compra">S/ 0.00</span>
+    </h3>
+
+    <p id="mensaje-vacio" style="display: none;">
+        Tu carrito está vacío.
+    </p>
+
+    <button type="button">Continuar comprando</button>
+    <button type="button" id="btn-finalizar">Finalizar compra</button>
+</section>
+
+    <!-- Ventana de métodos de pago -->
+<div id="ventana-pago" class="modal-pago" style="display: none;">
+
+    <div class="contenido-pago">
+
+        <button type="button" id="cerrar-pago" class="cerrar-pago">
+            ✖
+        </button>
+
+        <h2>💳 Método de pago</h2>
+        <p>Selecciona cómo deseas pagar tu compra.</p>
+
+        <h3>
+            Total a pagar:
+            <span id="total-pago">S/ 0.00</span>
+        </h3>
+
+        <label for="metodo-pago">Selecciona tu método de pago:</label>
+
+        <select id="metodo-pago">
+            <option value="">Seleccionar método</option>
+            <option value="tarjeta">Tarjeta de crédito o débito</option>
+            <option value="yape">Yape</option>
+            <option value="plin">Plin</option>
+            <option value="contraentrega">Pago contra entrega</option>
+        </select>
+
+        <!-- Información de tarjeta -->
+        <div id="pago-tarjeta" class="opcion-pago" style="display: none;">
+            <h3>💳 Pago con tarjeta</h3>
+
+            <label>Número de tarjeta (simulación)</label>
+            <input type="text" placeholder="XXXX XXXX XXXX XXXX">
+
+            <label>Nombre del titular</label>
+            <input type="text" placeholder="Nombre del titular">
+
+            <label>Fecha de vencimiento</label>
+            <input type="text" placeholder="MM/AA">
+        </div>
+
+        <!-- Información de Yape -->
+        <div id="pago-yape" class="opcion-pago" style="display: none;">
+            <h3>📱 Pago con Yape</h3>
+            <p>Realiza tu pago al número de Yape de nuestra tienda.</p>
+            <p><strong>Número:</strong> 999999999</p>
+            <p>Después de realizar el pago, confirma tu pedido.</p>
+        </div>
+
+        <!-- Información de Plin -->
+        <div id="pago-plin" class="opcion-pago" style="display: none;">
+            <h3>📱 Pago con Plin</h3>
+            <p>Realiza tu pago al número de Plin de nuestra tienda.</p>
+            <p><strong>Número:</strong> 999999999</p>
+            <p>Después de realizar el pago, confirma tu pedido.</p>
+        </div>
+
+        <!-- Pago contra entrega -->
+        <div id="pago-contraentrega" class="opcion-pago" style="display: none;">
+            <h3>💵 Pago contra entrega</h3>
+            <p>Paga cuando recibas los productos en tu domicilio.</p>
+        </div>
+
+        <button type="button" id="confirmar-pago">
+            Confirmar pedido
+        </button>
+
+    </div>
+</div>
 
     </main>
-
+        <script src="assets/js/carrito.js"></script>
 </body>
 
 </html>
