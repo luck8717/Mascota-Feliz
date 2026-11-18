@@ -3160,6 +3160,8 @@ footer p {
   background-color: #0F172A;
   color: var(--color-neutro);
   border-color: var(--color-borde);
+}
+
 .mf-carrito {
   position: relative;
 }
