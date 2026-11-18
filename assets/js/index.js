@@ -3,7 +3,6 @@ const contador = document.getElementById('contador-carrito');
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-// Suma las cantidades y actualiza el numerito del header
 function actualizarContador() {
   let total = 0;
   carrito.forEach((producto) => {
@@ -32,5 +31,4 @@ botones.forEach((boton) => {
   });
 });
 
-// Al cargar la página, mostrar lo que ya estaba guardado
 actualizarContador();
