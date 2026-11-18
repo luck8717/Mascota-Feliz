@@ -4,12 +4,10 @@ const pagina = document.documentElement; // la etiqueta <html>
 
 boton.addEventListener('click', () => {
   if (pagina.classList.contains('modo-oscuro')) {
-    // Estaba oscuro: lo pasamos a claro
     pagina.classList.remove('modo-oscuro');
     icono.textContent = 'dark_mode';
     localStorage.setItem('tema', 'claro');
   } else {
-    // Estaba claro: lo pasamos a oscuro
     pagina.classList.add('modo-oscuro');
     icono.textContent = 'light_mode';
     localStorage.setItem('tema', 'oscuro');
