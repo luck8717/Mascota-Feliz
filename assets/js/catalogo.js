@@ -2,112 +2,113 @@
 (() => {
   "use strict";
   const productos = [
-  {
-    "id": 1,
-    "name": "Royal Canin Mini Adult 7.5kg",
-    "description": "Nutrición equilibrada para razas pequeñas con soporte digestivo\n              y salud articular.",
-    "image": "assets/img/productos/royal-canin.jpg",
-    "price": 42.0,
-    "pet": "perros",
-    "category": "alimentos",
-    "brand": "royal-canin",
-    "rating": 4.9,
-    "reviews": 124,
-    "stock": true
-  },
-  {
-    "id": 2,
-    "name": "Bravecto Comprimido Masticable Perros (10–20kg)",
-    "description": "Protección continua contra pulgas y garrapatas por 12 semanas\n              completas.",
-    "image": "assets/img/productos/bravecto.jpg",
-    "price": 34.5,
-    "pet": "perros",
-    "category": "antipulgas",
-    "brand": "bravecto",
-    "rating": 5.0,
-    "reviews": 89,
-    "stock": true
-  },
-  {
-    "id": 3,
-    "name": "Hill's Prescription Diet Feline c/d Multicare 3.8kg",
-    "description": "Soporte urinario comprobado para prevenir cálculos de estruvita\n              en gatos.",
-    "image": "assets/img/productos/royal-canin.jpg",
-    "price": 52.0,
-    "pet": "gatos",
-    "category": "farmacia",
-    "brand": "hills",
-    "rating": 4.8,
-    "reviews": 67,
-    "stock": true
-  },
-  {
-    "id": 4,
-    "name": "ZuPreem FruitBlend Alimento Completo para Loros 1.6kg",
-    "description": "Pellets enriquecidos con vitaminas esenciales y sabores a frutas\n              naturales.",
-    "image": "assets/img/productos/mezcla-premium.jpg",
-    "price": 21.5,
-    "pet": "aves",
-    "category": "alimentos",
-    "brand": "zupreem",
-    "rating": 4.9,
-    "reviews": 42,
-    "stock": true
-  },
-  {
-    "id": 5,
-    "name": "Rascador Torre Multinivel para Gatos con Hamaca",
-    "description": "Estructura reforzada con postes de sisal natural, plataforma\n              acolchada y zona de descanso.",
-    "image": "assets/img/productos/arena-sanitaria.jpg",
-    "price": 65.0,
-    "pet": "gatos",
-    "category": "juguetes",
-    "brand": "mascotafeliz",
-    "rating": 4.7,
-    "reviews": 53,
-    "stock": true
-  },
-  {
-    "id": 6,
-    "name": "Versele-Laga Prestige Mezcla de Semillas para Canarios 1kg",
-    "description": "Fórmula tradicional de semillas selectas y linaza para el canto y\n              la vitalidad.",
-    "image": "assets/img/productos/mezcla-premium.jpg",
-    "price": 8.9,
-    "pet": "aves",
-    "category": "alimentos",
-    "brand": "versele-laga",
-    "rating": 4.8,
-    "reviews": 35,
-    "stock": true
-  },
-  {
-    "id": 7,
-    "name": "Suplemento Articular Condroprotector Mascotas 60 comprimidos",
-    "description": "Glucosamina, condroitina y colágeno hidrolizado para mejorar la\n              movilidad articular.",
-    "image": "assets/img/productos/bravecto.jpg",
-    "price": 28.0,
-    "pet": "perros",
-    "category": "farmacia",
-    "brand": "mascotafeliz",
-    "rating": 4.9,
-    "reviews": 98,
-    "stock": true
-  },
-  {
-    "id": 8,
-    "name": "Jaula Espaciosa para Ninfas y Agapornis con Accesorios",
-    "description": "Barrotes con recubrimiento no tóxico, bandeja extraíble y apertura\n              superior de juego.",
-    "image": "assets/img/productos/mezcla-premium.jpg",
-    "price": 89.0,
-    "pet": "aves",
-    "category": "juguetes",
-    "brand": "mascotafeliz",
-    "rating": 5.0,
-    "reviews": 19,
-    "stock": true
-  }
-];
-  const CLAVE_CARRITO = "mascotafeliz_carrito";
+    {
+      "id": 1,
+      "name": "Royal Canin Mini Adult 7.5kg",
+      "description": "Nutrición equilibrada para razas pequeñas con soporte digestivo y salud articular.",
+      "image": "assets/img/productos/royal-canin.jpg",
+      "price": 42.0,
+      "pet": "perros",
+      "category": "alimentos",
+      "brand": "royal-canin",
+      "rating": 4.9,
+      "reviews": 124,
+      "stock": true
+    },
+    {
+      "id": 2,
+      "name": "Bravecto Comprimido Masticable Perros (10–20kg)",
+      "description": "Protección continua contra pulgas y garrapatas por 12 semanas completas.",
+      "image": "assets/img/productos/bravecto.jpg",
+      "price": 34.5,
+      "pet": "perros",
+      "category": "antipulgas",
+      "brand": "bravecto",
+      "rating": 5.0,
+      "reviews": 89,
+      "stock": true
+    },
+    {
+      "id": 3,
+      "name": "Hill's Prescription Diet Feline c/d Multicare 3.8kg",
+      "description": "Soporte urinario comprobado para prevenir cálculos de estruvita en gatos.",
+      "image": "assets/img/productos/royal-canin.jpg",
+      "price": 52.0,
+      "pet": "gatos",
+      "category": "farmacia",
+      "brand": "hills",
+      "rating": 4.8,
+      "reviews": 67,
+      "stock": true
+    },
+    {
+      "id": 4,
+      "name": "ZuPreem FruitBlend Alimento Completo para Loros 1.6kg",
+      "description": "Pellets enriquecidos con vitaminas esenciales y sabores a frutas naturales.",
+      "image": "assets/img/productos/mezcla-premium.jpg",
+      "price": 21.5,
+      "pet": "aves",
+      "category": "alimentos",
+      "brand": "zupreem",
+      "rating": 4.9,
+      "reviews": 42,
+      "stock": true
+    },
+    {
+      "id": 5,
+      "name": "Rascador Torre Multinivel para Gatos con Hamaca",
+      "description": "Estructura reforzada con postes de sisal natural, plataforma acolchada y zona de descanso.",
+      "image": "assets/img/productos/arena-sanitaria.jpg",
+      "price": 65.0,
+      "pet": "gatos",
+      "category": "juguetes",
+      "brand": "mascotafeliz",
+      "rating": 4.7,
+      "reviews": 53,
+      "stock": true
+    },
+    {
+      "id": 6,
+      "name": "Versele-Laga Prestige Mezcla de Semillas para Canarios 1kg",
+      "description": "Fórmula tradicional de semillas selectas y linaza para el canto y la vitalidad.",
+      "image": "assets/img/productos/mezcla-premium.jpg",
+      "price": 8.9,
+      "pet": "aves",
+      "category": "alimentos",
+      "brand": "versele-laga",
+      "rating": 4.8,
+      "reviews": 35,
+      "stock": true
+    },
+    {
+      "id": 7,
+      "name": "Suplemento Articular Condroprotector Mascotas 60 comprimidos",
+      "description": "Glucosamina, condroitina y colágeno hidrolizado para mejorar la movilidad articular.",
+      "image": "assets/img/productos/bravecto.jpg",
+      "price": 28.0,
+      "pet": "perros",
+      "category": "farmacia",
+      "brand": "mascotafeliz",
+      "rating": 4.9,
+      "reviews": 98,
+      "stock": true
+    },
+    {
+      "id": 8,
+      "name": "Jaula Espaciosa para Ninfas y Agapornis con Accesorios",
+      "description": "Barrotes con recubrimiento no tóxico, bandeja extraíble y apertura superior de juego.",
+      "image": "assets/img/productos/mezcla-premium.jpg",
+      "price": 89.0,
+      "pet": "aves",
+      "category": "juguetes",
+      "brand": "mascotafeliz",
+      "rating": 5.0,
+      "reviews": 19,
+      "stock": true
+    }
+  ];
+
+  const CLAVE_CARRITO = "carrito";
   const grid = document.getElementById("catalogo-productos");
   if (!grid) return;
 
@@ -126,24 +127,29 @@
     try { return JSON.parse(localStorage.getItem(CLAVE_CARRITO)) || []; }
     catch { return []; }
   };
+
   const guardarCarrito = (carrito) => {
     localStorage.setItem(CLAVE_CARRITO, JSON.stringify(carrito));
     actualizarContador();
   };
+
   function actualizarContador() {
-    const total = leerCarrito().reduce((s, p) => s + p.quantity, 0);
+    const total = leerCarrito().reduce((s, p) => s + (Number(p.cantidad) || 0), 0);
     if (contadorCarrito) {
       contadorCarrito.textContent = total;
       contadorCarrito.setAttribute("aria-label", `${total} productos en el carrito`);
       contadorCarrito.hidden = total === 0;
     }
   }
+
   function notificar(mensaje) {
+    if (!aviso) return;
     aviso.textContent = mensaje;
     aviso.classList.add("is-visible");
     clearTimeout(avisoTimer);
     avisoTimer = setTimeout(() => aviso.classList.remove("is-visible"), 2400);
   }
+
   const moneda = (valor) => `S/ ${valor.toFixed(2)}`;
   const valores = (nombre) => [...form.querySelectorAll(`input[name="${nombre}"]:checked`)].map(el => el.value);
 
@@ -154,6 +160,7 @@
     const marcas = valores("marca");
     const soloStock = form.querySelector('input[name="stock"]:checked') !== null;
     const precioMax = Number(rango.value);
+
     let lista = productos.filter(p => {
       const coincideTexto = `${p.name} ${p.description} ${p.brand}`.toLocaleLowerCase("es").includes(texto);
       return coincideTexto
@@ -165,10 +172,10 @@
     });
 
     switch (ordenar.value) {
-      case "precio-asc": lista.sort((a,b) => a.price-b.price); break;
-      case "precio-desc": lista.sort((a,b) => b.price-a.price); break;
-      case "rating": lista.sort((a,b) => b.rating-a.rating); break;
-      default: lista.sort((a,b) => b.rating-a.rating || a.id-b.id);
+      case "precio-asc": lista.sort((a, b) => a.price - b.price); break;
+      case "precio-desc": lista.sort((a, b) => b.price - a.price); break;
+      case "rating": lista.sort((a, b) => b.rating - a.rating); break;
+      default: lista.sort((a, b) => b.rating - a.rating || a.id - b.id);
     }
 
     cantidad.textContent = lista.length;
@@ -183,15 +190,22 @@
       ...(texto ? [`Búsqueda: ${texto}`] : [])
     ];
     if (!etiquetas.length) {
-      const li=document.createElement("li"); li.textContent="Sin filtros"; filtrosActivos.append(li);
-    } else etiquetas.forEach(etiqueta => {
-      const li=document.createElement("li"); li.textContent=etiqueta; filtrosActivos.append(li);
-    });
+      const li = document.createElement("li");
+      li.textContent = "Sin filtros";
+      filtrosActivos.append(li);
+    } else {
+      etiquetas.forEach(etiqueta => {
+        const li = document.createElement("li");
+        li.textContent = etiqueta;
+        filtrosActivos.append(li);
+      });
+    }
 
     if (!lista.length) {
       grid.innerHTML = '<div class="mf-sin-resultados"><span>🔎</span><h3>No encontramos productos</h3><p>Prueba cambiando la búsqueda o quitando algunos filtros.</p></div>';
       return;
     }
+
     grid.innerHTML = lista.map(p => `
       <article class="mf-tarjeta" data-producto="${p.id}">
         <div class="mf-tarjeta__etiquetas">
@@ -222,30 +236,49 @@
   ordenar.addEventListener("change", renderizar);
   rango.addEventListener("input", renderizar);
   document.getElementById("limpiar-filtros").addEventListener("click", () => {
-    form.reset(); buscador.value=""; ordenar.value="populares"; rango.value="120"; renderizar();
+    form.reset();
+    buscador.value = "";
+    ordenar.value = "populares";
+    rango.value = "120";
+    renderizar();
   });
 
   grid.addEventListener("click", e => {
-    const card=e.target.closest(".mf-tarjeta");
+    const card = e.target.closest(".mf-tarjeta");
     if (!card) return;
-    const quantityEl=card.querySelector(".cantidad-valor");
+
+    const quantityEl = card.querySelector(".cantidad-valor");
     if (e.target.matches("[data-cantidad]")) {
-      quantityEl.textContent=Math.max(1, Math.min(99, Number(quantityEl.textContent)+Number(e.target.dataset.cantidad)));
+      quantityEl.textContent = Math.max(1, Math.min(99, Number(quantityEl.textContent) + Number(e.target.dataset.cantidad)));
     }
-    const addButton=e.target.closest("[data-agregar]");
+
+    const addButton = e.target.closest("[data-agregar]");
     if (addButton) {
-      const product=productos.find(p => p.id === Number(addButton.dataset.agregar));
-      const quantity=Number(quantityEl.textContent);
-      const cart=leerCarrito();
-      const existing=cart.find(p => p.id === product.id);
-      if (existing) existing.quantity += quantity;
-      else cart.push({...product, quantity});
+      const product = productos.find(p => p.id === Number(addButton.dataset.agregar));
+      const quantity = Number(quantityEl.textContent) || 1;
+      const cart = leerCarrito();
+      const existing = cart.find(p => p.id === product.id || p.nombre === product.name);
+
+      if (existing) {
+        existing.cantidad = (Number(existing.cantidad) || 0) + quantity;
+      } else {
+        cart.push({
+          id: product.id,
+          nombre: product.name,
+          descripcion: product.description.replace(/\s+/g, " ").trim(),
+          precio: product.price,
+          cantidad: quantity
+        });
+      }
+
       guardarCarrito(cart);
       notificar(`${product.name} se agregó al carrito.`);
-      addButton.textContent="✓ Agregado";
-      setTimeout(() => { if (addButton.isConnected) addButton.textContent="🛒 Añadir al Carrito"; }, 1100);
+      quantityEl.textContent = "1";
+      addButton.textContent = "✓ Agregado";
+      setTimeout(() => { if (addButton.isConnected) addButton.textContent = "🛒 Añadir al Carrito"; }, 1100);
     }
   });
+
   window.addEventListener("storage", actualizarContador);
   actualizarContador();
   renderizar();

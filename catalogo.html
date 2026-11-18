@@ -26,10 +26,11 @@
   <script src="assets/js/theme.js" defer></script>
 </head>
 
+<script src="assets/js/carrito.js"></script>
+
+<script defer="True" src="assets/js/catalogo.js"></script>
+
 <body>
-
-  <!-- ENCABEZADO Y NAVEGACIÓN -->
-
   <header class="mf-header">
 
     <div class="mf-header__topbar">
@@ -52,7 +53,6 @@
       </div>
     </div>
 
-    <!-- Navegación principal -->
     <div class="mf-header__principal">
       <div class="mf-header__barra mf-contenedor">
         <a class="mf-marca" href="index.html">
@@ -84,18 +84,15 @@
     </div>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
 
   <main>
 
-    <!-- Migas de pan -->
     <nav aria-label="Migas de pan" class="mf-migas mf-contenedor">
       <a href="index.html">Inicio</a>
       <span aria-hidden="true">›</span>
       <span aria-current="page">Tienda de Mascotas</span>
     </nav>
 
-    <!-- Cabecera de la tienda -->
     <section class="mf-tienda__cabecera mf-contenedor">
       <p class="mf-tienda__insignia">✚ Farmacia y Nutrición Certificada</p>
       <h1 class="mf-tienda__titulo">Tienda &amp; Farmacia Veterinaria <span>MascotaFeliz</span></h1>
@@ -107,7 +104,6 @@
       </ul>
     </section>
 
-    <!-- Barra de envíos -->
     <div class="mf-tienda__envios">
       <div class="mf-contenedor mf-tienda__envios-interior">
         <p>⚡ Envíos exprés en el día para pedidos antes de las 14:00 | Retiro gratis en clínica en 30 minutos</p>
@@ -116,7 +112,6 @@
       </div>
     </div>
 
-    <!-- DISTRIBUCIÓN DEL CATÁLOGO -->
 
     <div class="mf-contenedor mf-tienda__layout">
 
@@ -426,9 +421,6 @@
 
   <!-- Notificaciones del carrito -->
   <div aria-live="polite" class="mf-aviso" id="aviso-carrito" role="status"></div>
-
-  <!-- Archivo JavaScript del catálogo -->
-  <script defer="True" src="assets/js/catalogo.js"></script>
 
 </body>
 

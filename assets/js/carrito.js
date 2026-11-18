@@ -2,6 +2,7 @@
 // 1. TIENDA: Agregar productos al localStorage
 // ==========================================
 document.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById("catalogo-productos")) return;
     const tarjetas = document.querySelectorAll(".mf-tarjeta");
 
     tarjetas.forEach(function (tarjeta) {
@@ -51,8 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             localStorage.setItem("carrito", JSON.stringify(carrito));
-            alert("¡" + nombre + " agregado al carrito! 🛒");
-
             cantidad = 1;
             cantidadSpan.textContent = "1";
         });
