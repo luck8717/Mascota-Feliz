@@ -3185,3 +3185,29 @@ footer p {
 .mf-carrito__contador[hidden] {
   display: none;
 }
+
+.mf-suscripcion__mensaje {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.mf-suscripcion__mensaje:empty {
+  display: none;
+}
+
+.mf-suscripcion__mensaje--ok {
+  color: var(--color-primario-oscuro);
+}
+
+.mf-suscripcion__mensaje--error {
+  color: var(--color-urgencia);
+}
+
+.modo-oscuro .mf-suscripcion__mensaje--ok {
+  color: var(--color-primario-claro);
+}
+
+.modo-oscuro .mf-suscripcion__mensaje--error {
+  color: #FDBA9B;
+}

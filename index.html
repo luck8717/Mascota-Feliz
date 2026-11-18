@@ -634,12 +634,13 @@
                 <h2 class="mf-footer__titulo">Consejos &amp; Comunidad</h2>
                 <p class="mf-footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
                     promociones de nuestra tienda.</p>
-                <form class="mf-suscripcion" action="#" method="post">
+                <form class="mf-suscripcion" action="#" method="post" novalidate>
                     <label class="mf-solo-lectores" for="correo-boletin">Correo electrónico</label>
                     <input class="mf-suscripcion__campo" type="email" name="correo" id="correo-boletin"
                         placeholder="Introduce tu correo electrónico" autocomplete="email" required>
                     <button class="mf-btn mf-btn--primario mf-suscripcion__boton" type="submit">Suscribirme
                         gratis</button>
+                    <p class="mf-suscripcion__mensaje" id="mensaje-suscripcion" role="status"></p>
                 </form>
             </div>
         </div>
