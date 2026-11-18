@@ -1,6 +1,6 @@
 const boton = document.getElementById('btn-tema');
 const icono = boton.querySelector('.material-symbols-outlined');
-const pagina = document.documentElement; // la etiqueta <html>
+const pagina = document.documentElement;
 
 boton.addEventListener('click', () => {
   if (pagina.classList.contains('modo-oscuro')) {
