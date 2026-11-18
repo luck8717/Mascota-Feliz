@@ -20,8 +20,11 @@
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
 
 </head>
+
+
 
 <body>
     <header class="mf-header">
@@ -57,7 +60,6 @@
                         <li><a class="mf-menu__enlace" href="index.html" aria-current="page">Inicio</a></li>
                         <li><a class="mf-menu__enlace" href="servicios.html">Servicios Médicos</a></li>
                         <li><a class="mf-menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
-                        <li><a class="mf-menu__enlace" href="nosotros.html">Sobre Nosotros</a></li>
                     </ul>
                 </nav>
 
@@ -73,6 +75,7 @@
                     </button>
                     <a class="mf-carrito" href="carrito.html" aria-label="Carrito de compras">
                         <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
+                        <span class="ms-carrito__contador" id="contador-carrito">0</span>
                     </a>
                 </div>
             </div>
@@ -385,7 +388,8 @@
                                 <del class="mf-producto__precio-anterior">S/ 79.90</del>
                             </div>
                             <button class="mf-producto__carrito" type="button"
-                                aria-label="Agregar Royal Canin Maxi Puppy al carrito">
+                                aria-label="Agregar Royal Canin Maxi Puppy al carrito"
+                                data-nombre="Royal Canin Maxi Puppy 15kg" data-precio="68.00">
                                 <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
                             </button>
                         </div>
@@ -412,7 +416,8 @@
                         <div class="mf-producto__pie">
                             <strong class="mf-producto__precio">S/ 32.50</strong>
                             <button class="mf-producto__carrito" type="button"
-                                aria-label="Agregar Bravecto Antipulgas Perros M al carrito">
+                                aria-label="Agregar Bravecto Antipulgas Perros M al carrito"
+                                data-nombre="Bravecto Antipulgas Perros M (10-20kg)" data-precio="32.50">
                                 <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
                             </button>
                         </div>
@@ -438,7 +443,8 @@
                         <div class="mf-producto__pie">
                             <strong class="mf-producto__precio">S/ 18.00</strong>
                             <button class="mf-producto__carrito" type="button"
-                                aria-label="Agregar Arena Sanitaria Aglomerante al carrito">
+                                aria-label="Agregar Arena Sanitaria Aglomerante al carrito"
+                                data-nombre="Arena Sanitaria Aglomerante (Gatos) 10kg" data-precio="18.00">
                                 <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
                             </button>
                         </div>
@@ -465,7 +471,8 @@
                         <div class="mf-producto__pie">
                             <strong class="mf-producto__precio">S/ 14.90</strong>
                             <button class="mf-producto__carrito" type="button"
-                                aria-label="Agregar Mezcla Premium Loros y Aves al carrito">
+                                aria-label="Agregar Mezcla Premium Loros y Aves al carrito"
+                                data-nombre="Mezcla Premium Loros y Aves 2kg" data-precio="14.90">
                                 <span class="material-symbols-outlined" aria-hidden="true">add_shopping_cart</span>
                             </button>
                         </div>

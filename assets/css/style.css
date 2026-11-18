@@ -3160,4 +3160,27 @@ footer p {
   background-color: #0F172A;
   color: var(--color-neutro);
   border-color: var(--color-borde);
+.mf-carrito {
+  position: relative;
+}
+
+.mf-carrito__contador {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  display: grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding-inline: 5px;
+  border-radius: 999px;
+  background: var(--color-urgencia);
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.mf-carrito__contador[hidden] {
+  display: none;
 }
