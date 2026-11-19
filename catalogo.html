@@ -1,412 +1,427 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="Tienda y farmacia veterinaria MascotaFeliz: alimentos, antipulgas, farmacia y accesorios para perros, gatos y aves con envío exprés." name="description"/>
-    <title>MascotaFeliz - Tienda y Farmacia Veterinaria</title>
+<meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta
+    content="Tienda y farmacia veterinaria MascotaFeliz: alimentos, antipulgas, farmacia y accesorios para perros, gatos y aves con envío exprés."
+    name="description" />
+  <title>MascotaFeliz - Tienda y Farmacia Veterinaria</title>
 
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+    rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
 
-    <link href="assets/css/normalize.css" rel="stylesheet"/>
-    <link href="assets/css/base.css" rel="stylesheet"/>
-    <link href="assets/css/escatalogo.css" rel="stylesheet"/>
-    
-    <script src="assets/js/theme.js" defer></script>
-    <script defer="True" src="assets/js/catalogo.js"></script>
-    
-  </head>
+  <link href="assets/css/normalize.css" rel="stylesheet" />
+  <link href="assets/css/base.css" rel="stylesheet" />
+  <link href="assets/css/escatalogo.css" rel="stylesheet" />
 
-  <body>
-    
-    <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/catalogo.js" defer></script>
+  <script src="assets/js/carrito.js" defer></script>
+</head>
 
-    <header class="mf-header">
+<body>
 
-      <div class="mf-header__topbar">
-        <div class="mf-contenedor">
-          <ul class="mf-header__contacto">
-            <li class="mf-header__dato">
-              <span aria-hidden="true" class="material-symbols-outlined">emergency</span>
-              Urgencias 24/7:
-              <a href="tel:+51987654321">+51 987 654 321</a>
-            </li>
-            <li class="mf-header__dato">
-              <span aria-hidden="true" class="material-symbols-outlined">schedule</span>
-              Lun-Sáb: 8:00-20:00
-            </li>
-            <li class="mf-header__dato">
-              <span aria-hidden="true" class="material-symbols-outlined">location_on</span>
-              Av. Principal de las Mascotas 42, Lima
-            </li>
-          </ul>
-        </div>
-      </div>
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
 
-      <!-- Navegación principal -->
-      <div class="mf-header__principal">
-        <div class="mf-header__barra mf-contenedor">
-          <a class="mf-marca" href="index.html">
-            <img alt="MascotaFeliz, ir al inicio" class="mf-marca__logo" height="48" src="assets/img/logos/logo.jpg" width="150"/>
-          </a>
-          <nav aria-label="Navegación principal" class="mf-menu">
-            <ul class="mf-menu__lista">
-              <li><a class="mf-menu__enlace" href="index.html">Inicio</a></li>
-              <li><a class="mf-menu__enlace" href="servicios.html">Servicios Médicos</a></li>
-              <li><a aria-current="page" class="mf-menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
-            </ul>
-          </nav>
+  <header class="mf-header">
 
-          <!-- Acciones del encabezado -->
-          <div class="mf-header__acciones">
-            <a class="mf-btn mf-btn--primario" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
-              <span aria-hidden="true" class="material-symbols-outlined">calendar_month</span>
-              Agendar Cita
-            </a>
-            <a aria-label="Carrito de compras" class="mf-carrito" href="carrito.html">
-              <span aria-hidden="true" class="material-symbols-outlined">shopping_cart</span>
-              <span aria-label="0 productos en el carrito" class="mf-carrito__contador" id="contador-carrito">0</span></a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- CONTENIDO PRINCIPAL -->
-
-    <main>
-
-      <!-- Migas de pan -->
-      <nav aria-label="Migas de pan" class="mf-migas mf-contenedor">
-        <a href="index.html">Inicio</a>
-        <span aria-hidden="true">›</span>
-        <span aria-current="page">Tienda de Mascotas</span>
-      </nav>
-
-      <!-- Cabecera de la tienda -->
-      <section class="mf-tienda__cabecera mf-contenedor">
-        <p class="mf-tienda__insignia">✚ Farmacia y Nutrición Certificada</p>
-        <h1 class="mf-tienda__titulo">Tienda &amp; Farmacia Veterinaria <span>MascotaFeliz</span></h1>
-        <p class="mf-tienda__subtitulo">Nutrición de alta gama, farmacia certificada, antipulgas y accesorios para
-          consentir a perros, gatos y aves con envío a domicilio en 24h.</p>
-        <ul class="mf-tienda__puntos">
-          <li>🚚 <strong>Envío Exprés 24h</strong><span>Gratis desde S/ 149</span></li>
-          <li>🛡️ <strong>Control Clínico</strong><span>Supervisado por veterinarios</span></li>
+    <div class="mf-header__topbar">
+      <div class="mf-contenedor">
+        <ul class="mf-header__contacto">
+          <li class="mf-header__dato">
+            <span aria-hidden="true" class="material-symbols-outlined">emergency</span>
+            Urgencias 24/7:
+            <a href="tel:+51987654321">+51 987 654 321</a>
+          </li>
+          <li class="mf-header__dato">
+            <span aria-hidden="true" class="material-symbols-outlined">schedule</span>
+            Lun-Sáb: 8:00-20:00
+          </li>
+          <li class="mf-header__dato">
+            <span aria-hidden="true" class="material-symbols-outlined">location_on</span>
+            Av. Principal de las Mascotas 42, Lima
+          </li>
         </ul>
-      </section>
-
-      <!-- Barra de envíos -->
-      <div class="mf-tienda__envios">
-        <div class="mf-contenedor mf-tienda__envios-interior">
-          <p>⚡ Envíos exprés en el día para pedidos antes de las 14:00 | Retiro gratis en clínica en 30 minutos</p>
-          <a href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">¿Dudas o recetas?
-            Consúltanos</a>
-        </div>
       </div>
+    </div>
 
-      <!-- DISTRIBUCIÓN DEL CATÁLOGO -->
-
-      <div class="mf-contenedor mf-tienda__layout">
-
-        <!-- FILTROS LATERALES -->
-
-        <aside aria-label="Filtros de productos" class="mf-filtros">
-          <div class="mf-filtros__cabecera">
-            <h2>🎚️ Filtros</h2>
-            <button form="form-filtros" id="limpiar-filtros" type="reset">Limpiar todo</button>
-          </div>
-
-          <form action="#" id="form-filtros" method="get">
-
-            <!-- Filtro por mascota -->
-            <fieldset class="mf-filtros__grupo">
-              <legend>Filtro por Mascota</legend>
-              <label class="mf-filtros__opcion">
-                <input name="mascota" type="checkbox" value="perros"/>
-                🐶 Perros <span class="mf-filtros__cantidad">142</span>
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="mascota" type="checkbox" value="gatos"/>
-                🐱 Gatos <span class="mf-filtros__cantidad">98</span>
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="mascota" type="checkbox" value="aves"/>
-                🐦 Aves <span class="mf-filtros__cantidad">45</span>
-              </label>
-            </fieldset>
-
-            <!-- Filtro por categorías -->
-            <fieldset class="mf-filtros__grupo">
-              <legend>Categorías Especializadas</legend>
-              <label class="mf-filtros__opcion">
-                <input name="categoria" type="checkbox" value="alimentos"/>
-                🍖 Alimentos y Snacks <span class="mf-filtros__cantidad">110</span>
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="categoria" type="checkbox" value="farmacia"/>
-                ✚ Farmacia y Suplementos <span class="mf-filtros__cantidad">64</span>
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="categoria" type="checkbox" value="antipulgas"/>
-                🛡️ Antipulgas y Pipetas <span class="mf-filtros__cantidad">38</span>
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="categoria" type="checkbox" value="juguetes"/>
-                🧸 Juguetes y Hábitats <span class="mf-filtros__cantidad">49</span>
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="categoria" type="checkbox" value="higiene"/>
-                🧼 Higiene y Belleza <span class="mf-filtros__cantidad">24</span>
-              </label>
-            </fieldset>
-
-            <!-- Filtro por precio -->
-            <fieldset class="mf-filtros__grupo">
-              <legend>Rango de Precio <span class="mf-filtros__max" id="precio-maximo-texto">Hasta S/ 120</span></legend>
-              <input aria-label="Precio máximo" class="mf-filtros__rango" id="precio-maximo" max="120" min="5" name="precio" type="range" value="120"/>
-              <div class="mf-filtros__rango-marcas">
-                <span>S/ 5</span><span>S/ 60</span><span>S/ 120</span>
-              </div>
-            </fieldset>
-
-            <!-- Filtro por marcas -->
-            <fieldset class="mf-filtros__grupo">
-              <legend>Marcas Destacadas</legend>
-              <label class="mf-filtros__opcion">
-                <input name="marca" type="checkbox" value="royal-canin"/>
-                Royal Canin
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="marca" type="checkbox" value="bravecto"/>
-                Bravecto
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="marca" type="checkbox" value="versele-laga"/>
-                Versele-Laga
-              </label>
-              <label class="mf-filtros__opcion">
-                <input name="marca" type="checkbox" value="zupreem"/>
-                ZuPreem
-              </label>
-            </fieldset>
-
-            <!-- Filtro por disponibilidad -->
-            <fieldset class="mf-filtros__grupo">
-              <legend>Disponibilidad</legend>
-              <label class="mf-filtros__opcion">
-                <input name="stock" type="checkbox" value="hoy"/>
-                📦 En stock para entrega hoy
-                <span class="mf-filtros__nota">Despacho desde clínica local</span>
-              </label>
-            </fieldset>
-
-            <button class="mf-filtros__aplicar mf-btn mf-btn--primario" type="submit">Aplicar filtros</button>
-          </form>
-
-          <!-- Información sobre recetas -->
-          <div class="mf-filtros__receta">
-            <h3>✚ Farmacia con Receta</h3>
-            <p>¿Tu mascota necesita medicamentos sujetos a prescripción? Envíanos la orden médica por WhatsApp y
-              la validamos.</p>
-            <a href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">📄 Subir receta
-              médica</a>
-          </div>
-        </aside>
-
-        <!-- LISTADO DE PRODUCTOS          -->
-
-        <section aria-label="Listado de productos" class="mf-listado">
-
-          <!-- Barra de herramientas -->
-          <div class="mf-listado__barra">
-            <p class="mf-listado__contador">Mostrando <strong id="productos-cantidad">0</strong> productos</p>
-            <p class="mf-listado__stock">✔ Stock verificado en tiempo real</p>
-
-            <div class="mf-listado__herramientas">
-
-              <!-- Buscador -->
-              <label class="mf-listado__buscar">
-                <span aria-hidden="true" class="mf-listado__buscar-icono">🔍</span>
-                <input aria-label="Buscar productos" autocomplete="off" id="buscar-productos" name="buscar" placeholder="Buscar en farmacia y pienso" type="search"/>
-              </label>
-
-              <!-- Ordenamiento -->
-              <label class="mf-listado__ordenar">
-                Ordenar:
-                <select id="ordenar-productos" name="ordenar">
-                  <option value="populares">Más populares</option>
-                  <option value="precio-asc">Precio: menor a mayor</option>
-                  <option value="precio-desc">Precio: mayor a menor</option>
-                  <option value="rating">Mejor valorados</option>
-                </select>
-              </label>
-
-            </div>
-          </div>
-
-          <!-- Filtros activos -->
-          <ul aria-label="Filtros activos" class="mf-listado__activos" id="filtros-activos"><li>Filtros activos:</li></ul>
-
-          <!-- Contenedor dinámico de productos -->
-          <div aria-live="polite" class="mf-listado__rejilla" id="catalogo-productos"></div>
-
-          <!-- Paginación (estática) -->
-          <nav aria-label="Paginación del catálogo" class="mf-paginacion">
-            <p class="mf-paginacion__info">Página 1 de 24 <span>(285 resultados en catálogo)</span></p>
-            <ol class="mf-paginacion__lista">
-              <li><a aria-current="page" class="mf-paginacion__enlace mf-paginacion__enlace--actual" href="catalogo.html">1</a></li>
-              <li><a class="mf-paginacion__enlace" href="catalogo.html">2</a></li>
-              <li><a class="mf-paginacion__enlace" href="catalogo.html">3</a></li>
-              <li><span class="mf-paginacion__puntos">…</span></li>
-              <li><a class="mf-paginacion__enlace" href="catalogo.html">24</a></li>
-              <li><a class="mf-paginacion__enlace mf-paginacion__enlace--siguiente" href="catalogo.html">›</a></li>
-            </ol>
-          </nav>
-        </section>
-      </div>
-
-      <!-- GARANTÍAS DE COMPRA -->
-
-      <section aria-label="Garantías de compra" class="mf-garantias mf-contenedor">
-
-        <article class="mf-garantias__item">
-          <span aria-hidden="true" class="mf-garantias__icono">🧊</span>
-          <div>
-            <h2>Garantía Farmacéutica</h2>
-            <p>Todos los productos se almacenan con control de temperatura y trazabilidad por veterinarios
-              colegiados.</p>
-          </div>
-        </article>
-
-        <article class="mf-garantias__item">
-          <span aria-hidden="true" class="mf-garantias__icono">🛵</span>
-          <div>
-            <h2>Reparto Local Urgente</h2>
-            <p>Si tu mascota necesita antibióticos o alimento medicinal de urgencia, te lo entregamos en menos
-              de 3 horas en la ciudad.</p>
-          </div>
-        </article>
-
-        <article class="mf-garantias__item">
-          <span aria-hidden="true" class="mf-garantias__icono">↩️</span>
-          <div>
-            <h2>Devolución Segura</h2>
-            <p>30 días para cambios en accesorios o devoluciones asistidas en cualquiera de nuestras clínicas
-              veterinarias.</p>
-          </div>
-        </article>
-
-      </section>
-    </main>
-
-    <!-- PIE DE PÁGINA  -->
-
-    <footer class="mf-footer">
-      <div class="mf-footer__principal mf-contenedor">
-
-        <!-- Información de la empresa -->
-        <div class="mf-footer__columna">
-          <p class="mf-footer__marca">Mascota<span class="mf-footer__acento">Feliz</span></p>
-          <p class="mf-footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
-            bienestar y cariño de tus compañeros peludos y alados.</p>
-
-          <ul class="mf-footer__datos">
-            <li>
-              <span aria-hidden="true" class="material-symbols-outlined">verified</span>
-              <p class="mf-footer--equipo--medico">Equipo Médico Colegiado N.º 95130</p>
-            </li>
-            <li>
-              <span aria-hidden="true" class="material-symbols-outlined mf-footer__icono-urgencia">call</span>
-              <span class="mf-footer__link--urgencia">Urgencias 24h: <a class="mf-footer__urgencia" href="tel:+51987654321">+51 987 654
-                  321</a></span>
-            </li>
-            <li>
-              <span aria-hidden="true" class="material-symbols-outlined">location_on</span>
-              <a class="mf-footer__enlace-subrayado" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Principal+de+las+Mascotas+42%2C+Lima" rel="noopener noreferrer" target="_blank">Ver sedes en Google Maps</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Enlaces de servicios y productos -->
-        <nav aria-label="Servicios y Productos" class="mf-footer__columna">
-          <h2 class="mf-footer__titulo">Servicios y Productos por Especie</h2>
-          <ul class="mf-footer__lista">
-            <li><a class="mf-footer__enlace" href="servicios.html#perros">Medicina Integral para Perros</a></li>
-            <li><a class="mf-footer__enlace" href="servicios.html#gatos">Cuidados Especiales y Vacunación
-                Felina</a></li>
-            <li><a class="mf-footer__enlace" href="servicios.html#aves">Clínica y Bienestar de Aves Exóticas</a></li>
-            <li><a class="mf-footer__enlace" href="catalogo.html">Farmacia Veterinaria y Fármacos</a></li>
-            <li><a class="mf-footer__enlace" href="servicios.html#peluqueria">Peluquería Dermatológica e
-                Higiene</a></li>
-            <li><a class="mf-footer__enlace" href="servicios.html#urgencias">Cirugía y Hospitalización 24/7</a></li>
+    <div class="mf-header__principal">
+      <div class="mf-header__barra mf-contenedor">
+        <a class="mf-marca" href="index.html">
+          <img alt="MascotaFeliz, ir al inicio" class="mf-marca__logo" height="48" src="assets/img/logos/logo.jpg"
+            width="150" />
+        </a>
+        <nav aria-label="Navegación principal" class="mf-menu">
+          <ul class="mf-menu__lista">
+            <li><a class="mf-menu__enlace" href="index.html">Inicio</a></li>
+            <li><a class="mf-menu__enlace" href="servicios.html">Servicios Médicos</a></li>
+            <li><a aria-current="page" class="mf-menu__enlace" href="catalogo.html">Tienda para tus Mascotas</a></li>
           </ul>
         </nav>
 
-        <!-- Atención y sedes -->
-        <div class="mf-footer__columna">
-          <h2 class="mf-footer__titulo">Atención &amp; Sedes</h2>
-
-          <div class="mf-footer__sede">
-            <strong class="mf-footer__sede-titulo">Sede Central Lima</strong>
-            <address class="mf-footer__sede-contacto">Av. Principal de las Mascotas 42, Lima</address>
-            <p class="mf-footer__sede-detalle">Lun a Sáb de 8:00 a 20:00</p>
-          </div>
-
-          <div class="mf-footer__sede">
-            <strong class="mf-footer__sede-titulo">Centro Hospitalario Urgencias</strong>
-            <address class="mf-footer__sede-contacto">Calle del Rescate 20, Lima</address>
-            <p class="mf-footer__sede-detalle">Abierto 24 Horas / 365 Días</p>
-          </div>
-
-          <div class="mf-footer__sede">
-            <strong class="mf-footer__sede-titulo">WhatsApp Atención al Cliente:</strong>
-            <address class="mf-footer__sede-contacto">
-              <a class="mf-footer__enlace-verde" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">+51 999 999 999</a>
-            </address>
-          </div>
+        <!-- Acciones del encabezado -->
+        <div class="mf-header__acciones">
+          <a class="mf-btn mf-btn--primario" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
+            <span aria-hidden="true" class="material-symbols-outlined">calendar_month</span>
+            Agendar Cita
+          </a>
+          <button class="mf-carrito" id="btn-tema" type="button" aria-label="Cambiar modo oscuro" aria-pressed="false">
+            <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+          </button>
+          <a aria-label="Carrito de compras" class="mf-carrito" href="carrito.html">
+            <span aria-hidden="true" class="material-symbols-outlined">shopping_cart</span>
+            <span aria-label="0 productos en el carrito" class="mf-carrito__contador" id="contador-carrito">0</span></a>
         </div>
-
-        <!-- Formulario de suscripción -->
-        <div class="mf-footer__columna">
-          <h2 class="mf-footer__titulo">Consejos &amp; Comunidad</h2>
-          <p class="mf-footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
-            promociones de nuestra tienda.</p>
-
-          <form action="#" class="mf-suscripcion" method="post">
-            <label class="mf-solo-lectores" for="correo-boletin">Correo electrónico</label>
-            <input autocomplete="email" class="mf-suscripcion__campo" id="correo-boletin" name="correo" placeholder="Introduce tu correo electrónico" required="" type="email"/>
-            <button class="mf-btn mf-btn--primario mf-suscripcion__boton" type="submit">Suscribirme
-              gratis</button>
-          </form>
-        </div>
-
       </div>
+    </div>
+  </header>
 
-      <!-- Información legal y derechos -->
-      <div class="mf-footer__inferior mf-contenedor">
-        <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
-        <ul class="mf-footer__legal">
-          <li><a href="aviso-legal.html">Aviso Legal</a></li>
-          <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
-        </ul>
+
+  <main>
+
+    <nav aria-label="Migas de pan" class="mf-migas mf-contenedor">
+      <a href="index.html">Inicio</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Tienda de Mascotas</span>
+    </nav>
+
+    <section class="mf-tienda__cabecera mf-contenedor">
+      <p class="mf-tienda__insignia">✚ Farmacia y Nutrición Certificada</p>
+      <h1 class="mf-tienda__titulo">Tienda &amp; Farmacia Veterinaria <span>MascotaFeliz</span></h1>
+      <p class="mf-tienda__subtitulo">Nutrición de alta gama, farmacia certificada, antipulgas y accesorios para
+        consentir a perros, gatos y aves con envío a domicilio en 24h.</p>
+      <ul class="mf-tienda__puntos">
+        <li>🚚 <strong>Envío Exprés 24h</strong><span>Gratis desde S/ 149</span></li>
+        <li>🛡️ <strong>Control Clínico</strong><span>Supervisado por veterinarios</span></li>
+      </ul>
+    </section>
+
+    <div class="mf-tienda__envios">
+      <div class="mf-contenedor mf-tienda__envios-interior">
+        <p>⚡ Envíos exprés en el día para pedidos antes de las 14:00 | Retiro gratis en clínica en 30 minutos</p>
+        <a href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">¿Dudas o recetas?
+          Consúltanos</a>
       </div>
-    </footer>
-
-    <!-- ACCESO FLOTANTE A WHATSAPP  -->
-
-    <div class="mf-whatsapp-flotante">
-      <p class="mf-whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
-      <a aria-label="Escribir por WhatsApp" class="mf-whatsapp-flotante__boton" href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">
-        <span aria-hidden="true" class="material-symbols-outlined">chat</span>
-      </a>
     </div>
 
-    <!-- Notificaciones del carrito -->
-    <div aria-live="polite" class="mf-aviso" id="aviso-carrito" role="status"></div>
 
-  </body>
+    <div class="mf-contenedor mf-tienda__layout">
+
+      <!-- FILTROS LATERALES -->
+
+      <aside aria-label="Filtros de productos" class="mf-filtros">
+        <div class="mf-filtros__cabecera">
+          <h2>🎚️ Filtros</h2>
+          <button form="form-filtros" id="limpiar-filtros" type="reset">Limpiar todo</button>
+        </div>
+
+        <form action="#" id="form-filtros" method="get">
+
+          <!-- Filtro por mascota -->
+          <fieldset class="mf-filtros__grupo">
+            <legend>Filtro por Mascota</legend>
+            <label class="mf-filtros__opcion">
+              <input name="mascota" type="checkbox" value="perros" />
+              🐶 Perros <span class="mf-filtros__cantidad">142</span>
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="mascota" type="checkbox" value="gatos" />
+              🐱 Gatos <span class="mf-filtros__cantidad">98</span>
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="mascota" type="checkbox" value="aves" />
+              🐦 Aves <span class="mf-filtros__cantidad">45</span>
+            </label>
+          </fieldset>
+
+          <!-- Filtro por categorías -->
+          <fieldset class="mf-filtros__grupo">
+            <legend>Categorías Especializadas</legend>
+            <label class="mf-filtros__opcion">
+              <input name="categoria" type="checkbox" value="alimentos" />
+              🍖 Alimentos y Snacks <span class="mf-filtros__cantidad">110</span>
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="categoria" type="checkbox" value="farmacia" />
+              ✚ Farmacia y Suplementos <span class="mf-filtros__cantidad">64</span>
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="categoria" type="checkbox" value="antipulgas" />
+              🛡️ Antipulgas y Pipetas <span class="mf-filtros__cantidad">38</span>
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="categoria" type="checkbox" value="juguetes" />
+              🧸 Juguetes y Hábitats <span class="mf-filtros__cantidad">49</span>
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="categoria" type="checkbox" value="higiene" />
+              🧼 Higiene y Belleza <span class="mf-filtros__cantidad">24</span>
+            </label>
+          </fieldset>
+
+          <!-- Filtro por precio -->
+          <fieldset class="mf-filtros__grupo">
+            <legend>Rango de Precio <span class="mf-filtros__max" id="precio-maximo-texto">Hasta S/ 120</span></legend>
+            <input aria-label="Precio máximo" class="mf-filtros__rango" id="precio-maximo" max="120" min="5"
+              name="precio" type="range" value="120" />
+            <div class="mf-filtros__rango-marcas">
+              <span>S/ 5</span><span>S/ 60</span><span>S/ 120</span>
+            </div>
+          </fieldset>
+
+          <!-- Filtro por marcas -->
+          <fieldset class="mf-filtros__grupo">
+            <legend>Marcas Destacadas</legend>
+            <label class="mf-filtros__opcion">
+              <input name="marca" type="checkbox" value="royal-canin" />
+              Royal Canin
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="marca" type="checkbox" value="bravecto" />
+              Bravecto
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="marca" type="checkbox" value="versele-laga" />
+              Versele-Laga
+            </label>
+            <label class="mf-filtros__opcion">
+              <input name="marca" type="checkbox" value="zupreem" />
+              ZuPreem
+            </label>
+          </fieldset>
+
+          <!-- Filtro por disponibilidad -->
+          <fieldset class="mf-filtros__grupo">
+            <legend>Disponibilidad</legend>
+            <label class="mf-filtros__opcion">
+              <input name="stock" type="checkbox" value="hoy" />
+              📦 En stock para entrega hoy
+              <span class="mf-filtros__nota">Despacho desde clínica local</span>
+            </label>
+          </fieldset>
+
+          <button class="mf-filtros__aplicar mf-btn mf-btn--primario" type="submit">Aplicar filtros</button>
+        </form>
+
+        <!-- Información sobre recetas -->
+        <div class="mf-filtros__receta">
+          <h3>✚ Farmacia con Receta</h3>
+          <p>¿Tu mascota necesita medicamentos sujetos a prescripción? Envíanos la orden médica por WhatsApp y
+            la validamos.</p>
+          <a href="https://wa.me/51999999999" rel="noopener noreferrer" target="_blank">📄 Subir receta
+            médica</a>
+        </div>
+      </aside>
+
+      <!-- LISTADO DE PRODUCTOS          -->
+
+      <section aria-label="Listado de productos" class="mf-listado">
+
+        <!-- Barra de herramientas -->
+        <div class="mf-listado__barra">
+          <p class="mf-listado__contador">Mostrando <strong id="productos-cantidad">0</strong> productos</p>
+          <p class="mf-listado__stock">✔ Stock verificado en tiempo real</p>
+
+          <div class="mf-listado__herramientas">
+
+            <!-- Buscador -->
+            <label class="mf-listado__buscar">
+              <span aria-hidden="true" class="mf-listado__buscar-icono">🔍</span>
+              <input aria-label="Buscar productos" autocomplete="off" id="buscar-productos" name="buscar"
+                placeholder="Buscar en farmacia y pienso" type="search" />
+            </label>
+
+            <!-- Ordenamiento -->
+            <label class="mf-listado__ordenar">
+              Ordenar:
+              <select id="ordenar-productos" name="ordenar">
+                <option value="populares">Más populares</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="rating">Mejor valorados</option>
+              </select>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Filtros activos -->
+        <ul aria-label="Filtros activos" class="mf-listado__activos" id="filtros-activos">
+          <li>Filtros activos:</li>
+        </ul>
+
+        <!-- Contenedor dinámico de productos -->
+        <div aria-live="polite" class="mf-listado__rejilla" id="catalogo-productos"></div>
+
+        <!-- Paginación (estática) -->
+        <nav aria-label="Paginación del catálogo" class="mf-paginacion">
+          <p class="mf-paginacion__info">Página 1 de 24 <span>(285 resultados en catálogo)</span></p>
+          <ol class="mf-paginacion__lista">
+            <li><a aria-current="page" class="mf-paginacion__enlace mf-paginacion__enlace--actual"
+                href="catalogo.html">1</a></li>
+            <li><a class="mf-paginacion__enlace" href="catalogo.html">2</a></li>
+            <li><a class="mf-paginacion__enlace" href="catalogo.html">3</a></li>
+            <li><span class="mf-paginacion__puntos">…</span></li>
+            <li><a class="mf-paginacion__enlace" href="catalogo.html">24</a></li>
+            <li><a class="mf-paginacion__enlace mf-paginacion__enlace--siguiente" href="catalogo.html">›</a></li>
+          </ol>
+        </nav>
+      </section>
+    </div>
+
+    <!-- GARANTÍAS DE COMPRA -->
+
+    <section aria-label="Garantías de compra" class="mf-garantias mf-contenedor">
+
+      <article class="mf-garantias__item">
+        <span aria-hidden="true" class="mf-garantias__icono">🧊</span>
+        <div>
+          <h2>Garantía Farmacéutica</h2>
+          <p>Todos los productos se almacenan con control de temperatura y trazabilidad por veterinarios
+            colegiados.</p>
+        </div>
+      </article>
+
+      <article class="mf-garantias__item">
+        <span aria-hidden="true" class="mf-garantias__icono">🛵</span>
+        <div>
+          <h2>Reparto Local Urgente</h2>
+          <p>Si tu mascota necesita antibióticos o alimento medicinal de urgencia, te lo entregamos en menos
+            de 3 horas en la ciudad.</p>
+        </div>
+      </article>
+
+      <article class="mf-garantias__item">
+        <span aria-hidden="true" class="mf-garantias__icono">↩️</span>
+        <div>
+          <h2>Devolución Segura</h2>
+          <p>30 días para cambios en accesorios o devoluciones asistidas en cualquiera de nuestras clínicas
+            veterinarias.</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA  -->
+
+  <footer class="mf-footer">
+    <div class="mf-footer__principal mf-contenedor">
+
+      <!-- Información de la empresa -->
+      <div class="mf-footer__columna">
+        <p class="mf-footer__marca">Mascota<span class="mf-footer__acento">Feliz</span></p>
+        <p class="mf-footer__texto">Clínica veterinaria y farmacia especializada comprometida con la salud,
+          bienestar y cariño de tus compañeros peludos y alados.</p>
+
+        <ul class="mf-footer__datos">
+          <li>
+            <span aria-hidden="true" class="material-symbols-outlined">verified</span>
+            <p class="mf-footer--equipo--medico">Equipo Médico Colegiado N.º 95130</p>
+          </li>
+          <li>
+            <span aria-hidden="true" class="material-symbols-outlined mf-footer__icono-urgencia">call</span>
+            <span class="mf-footer__link--urgencia">Urgencias 24h: <a class="mf-footer__urgencia"
+                href="tel:+51987654321">+51 987 654
+                321</a></span>
+          </li>
+          <li>
+            <span aria-hidden="true" class="material-symbols-outlined">location_on</span>
+            <a class="mf-footer__enlace-subrayado"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Principal+de+las+Mascotas+42%2C+Lima"
+              rel="noopener noreferrer" target="_blank">Ver sedes en Google Maps</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Enlaces de servicios y productos -->
+      <nav aria-label="Servicios y Productos" class="mf-footer__columna">
+        <h2 class="mf-footer__titulo">Servicios y Productos por Especie</h2>
+        <ul class="mf-footer__lista">
+          <li><a class="mf-footer__enlace" href="servicios.html#perros">Medicina Integral para Perros</a></li>
+          <li><a class="mf-footer__enlace" href="servicios.html#gatos">Cuidados Especiales y Vacunación
+              Felina</a></li>
+          <li><a class="mf-footer__enlace" href="servicios.html#aves">Clínica y Bienestar de Aves Exóticas</a></li>
+          <li><a class="mf-footer__enlace" href="catalogo.html">Farmacia Veterinaria y Fármacos</a></li>
+          <li><a class="mf-footer__enlace" href="servicios.html#peluqueria">Peluquería Dermatológica e
+              Higiene</a></li>
+          <li><a class="mf-footer__enlace" href="servicios.html#urgencias">Cirugía y Hospitalización 24/7</a></li>
+        </ul>
+      </nav>
+
+      <!-- Atención y sedes -->
+      <div class="mf-footer__columna">
+        <h2 class="mf-footer__titulo">Atención &amp; Sedes</h2>
+
+        <div class="mf-footer__sede">
+          <strong class="mf-footer__sede-titulo">Sede Central Lima</strong>
+          <address class="mf-footer__sede-contacto">Av. Principal de las Mascotas 42, Lima</address>
+          <p class="mf-footer__sede-detalle">Lun a Sáb de 8:00 a 20:00</p>
+        </div>
+
+        <div class="mf-footer__sede">
+          <strong class="mf-footer__sede-titulo">Centro Hospitalario Urgencias</strong>
+          <address class="mf-footer__sede-contacto">Calle del Rescate 20, Lima</address>
+          <p class="mf-footer__sede-detalle">Abierto 24 Horas / 365 Días</p>
+        </div>
+
+        <div class="mf-footer__sede">
+          <strong class="mf-footer__sede-titulo">WhatsApp Atención al Cliente:</strong>
+          <address class="mf-footer__sede-contacto">
+            <a class="mf-footer__enlace-verde" href="https://wa.me/51999999999" rel="noopener noreferrer"
+              target="_blank">+51 999 999 999</a>
+          </address>
+        </div>
+      </div>
+
+      <!-- Formulario de suscripción -->
+      <div class="mf-footer__columna">
+        <h2 class="mf-footer__titulo">Consejos &amp; Comunidad</h2>
+        <p class="mf-footer__texto">Suscríbete para recibir guías de nutrición, recordatorios de vacunación y
+          promociones de nuestra tienda.</p>
+
+        <form action="#" class="mf-suscripcion" method="post">
+          <label class="mf-solo-lectores" for="correo-boletin">Correo electrónico</label>
+          <input autocomplete="email" class="mf-suscripcion__campo" id="correo-boletin" name="correo"
+            placeholder="Introduce tu correo electrónico" required="" type="email" />
+          <button class="mf-btn mf-btn--primario mf-suscripcion__boton" type="submit">Suscribirme
+            gratis</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Información legal y derechos -->
+    <div class="mf-footer__inferior mf-contenedor">
+      <small>© 2026 MascotaFeliz. Todos los derechos reservados.</small>
+      <ul class="mf-footer__legal">
+        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ACCESO FLOTANTE A WHATSAPP  -->
+
+  <div class="mf-whatsapp-flotante">
+    <p class="mf-whatsapp-flotante__texto">¿Necesitas cita o consulta? ¡Escríbenos!</p>
+    <a aria-label="Escribir por WhatsApp" class="mf-whatsapp-flotante__boton" href="https://wa.me/51999999999"
+      rel="noopener noreferrer" target="_blank">
+      <span aria-hidden="true" class="material-symbols-outlined">chat</span>
+    </a>
+  </div>
+
+
+  <!-- Notificaciones del carrito -->
+  <div aria-live="polite" class="mf-aviso" id="aviso-carrito" role="status"></div>
+
+</body>
 </html>
