@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCarrito } from "../context/CarritoContext";
-import "../styles/carrito.css";
 
 function Carrito() {
 
